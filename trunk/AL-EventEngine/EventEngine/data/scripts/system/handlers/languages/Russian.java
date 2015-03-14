@@ -21,196 +21,196 @@ import com.aionemu.gameserver.utils.i18n.CustomMessageId;
 import com.aionemu.gameserver.utils.i18n.Language;
 
 public class Russian extends Language {
-    public Russian() {
-        super("ru");
-        addSupportedLanguage("ru_RU");
-        addTranslatedMessage(CustomMessageId.SERVER_REVISION, "Версия сервера : %-6s");
-        addTranslatedMessage(CustomMessageId.WELCOME_PREMIUM, "Добро пожаловать");
-        addTranslatedMessage(CustomMessageId.WELCOME_REGULAR, "Добро пожаловать");
-        addTranslatedMessage(CustomMessageId.WELCOME_BASIC, "Добро пожаловать");
-        addTranslatedMessage(CustomMessageId.SERVERVERSION, "Поддерживаемые NCSoft Версия");
+	public Russian() {
+		super("ru");
+		addSupportedLanguage("ru_RU");
+		addTranslatedMessage(CustomMessageId.SERVER_REVISION, "Версия сервера : %-6s");
+		addTranslatedMessage(CustomMessageId.WELCOME_PREMIUM, "Добро пожаловать!");
+		addTranslatedMessage(CustomMessageId.WELCOME_REGULAR, "Добро пожаловать!");
+		addTranslatedMessage(CustomMessageId.WELCOME_BASIC, "Добро пожаловать!");
+		addTranslatedMessage(CustomMessageId.SERVERVERSION, "Поддерживаемые версии NCSoft клиента");
 		addTranslatedMessage(CustomMessageId.ENDMESSAGE, "Веселиться.");
 		addTranslatedMessage(CustomMessageId.ANNOUNCE_GM_CONNECTION, "теперь доступен за поддержку!");
 		addTranslatedMessage(CustomMessageId.ANNOUNCE_GM_DECONNECTION, "Сейчас недоступны за поддержку!");
-		addTranslatedMessage(CustomMessageId.ANNOUNCE_MEMBER_CONNECTION, "%s только что вступили в Atreia.");
-        addTranslatedMessage(CustomMessageId.COMMAND_NOT_ENOUGH_RIGHTS, "У вас нет прав, чтобы использовать эту команду");
-        addTranslatedMessage(CustomMessageId.PLAYER_NOT_ONLINE, "Такого игрока нет в сейчас игре");
-        addTranslatedMessage(CustomMessageId.INTEGER_PARAMETER_REQUIRED, "Параметр должен содержать цифры");
-        addTranslatedMessage(CustomMessageId.INTEGER_PARAMETERS_ONLY, "Параметры должны быть цифрами");
-        addTranslatedMessage(CustomMessageId.SOMETHING_WRONG_HAPPENED, "Произошла ошибка");
-        addTranslatedMessage(CustomMessageId.COMMAND_DISABLED, "Команда неактивна");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADD_SYNTAX, "Синтекс: //add <имя игрока> <id предмета> [<количество>]");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADD_ADMIN_SUCCESS, "Предмет(ы) успешно добавлен игроку %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADD_PLAYER_SUCCESS, "Администратор %s дал вам %d предмет(ы)");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADD_FAILURE, "Предмет %d не существует и/или не может быть добавлен %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDDROP_SYNTAX, "Синтекс: //adddrop <id моба> <id вещи> <min> <max> <шанс>");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_SYNTAX, "Синтекс: //addset <имя игрока> <id сета>");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_SET_DOES_NOT_EXISTS, "Сет %d не существует");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_NOT_ENOUGH_SLOTS, "Не хватает %d слотов в инвентаре, чтобы добавить этот сет");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_CANNOT_ADD_ITEM, "Предмет %d не может быть добавлен к %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_ADMIN_SUCCESS, "Сет %d успешно добавлен %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_PLAYER_SUCCESS, "%s дал вам сет");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSKILL_SYNTAX, "Синтекс: //addskill <id скилла> <уровен скилла");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSKILL_ADMIN_SUCCESS, "Скилл %d успешно добавлен %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDSKILL_PLAYER_SUCCESS, "%s дал вам скилл");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_SYNTAX, "Синтекс: //addtitle <id титула> <имя игрока> [special]");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_TITLE_INVALID, "Титул должен быть от 1 до 50");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_CANNOT_ADD_TITLE_TO_ME, "Ва не можете дать титул %d себе");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_CANNOT_ADD_TITLE_TO_PLAYER, "Невозможно дыть титул %d к %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_ADMIN_SUCCESS_ME, "Вы успешно добавили титул %d себе");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_ADMIN_SUCCESS, "Вы успешно дали игроку %s титул %d");
-        addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_PLAYER_SUCCESS, "%s дал вам титул %d");
-        addTranslatedMessage(CustomMessageId.COMMAND_SEND_SYNTAX, "Синтекс: //send <имя файла>");
-        addTranslatedMessage(CustomMessageId.COMMAND_SEND_MAPPING_NOT_FOUND, "%s не найдено");
-        addTranslatedMessage(CustomMessageId.COMMAND_SEND_NO_PACKET, "Пакет не послан");
-        addTranslatedMessage(CustomMessageId.CHANNEL_WORLD_DISABLED, "Канал %s закрыт, используйте канал %s или %s исходя из вашей расы");
-        addTranslatedMessage(CustomMessageId.CHANNEL_ALL_DISABLED, "Все каналы деактивированы");
-        addTranslatedMessage(CustomMessageId.CHANNEL_ALREADY_FIXED, "Ваш канал успешно установлен %s");
-        addTranslatedMessage(CustomMessageId.CHANNEL_FIXED, "Установлен канал %s");
-        addTranslatedMessage(CustomMessageId.CHANNEL_NOT_ALLOWED, "Вы не можете использовать этот канал");
-        addTranslatedMessage(CustomMessageId.CHANNEL_FIXED_BOTH, "Установлены каналы %s и %s");
-        addTranslatedMessage(CustomMessageId.CHANNEL_UNFIX_HELP, "Впишите %s чтобы выйти из канала"); // ;)
-        addTranslatedMessage(CustomMessageId.CHANNEL_NOT_FIXED, "Вы не установлены на канал");
-        addTranslatedMessage(CustomMessageId.CHANNEL_FIXED_OTHER, "Ваш чат не установлен на этом канале, но на %s");
-        addTranslatedMessage(CustomMessageId.CHANNEL_RELEASED, "Вы вышли из канала %s");
-        addTranslatedMessage(CustomMessageId.CHANNEL_RELEASED_BOTH, "Вы вышли из %s и %s");
-        addTranslatedMessage(CustomMessageId.CHANNEL_BAN_ENDED, "Вы можете опять присоединиться к каналам");
-        addTranslatedMessage(CustomMessageId.CHANNEL_BAN_ENDED_FOR, "Игрок %s снова может присоединяться к каналам");
-        addTranslatedMessage(CustomMessageId.CHANNEL_BANNED, "Вы не можете войти на канал, так как %s забанил вас по причине: %s, до разблокировки осталось: %s");
-        addTranslatedMessage(CustomMessageId.COMMAND_MISSING_SKILLS_STIGMAS_ADDED, "%d умения %d стигма даны вам");
-        addTranslatedMessage(CustomMessageId.COMMAND_MISSING_SKILLS_ADDED, "%d умение дано вам");
-        addTranslatedMessage(CustomMessageId.USER_COMMAND_DOES_NOT_EXIST, "Этой игровой команды не существует");
-        addTranslatedMessage(CustomMessageId.COMMAND_XP_DISABLED, "Начисление XP отключено. Введите .xpon чтобы разблокировать");
-        addTranslatedMessage(CustomMessageId.COMMAND_XP_ALREADY_DISABLED, "Начисление XP отключено");
-        addTranslatedMessage(CustomMessageId.COMMAND_XP_ENABLED, "Начисление XP включено");
-        addTranslatedMessage(CustomMessageId.COMMAND_XP_ALREADY_ENABLED, "Начисление XP уже включено");
-		addTranslatedMessage(CustomMessageId.DREDGION_LEVEL_TOO_LOW, "Your current level is too low to enter the Dredgion.");
-		addTranslatedMessage(CustomMessageId.DEFAULT_FINISH_MESSAGE, "Finish!");
+		addTranslatedMessage(CustomMessageId.ANNOUNCE_MEMBER_CONNECTION, "%s только что вступили в Атрею.");
+		addTranslatedMessage(CustomMessageId.COMMAND_NOT_ENOUGH_RIGHTS, "У вас нет прав, чтобы использовать эту команду");
+		addTranslatedMessage(CustomMessageId.PLAYER_NOT_ONLINE, "Игрока нет сейчас в игре");
+		addTranslatedMessage(CustomMessageId.INTEGER_PARAMETER_REQUIRED, "Параметр должен содержать цифры");
+		addTranslatedMessage(CustomMessageId.INTEGER_PARAMETERS_ONLY, "Параметр должен содержать только цифры");
+		addTranslatedMessage(CustomMessageId.SOMETHING_WRONG_HAPPENED, "Произошла ошибка");
+		addTranslatedMessage(CustomMessageId.COMMAND_DISABLED, "Команда неактивна");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADD_SYNTAX, "Синтекс: //add <имя игрока> <id предмета> [<количество>]");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADD_ADMIN_SUCCESS, "Предмет(ы) успешно выдан игроку %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADD_PLAYER_SUCCESS, "Администратор %s добавил вам %d предмет(ы)");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADD_FAILURE, "Предмет %d не существует и/или не может быть добавлен %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDDROP_SYNTAX, "Синтекс: //adddrop <id моба> <id вещи> <min> <max> <шанс>");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_SYNTAX, "Синтекс: //addset <имя игрока> <id сета>");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_SET_DOES_NOT_EXISTS, "Сет %d не существует");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_NOT_ENOUGH_SLOTS, "Не хватает %d слотов в инвентаре, чтобы добавить этот сет");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_CANNOT_ADD_ITEM, "Предмет %d не может быть добавлен к %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_ADMIN_SUCCESS, "Сет %d успешно выдан %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSET_PLAYER_SUCCESS, "%s добавил вам сет");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSKILL_SYNTAX, "Синтекс: //addskill <id скилла> <уровен скилла");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSKILL_ADMIN_SUCCESS, "Скилл %d успешно добавлен %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDSKILL_PLAYER_SUCCESS, "%s добавил вам скилл");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_SYNTAX, "Синтекс: //addtitle <id титула> <имя игрока> [special]");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_TITLE_INVALID, "Титул должен быть от 1 до 50");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_CANNOT_ADD_TITLE_TO_ME, "Вы не можете добавить себе титул %d ");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_CANNOT_ADD_TITLE_TO_PLAYER, "Невозможно добавить титул %d к %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_ADMIN_SUCCESS_ME, "Вы успешно добавили титул %d себе");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_ADMIN_SUCCESS, "Вы успешно добавили игроку %s титул %d");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADDTITLE_PLAYER_SUCCESS, "%s добавил вам титул %d");
+		addTranslatedMessage(CustomMessageId.COMMAND_SEND_SYNTAX, "Синтекс: //send <имя файла>");
+		addTranslatedMessage(CustomMessageId.COMMAND_SEND_MAPPING_NOT_FOUND, "%s не найдено");
+		addTranslatedMessage(CustomMessageId.COMMAND_SEND_NO_PACKET, "Пакет не послан");
+		addTranslatedMessage(CustomMessageId.CHANNEL_WORLD_DISABLED, "Канал %s закрыт, используйте канал %s или %s исходя из вашей расы");
+		addTranslatedMessage(CustomMessageId.CHANNEL_ALL_DISABLED, "Все каналы деактивированы");
+		addTranslatedMessage(CustomMessageId.CHANNEL_ALREADY_FIXED, "Ваш канал успешно установлен %s");
+		addTranslatedMessage(CustomMessageId.CHANNEL_FIXED, "Установлен канал %s");
+		addTranslatedMessage(CustomMessageId.CHANNEL_NOT_ALLOWED, "Вы не можете использовать этот канал");
+		addTranslatedMessage(CustomMessageId.CHANNEL_FIXED_BOTH, "Установлены каналы %s и %s");
+		addTranslatedMessage(CustomMessageId.CHANNEL_UNFIX_HELP, "Напишите %s чтобы выйти из канала"); // ;)
+		addTranslatedMessage(CustomMessageId.CHANNEL_NOT_FIXED, "Вы не установлены на канал");
+		addTranslatedMessage(CustomMessageId.CHANNEL_FIXED_OTHER, "Ваш чат не установлен на этом канале, но на %s");
+		addTranslatedMessage(CustomMessageId.CHANNEL_RELEASED, "Вы вышли из канала %s");
+		addTranslatedMessage(CustomMessageId.CHANNEL_RELEASED_BOTH, "Вы вышли из %s и %s");
+		addTranslatedMessage(CustomMessageId.CHANNEL_BAN_ENDED, "Вы можете опять присоединиться к каналам");
+		addTranslatedMessage(CustomMessageId.CHANNEL_BAN_ENDED_FOR, "Игрок %s снова может присоединяться к каналам");
+		addTranslatedMessage(CustomMessageId.CHANNEL_BANNED, "Вы не можете присоедениться к каналу, так как %s забанил вас по причине: %s, до разблокировки осталось: %s");
+		addTranslatedMessage(CustomMessageId.COMMAND_MISSING_SKILLS_STIGMAS_ADDED, "%d умения %d стигма выданы вам");
+		addTranslatedMessage(CustomMessageId.COMMAND_MISSING_SKILLS_ADDED, "%d умение добавлено вам");
+		addTranslatedMessage(CustomMessageId.USER_COMMAND_DOES_NOT_EXIST, "Этой игровой команды не существует");
+		addTranslatedMessage(CustomMessageId.COMMAND_XP_DISABLED, "Получение опыта отключено. Введите .xpon чтобы разблокировать");
+		addTranslatedMessage(CustomMessageId.COMMAND_XP_ALREADY_DISABLED, "Получение опыта отключено");
+		addTranslatedMessage(CustomMessageId.COMMAND_XP_ENABLED, "Получение опыта включено");
+		addTranslatedMessage(CustomMessageId.COMMAND_XP_ALREADY_ENABLED, "Получение опыта уже включено");
+		addTranslatedMessage(CustomMessageId.DREDGION_LEVEL_TOO_LOW, "Текущий уровень слишком низкий, чтобы войти в Дерадикон.");
+		addTranslatedMessage(CustomMessageId.DEFAULT_FINISH_MESSAGE, "Финиш!");
 
 		/**
 		 * Asmo and Ely Channel
 		 */
-		addTranslatedMessage(CustomMessageId.ASMO_FAIL, "You are Elyos! You can not use this chat. Ely <message> to post a new faction chat!");
-		addTranslatedMessage(CustomMessageId.ELY_FAIL, "You are Asmo! You can not use this chat. Asmo <message> to post a new faction chat!");
+		addTranslatedMessage(CustomMessageId.ASMO_FAIL, "Вы Элиец! Вы не можете использовать данный чат. Синтекс: .ely <сообщение>, для публикации сообщения в чат своей фракции!");
+		addTranslatedMessage(CustomMessageId.ELY_FAIL, "Вы Асмодианен! Вы не можете использовать данный чат. Синтекс: .asmo <сообщение>, для публикации сообщения в чат своей фракции!");
 
 		/**
 		 * PvP Service
 		 */
-		addTranslatedMessage(CustomMessageId.ADV_WINNER_MSG, "[PvP System] You kill player ");
-		addTranslatedMessage(CustomMessageId.ADV_LOSER_MSG, "[PvP System] You killed by ");
-		addTranslatedMessage(CustomMessageId.PLAP_LOST1, "[PL-AP] You lost ");
-		addTranslatedMessage(CustomMessageId.PLAP_LOST2, "% of your total ap");
-		addTranslatedMessage(CustomMessageId.PVP_NO_REWARD1, "You dont won anything for killing ");
-		addTranslatedMessage(CustomMessageId.PVP_NO_REWARD2, " because you killed him too often!");
+		addTranslatedMessage(CustomMessageId.ADV_WINNER_MSG, "[ПвП Система] Вы убили игрока ");
+		addTranslatedMessage(CustomMessageId.ADV_LOSER_MSG, "[ПвП Система] Вы убиты игроком ");
+		addTranslatedMessage(CustomMessageId.PLAP_LOST1, "[Система ОБ] Вы потеряли ");
+		addTranslatedMessage(CustomMessageId.PLAP_LOST2, "% от общего кол-ва очков бездны");
+		addTranslatedMessage(CustomMessageId.PVP_NO_REWARD1, "Вы не получаете ничего за убийство игрока ");
+		addTranslatedMessage(CustomMessageId.PVP_NO_REWARD2, " Вы слишком часто убивали его!");
 
 		/**
 		 * Reward Service Login Messages
 		 */
-		addTranslatedMessage(CustomMessageId.REWARD10, "You can. Start using a level to get 10 Features!");
-		addTranslatedMessage(CustomMessageId.REWARD30, "You can. Start to use a Level 30 Equipment get!");
-		addTranslatedMessage(CustomMessageId.REWARD40, "You can. Start using a level to get 40 Features!");
-		addTranslatedMessage(CustomMessageId.REWARD50, "You can. Start a level use 50 features to get!");
-		addTranslatedMessage(CustomMessageId.REWARD60, "You can. Start to use a Level 60 Features get!");
+		addTranslatedMessage(CustomMessageId.REWARD10, "Вы можете. Start using a level to get 10 Features!");
+		addTranslatedMessage(CustomMessageId.REWARD30, "Вы можете. Start to use a Level 30 Equipment get!");
+		addTranslatedMessage(CustomMessageId.REWARD40, "Вы можете. Start using a level to get 40 Features!");
+		addTranslatedMessage(CustomMessageId.REWARD50, "Вы можете. Start a level use 50 features to get!");
+		addTranslatedMessage(CustomMessageId.REWARD60, "Вы можете. Start to use a Level 60 Features get!");
 
 		/**
 		 * Advanced PvP System
 		 */
-		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE1, "Today PvP Map: Reshanta");
-		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE2, "Today PvP Map: Tiamaranta");
-		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE3, "Today PvP Map: Inggison/Gelkmaros");
-		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE4, "Today PvP Map: Idian Depths");
-		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE5, "Today PvP Map: Katalam");
-		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE6, "Today PvP Map: Danaria");
+		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE1, "Сегодня ПвП локация: Арэшурат");
+		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE2, "Сегодня ПвП локация: Тиамаранта");
+		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE3, "Сегодня ПвП локация: Ингисон / Келькмарос");
+		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE4, "Сегодня ПвП локация: Подземный Каталам");
+		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE5, "Сегодня ПвП локация: Каталам");
+		addTranslatedMessage(CustomMessageId.PVP_ADV_MESSAGE6, "Сегодня ПвП локация: Данария");
 
 		/**
 		 * Wedding related
 		 */
-		addTranslatedMessage(CustomMessageId.WEDDINGNO1, "You can not use this command during the fight!");
-		addTranslatedMessage(CustomMessageId.WEDDINGNO2, "Wedding has not started!");
-		addTranslatedMessage(CustomMessageId.WEDDINGNO3, "You refused to marry!");
-		addTranslatedMessage(CustomMessageId.WEDDINGYES, "You have accepted the marriage!");
+		addTranslatedMessage(CustomMessageId.WEDDINGNO1, "Вы не можете использовать эту команду во время боя!");
+		addTranslatedMessage(CustomMessageId.WEDDINGNO2, "Свадьба не запущена!");
+		addTranslatedMessage(CustomMessageId.WEDDINGNO3, "Вы отказались от предложения руки и сердца!");
+		addTranslatedMessage(CustomMessageId.WEDDINGYES, "Да, Вы согласны!");
 
 		/**
 		 * Clean Command related
 		 */
-		addTranslatedMessage(CustomMessageId.CANNOTCLEAN, "You have to enter an Item ID, or post a link!");
-		addTranslatedMessage(CustomMessageId.CANNOTCLEAN2, "You do not own this item!");
-		addTranslatedMessage(CustomMessageId.SUCCESSCLEAN, "Item has been successfully removed from a cube!");
+		addTranslatedMessage(CustomMessageId.CANNOTCLEAN, "Вы должны ввести <id вещи> или отправить ссылку!");
+		addTranslatedMessage(CustomMessageId.CANNOTCLEAN2, "Это не пренадлежит вам!");
+		addTranslatedMessage(CustomMessageId.SUCCESSCLEAN, "Предмет был успешно удален из куба!");
 
 		/**
 		 * Mission check command related
 		 */
-		addTranslatedMessage(CustomMessageId.SUCCESCHECKED, "Mission successfully checked!");
+		addTranslatedMessage(CustomMessageId.SUCCESCHECKED, "Миссии успешно прошли проверку!");
 
 		/**
 		 * No Exp Command
 		 */
-		addTranslatedMessage(CustomMessageId.EPACTIVATED, "Your EP were re-activated!");
-		addTranslatedMessage(CustomMessageId.ACTODE, "To disable your EP, use noexp.");
-		addTranslatedMessage(CustomMessageId.EPDEACTIVATED, "Your EP were disabled!");
-		addTranslatedMessage(CustomMessageId.DETOAC, "To activate your EP, use noexp.");
+		addTranslatedMessage(CustomMessageId.EPACTIVATED, "Получение опыта - активировано!");
+		addTranslatedMessage(CustomMessageId.ACTODE, "Для отключения получения опыта, используйте команду: .noexp");
+		addTranslatedMessage(CustomMessageId.EPDEACTIVATED, "Получение опыта - отключено!");
+		addTranslatedMessage(CustomMessageId.DETOAC, "Для активации получения опыта, повторно используйте команду: .noexp");
 
 		/**
 		 * Auto Quest Command
 		 */
-		addTranslatedMessage(CustomMessageId.WRONGQID, "Please enter a correct quest Id!");
-		addTranslatedMessage(CustomMessageId.NOTSTARTED, "Quest could not be started!");
-		addTranslatedMessage(CustomMessageId.NOTSUPPORT, "This quest is not supported by this command!");
+		addTranslatedMessage(CustomMessageId.WRONGQID, "Пожалуйста, введите правильное <id задания>!");
+		addTranslatedMessage(CustomMessageId.NOTSTARTED, "Задание нельзя запустить!");
+		addTranslatedMessage(CustomMessageId.NOTSUPPORT, "Нельзя использовать команду для данного задания!");
 
 		/**
 		 * Quest Restart Command
 		 */
-		addTranslatedMessage(CustomMessageId.CANNOTRESTART, "] can not be restarted");
+		addTranslatedMessage(CustomMessageId.CANNOTRESTART, "] нельзя перезапустить");
 
 		/**
 		 * Exchange Toll Command
 		 */
-		addTranslatedMessage(CustomMessageId.TOLLTOBIG, "You have too many Toll!");
-		addTranslatedMessage(CustomMessageId.TOLOWAP, "You do not have enough AP!");
-		addTranslatedMessage(CustomMessageId.TOLOWTOLL, "You do not have enough Toll!");
-		addTranslatedMessage(CustomMessageId.WRONGTOLLNUM, "Something went wrong!");
+		addTranslatedMessage(CustomMessageId.TOLLTOBIG, "У вас слишком много Поинтов!");
+		addTranslatedMessage(CustomMessageId.TOLOWAP, "У вас недостаточно очков бездны!");
+		addTranslatedMessage(CustomMessageId.TOLOWTOLL, "У вас недостаточно Поинтов!");
+		addTranslatedMessage(CustomMessageId.WRONGTOLLNUM, "Что-то пошло не так!");
 
 		/**
 		 * Cube Command
 		 */
-		addTranslatedMessage(CustomMessageId.CUBE_ALLREADY_EXPANDED, "Your cube is fully extended!");
-		addTranslatedMessage(CustomMessageId.CUBE_SUCCESS_EXPAND, "Your cube is successfully expanded!");
+		addTranslatedMessage(CustomMessageId.CUBE_ALLREADY_EXPANDED, "Ваш куб увеличен до максимума!");
+		addTranslatedMessage(CustomMessageId.CUBE_SUCCESS_EXPAND, "Ваш куб успешно увеличен!");
 
 		/**
 		 * GMList Command
 		 */
-		addTranslatedMessage(CustomMessageId.ONE_GM_ONLINE, "A team member is online: ");
-		addTranslatedMessage(CustomMessageId.MORE_GMS_ONLINE, "The following team members online: ");
-		addTranslatedMessage(CustomMessageId.NO_GM_ONLINE, "No team member online!");
+		addTranslatedMessage(CustomMessageId.ONE_GM_ONLINE, "Представитель администрации онлайн: ");
+		addTranslatedMessage(CustomMessageId.MORE_GMS_ONLINE, "Представители администрации онлайн: ");
+		addTranslatedMessage(CustomMessageId.NO_GM_ONLINE, "Представителей администрации нет в игре!");
 
 		/**
 		 * Go Command (PvP Command)
 		 */
-		addTranslatedMessage(CustomMessageId.NOT_USE_WHILE_FIGHT, "You can not use this command during the fight!");
-		addTranslatedMessage(CustomMessageId.NOT_USE_ON_PVP_MAP, "You can not use this command on a PvP Map!");
-		addTranslatedMessage(CustomMessageId.LEVEL_TOO_LOW, "You can use this command only with level 55 or higher to use!");
+		addTranslatedMessage(CustomMessageId.NOT_USE_WHILE_FIGHT, "Вы не можете использовать эту команду во время боя!");
+		addTranslatedMessage(CustomMessageId.NOT_USE_ON_PVP_MAP, "Вы не можете использовать эту команду в ПвП локации!");
+		addTranslatedMessage(CustomMessageId.LEVEL_TOO_LOW, "Вы можете использовать эту команду только с 55-го уровня или выше!");
 
 		/**
 		 * Paint Command
 		 */
-		addTranslatedMessage(CustomMessageId.WRONG_TARGET, "Please use a legal target!");
+		addTranslatedMessage(CustomMessageId.WRONG_TARGET, "Выбрана неправильная цель!");
 
 		/**
 		 * Shiva Command
 		 */
-		addTranslatedMessage(CustomMessageId.ENCHANT_SUCCES, "All your items have been enchanted to: ");
-		addTranslatedMessage(CustomMessageId.ENCHANT_INFO, "Info: This command all your enchanted items on <value>!");
-		addTranslatedMessage(CustomMessageId.ENCHANT_SAMPLE, "For example, would enchant all your items to 15 (eq 15.)");
+		addTranslatedMessage(CustomMessageId.ENCHANT_SUCCES, "Все вещи успешно заточены до: ");
+		addTranslatedMessage(CustomMessageId.ENCHANT_INFO, "Информация: эта команда заточет вещи до указанного значения!");
+		addTranslatedMessage(CustomMessageId.ENCHANT_SAMPLE, "Например, чтобы заточить все вещи на +15 используйте значение 15.");
 
 		/**
 		 * Userinfo Command
 		 */
-		addTranslatedMessage(CustomMessageId.CANNOT_SPY_PLAYER, "You can not get information from other players!");
+		addTranslatedMessage(CustomMessageId.CANNOT_SPY_PLAYER, "Вы не можете просматривать информацию о других игроках!");
 
 		/**
 		 * Check AFK Status
 		 */
-		addTranslatedMessage(CustomMessageId.KICKED_AFK_OUT, "You have been kicked out for being inactive too long.");
+		addTranslatedMessage(CustomMessageId.KICKED_AFK_OUT, "Вы были отключены, из-за долгого отсутствия за компьютером.");
 
 		/**
 		 * Exchange Command
@@ -221,48 +221,48 @@ public class Russian extends Language {
 		/**
 		 * Medal Command
 		 */
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_SILVER, "You dont have enough silver medals.");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_GOLD, "You dont have enough gold medals.");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_PLATIN, "You dont have enough platin medals.");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MITHRIL, "You dont have enough mithril medals.");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_AP2, "You dont have enough ap, you need: ");
-		addTranslatedMessage(CustomMessageId.EXCHANGE_SILVER, "You have exchange [item:186000031] to [item:186000030].");
-		addTranslatedMessage(CustomMessageId.EXCHANGE_GOLD, "You have exchange [item:186000030] to [item:186000096].");
-		addTranslatedMessage(CustomMessageId.EXCHANGE_PLATIN, "You have exchange [item:186000096] to [item:186000147].");
-		addTranslatedMessage(CustomMessageId.EXCHANGE_MITHRIL, "You have exchange [item:186000147] to [item:186000223].");
-		addTranslatedMessage(CustomMessageId.EX_SILVER_INFO, "\nSyntax: .medal silver - Exchange Silver to Gold.");
-		addTranslatedMessage(CustomMessageId.EX_GOLD_INFO, "\nSyntax: .medal gold - Exchange Gold to Platin.");
-		addTranslatedMessage(CustomMessageId.EX_PLATIN_INFO, "\nSyntax: .medal platinum - Exchnage Platin to Mithril.");
-		addTranslatedMessage(CustomMessageId.EX_MITHRIL_INFO, "\nSyntax: .medal mithril - Exchange Mithril to Honorable Mithril.");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_SILVER, "У вас недостаточно Серебряных медалей.");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_GOLD, "У вас недостаточно Золотох медалей.");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_PLATIN, "У вас недостаточно Платиновых медалей.");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MITHRIL, "У вас недостаточно Мифриловых медалей.");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_AP2, "У вас недостаточно очков бездны, вам нужно: ");
+		addTranslatedMessage(CustomMessageId.EXCHANGE_SILVER, "Вы обмениваете: [item:186000031] to [item:186000030].");
+		addTranslatedMessage(CustomMessageId.EXCHANGE_GOLD, "Вы обмениваете: [item:186000030] to [item:186000096].");
+		addTranslatedMessage(CustomMessageId.EXCHANGE_PLATIN, "Вы обмениваете: [item:186000096] to [item:186000147].");
+		addTranslatedMessage(CustomMessageId.EXCHANGE_MITHRIL, "Вы обмениваете: [item:186000147] to [item:186000223].");
+		addTranslatedMessage(CustomMessageId.EX_SILVER_INFO, "\nСинтекс: .medal silver - Обменять Серебро на Золото.");
+		addTranslatedMessage(CustomMessageId.EX_GOLD_INFO, "\nСинтекс: .medal gold - Обменять Золото на Платину.");
+		addTranslatedMessage(CustomMessageId.EX_PLATIN_INFO, "\nСинтекс: .medal platinum - Обменять Платину на Мифрил.");
+		addTranslatedMessage(CustomMessageId.EX_MITHRIL_INFO, "\nСинтекс: .medal mithril - Обменять Мифрил на Почетный мифрил.");
 
 		/**
 		 * Legendary Raid Spawn Events
 		 */
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ASMO, "[Spawn Event] Ragnarok was spawned for Asmodians at Beluslan!");
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ELYOS, "[Spawn Event] Omega was spawned for Elyos at Heiron!");
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ASMO, "[Spawn Event] Ragnarok was unspawned, nobody kill him!");
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ELYOS, "[Spawn Event] Omega was unspawned, nobody kill him!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ASMO, "[Ивент] Мутант Натараз возродился в Бесуслане для битвы с Асмодианами!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ELYOS, "[Ивент] Хранитель Валон возродился в Интердике для битвы с Элийцами!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ASMO, "[Ивент] Мутант Натараз покинул локацию, никто не убил его!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ELYOS, "[Ивент] Хранитель Валон покинул локацию, никто не убил его!");
 
 		/**
 		 * HonorItems Command
 		 */
-		addTranslatedMessage(CustomMessageId.PLATE_ARMOR, "Plate Armor");
-		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR, "Leather Armor");
-		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR, "Cloth Armor");
-		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR, "Chain Armor");
-		addTranslatedMessage(CustomMessageId.WEAPONS, "Weapons");
-		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_PRICES, "Plate Armor Prices");
-		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_PRICES, "Leather Armor Prices");
-		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_PRICES, "Cloth Armor Prices");
-		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR_PRICES, "Chain Armor Prices");
-		addTranslatedMessage(CustomMessageId.WEAPONS_PRICES, "Weapons Prices");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MEDALS, "You dont have enough Medals, you need: ");
-		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 1");
-		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 6");
-		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 11");
-		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 16");
-		addTranslatedMessage(CustomMessageId.WEAPONS_USE_INFO, "Use .items and the equal ID (Example: .items 21");
-		addTranslatedMessage(CustomMessageId.SUCCESSFULLY_TRADED, "You got successfully your Trade!");
+		addTranslatedMessage(CustomMessageId.PLATE_ARMOR, "Латы");
+		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR, "Кожаная броня");
+		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR, "Одежда");
+		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR, "Кольчуга");
+		addTranslatedMessage(CustomMessageId.WEAPONS, "Оружие");
+		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_PRICES, "Цена за Латы");
+		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_PRICES, "Цена за Кажанную броню");
+		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_PRICES, "Цена за Одежду");
+		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR_PRICES, "Цена за Кольчугу");
+		addTranslatedMessage(CustomMessageId.WEAPONS_PRICES, "Цена за Оружие");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MEDALS, "У вас недостаточно медалей, вам нужно: ");
+		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_USE_INFO, "Используйте команду: .items и equal ID (Example: .items 1");
+		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_USE_INFO, "Используйте команду: .items и equal ID (Example: .items 6");
+		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_USE_INFO, "Используйте команду: .items и equal ID (Example: .items 11");
+		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR_USE_INFO, "Используйте команду: .items и equal ID (Example: .items 16");
+		addTranslatedMessage(CustomMessageId.WEAPONS_USE_INFO, "Используйте команду: .items и equal ID (Example: .items 21");
+		addTranslatedMessage(CustomMessageId.SUCCESSFULLY_TRADED, "Торговля завершена успешно!");
 
 		/**
 		 * Moltenus Announce
@@ -273,23 +273,23 @@ public class Russian extends Language {
 		/**
 		 * Dredgion Announce
 		 */
-		addTranslatedMessage(CustomMessageId.DREDGION_ASMO_GROUP, "An asmodian group is waiting for dredgion.");
-		addTranslatedMessage(CustomMessageId.DREDGION_ELYOS_GROUP, "An elyos group is waiting for dredgion.");
-		addTranslatedMessage(CustomMessageId.DREDGION_ASMO, "An alone asmodian is waiting for dredgion.");
-		addTranslatedMessage(CustomMessageId.DREDGION_ELYOS, "An alone elyos is waiting for dredgion.");
+		addTranslatedMessage(CustomMessageId.DREDGION_ASMO_GROUP, "Группа Асмодиан ожидает вход в Дерадикон.");
+		addTranslatedMessage(CustomMessageId.DREDGION_ELYOS_GROUP, "Группа Элийцев ожидает вход в Дерадикон.");
+		addTranslatedMessage(CustomMessageId.DREDGION_ASMO, "Асмодианен ожидает вход в Дерадикон.");
+		addTranslatedMessage(CustomMessageId.DREDGION_ELYOS, "Элиец ожидает вход в Дерадикон.");
 
 		/**
 		 * PvP Service
 		 */
-		addTranslatedMessage(CustomMessageId.PVP_TOLL_REWARD1, "You have earned");
-		addTranslatedMessage(CustomMessageId.PVP_TOLL_REWARD2, " Abso'Points.");
+		addTranslatedMessage(CustomMessageId.PVP_TOLL_REWARD1, "Вы заслужили");
+		addTranslatedMessage(CustomMessageId.PVP_TOLL_REWARD2, " Очков Бездны.");
 
 		/**
 		 * Invasion Rift
 		 */
-		addTranslatedMessage(CustomMessageId.INVASION_RIFT_MIN_LEVEL, "Your level is too low to enter.");
-		addTranslatedMessage(CustomMessageId.INVASION_RIFT_ELYOS, "A rift for Pandaemonium is open at Ingisson");
-		addTranslatedMessage(CustomMessageId.INVASION_RIFT_ASMOS, "A rift for Sanctum is open at Gelkmaros");
+		addTranslatedMessage(CustomMessageId.INVASION_RIFT_MIN_LEVEL, "Ваш уровень слишком низкий, чтобы войти.");
+		addTranslatedMessage(CustomMessageId.INVASION_RIFT_ELYOS, "Пространственный разлом в Пандемониум открылся в локации: Ингисон");
+		addTranslatedMessage(CustomMessageId.INVASION_RIFT_ASMOS, "Пространственный разлом в Элизиум открылся в локации: Келькмарос");
 
 		/**
 		 * PvP Spree Service
@@ -310,17 +310,17 @@ public class Russian extends Language {
 		addTranslatedMessage(CustomMessageId.SPREE_END_MSG3, " after ");
 		addTranslatedMessage(CustomMessageId.SPREE_END_MSG4, " uninterrupted murders !");
 		addTranslatedMessage(CustomMessageId.SPREE_MONSTER_MSG, "a monster");
-				
+
 		/**
 		 * EventEngine - EventUtil
 		 */
 		addTranslatedMessage(CustomMessageId.Event_Util_1, "Вы не можете использовать эту команду.");
-		addTranslatedMessage(CustomMessageId.Event_Util_2, "Неверный тип евента.");
+		addTranslatedMessage(CustomMessageId.Event_Util_2, "Неверный тип ивента.");
 		addTranslatedMessage(CustomMessageId.Event_Util_3, "Неизвестная инструкция.");
-			
-        /**
-        * EventEngine - Event
-        */
-        addTranslatedMessage(CustomMessageId.Event_1, "Нельзя участвовать в ивенте, пока вы в тюрьме, во временной зоне либо в состоянии боя.");	
+
+		/**
+		* EventEngine - Event
+		*/
+		addTranslatedMessage(CustomMessageId.Event_1, "Нельзя участвовать в ивенте, пока вы в тюрьме, во временной зоне либо в состоянии боя.");	
 	}
 }
