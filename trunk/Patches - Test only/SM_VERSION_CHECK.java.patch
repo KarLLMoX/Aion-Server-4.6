@@ -1,0 +1,77 @@
+Index: src/com/aionemu/gameserver/network/aion/serverpackets/SM_VERSION_CHECK.java
+===================================================================
+--- src/com/aionemu/gameserver/network/aion/serverpackets/SM_VERSION_CHECK.java	(Revision 175)
++++ src/com/aionemu/gameserver/network/aion/serverpackets/SM_VERSION_CHECK.java	(Arbeitskopie)
+@@ -75,15 +75,15 @@
+             return;
+         }
+ 		writeC(0x00);
+-		writeC(NetworkConfig.GAMESERVER_ID);
+-		writeD(141031); //start year month day
+-		writeD(140820); //start year month day
+-		writeD(0x00); //spacing
+-		writeD(140922); //year month day
+-		writeD(1415179894); //start server time in mili
+-		writeC(0x00); //unk
+-		writeC(GSConfig.SERVER_COUNTRY_CODE);// country code;
+-		writeC(0x00); //unk
++        writeC(NetworkConfig.GAMESERVER_ID);
++        writeD(140428);// start year month day
++        writeD(140428);// start year month day
++        writeD(0x00);// spacing
++        writeD(131216);// year month day
++        writeD(1399466550);// start server time in mili
++        writeC(0x00);// unk
++        writeC(GSConfig.SERVER_COUNTRY_CODE);// country code;
++        writeC(0x00);// unk
+ 
+ 		int serverMode = (characterLimitCount * 0x10) | characterFactionsMode;
+ 
+@@ -102,29 +102,23 @@
+         }
+ 
+ 		writeD((int) (System.currentTimeMillis() / 1000));
+-		writeH(350); //4.6
+-		writeH(1281); //4.6
+-		writeH(2575); //4.6
+-		writeH(257); //4.6
+-		writeH(322); //4.6
+-		writeH(0x02); //4.6
+-		writeC(GSConfig.CHARACTER_REENTRY_TIME);
+-        writeC(EventService.getInstance().getEventType().getId());	
+-		writeD(0x00); //unk4.3
+-		writeD(-3600); //unk4.3
+-		writeC(0x04); //unk4.3
+-		writeC(120); //unk4.3
+-		writeH(25233); //4.6
+-		writeC(0x02); //unk4.3
+-		writeC(0x01); //unk4.3
+-		writeD(0x00); //unk4.3
+-		writeH(0x01); //its loop size
+-		//for... chat servers?
+-		{
+-			writeC(0x00);//spacer
+-			// if the correct ip is not sent it will not work
+-			writeB(IPConfig.getDefaultAddress());
+-			writeH(ChatService.getPort());
+-		}
++        writeD(251724126);//4.7
++        writeD(1108347393);//4.7
++        writeH(257);//4.7
++        writeH(2);//4.7
++        writeC(GSConfig.CHARACTER_REENTRY_TIME);// 20sec
++        writeC(EventService.getInstance().getEventType().getId());
++        writeD(0);// 4.7
++        writeD(-32400);//may some mask make sure it not changed
++        writeD(1653700612);//4.7
++        writeC(2);//4.7
++        writeD(0);//4.7
++        writeD(0);//4.7
++        writeD(17545216);//4.7
++        writeD(65792);//4.7
++        writeD(16777216);//4.7
++        writeH(0);//4.7
++        writeB(IPConfig.getDefaultAddress());
++        writeH(ChatService.getPort());
+ 	}
+ }

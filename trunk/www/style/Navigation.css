@@ -1,0 +1,174 @@
+/* General menu styling */
+.nav {
+position: absolute;
+margin-top: 159px;
+line-height: 22px;
+width: 900px;
+background: url(../img/navbar.png) center;
+font-family: 'Oswald';
+z-index: 2000;
+}
+/* The main navigation link containers */
+.nav>li {
+display: block;
+float: left; /* Displaying them on the same line */
+margin: 0;
+padding: 0;
+font-family: 'Oswald';
+}
+/* The main navigation links */
+.nav>li>a {
+/* Layout */
+display: block;
+position: relative;
+padding: 10px 20px;
+/* Text */
+font-family: 'Oswald';
+color: #fff;
+font-size: 22px;
+text-decoration: none;
+/* Background */
+##background: url(../img/navbar.jpg) center;
+/* Making the color to change on hover with a transition */
+-webkit-transition: color .3s ease-in;
+-moz-transition: color .3s ease-in;
+-o-transition: color .3s ease-in;
+-ms-transition: color .3s ease-in;
+}
+.nav-bar-left {
+background: transparent url(../img/nav_left.png) no-repeat 0 0 scroll;
+width: 70px;
+height: 171px;
+position: absolute;
+left: 50%;
+margin-left: -520px;
+margin-top: 165px;
+z-index: 50000000000000000000000;
+}
+.nav-bar-right {
+background: transparent url(../img/nav_right.png) no-repeat 0 0 scroll;
+width: 70px;
+height: 171px;
+position: absolute;
+left: 50%;
+margin-left: 447px;
+margin-top: 165px;
+z-index: 50000000000000000000000;
+}
+.nav-bar-middle {
+background: transparent url(../img/nav_center.png) no-repeat 0 0 scroll;
+width: 368px;
+height: 160px;
+position: absolute;
+left: 50%;
+margin-left: -185px;
+margin-top: 123px;
+z-index: 50000000000000000000000;
+}
+.sprache {
+width: 368px;
+height: 160px;
+position: absolute;
+left: 50%;
+margin-left: 285px;
+margin-top: 151px;
+z-index: 50000000000000000000000;
+}
+/* Changing the color on hover */
+.nav>li>a:hover, .nav>li:hover>a {
+color: #0fd0f9;
+}
+/* The links which contain dropdowns menu are wider, because they have a little arrow */
+.nav>.dropdown>a {
+padding: 10px 30px 10px 20px;
+}
+/* The arrow indicating the dropdown */
+.dropdown>a::after {
+content: "";
+position: absolute;
+top: 17px;
+right: 10px;
+width: 7px;
+height: 7px;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+border-bottom: 1px solid #fff;
+border-right: 1px solid #fff;
+}
+/* Changing the color of the arrow on hover */ 
+.dropdown>a:hover::after, .dropdown:hover>a::after {
+border-color: #0fd0f9;
+}
+/* The submenus */
+.nav ul {
+position: absolute;
+margin: 0;
+padding: 0;
+list-style: none;
+display: block;
+}
+/* General layout settings for the link containers of the submenus */
+.nav ul li {
+position: absolute;
+top: -9999px; /* Hiding them */
+height: 0px;
+display: block;
+margin: 0;
+padding: 0;
+/* Making them to expand their height with a transition, for a slide effect */
+-webkit-transition: height .2s ease-in;
+-moz-transition: height .2s ease-in;
+-o-transition: height .2s ease-in;
+-ms-transition: height .2s ease-in;
+}
+/* Displays the submenu links, by expading their containers (with a transition, previously defined) and by repositioning them */
+.dropdown:hover>ul>li {
+height: 30px;
+position: relative;
+top: auto;
+}
+/* The submenu links */
+.nav ul li a {
+/* Layout */
+padding: 4px 20px;
+width: 120px;
+display: block;
+position: relative;
+/* Text */
+color: #bbb;
+text-decoration: none;
+font-size: 16px;
+/* Background & effects */
+background: black;
+background: rgba(0, 0, 0, .6);
+-webkit-transition: color .3s ease-in, background .3s ease-in;
+-moz-transition: color .3s ease-in, background .3s ease-in;
+-o-transition: color .3s ease-in, background .3s ease-in;
+-ms-transition: color .3s ease-in, background .3s ease-in;
+}
+/* Changing the link's color and background on hover */
+.nav ul li:hover>a, .nav ul li a:hover {
+color: #0fd0f9;
+background: rgba(0, 0, 0, .75);
+}
+/* Making the level 2 (or higher) submenus to appear at the right of their parent */
+.nav ul .dropdown:hover ul {
+left: 160px;
+top: 0px;
+}
+/* The submenu links have a different arrow which indicates another dropdown submenu */
+.nav ul .dropdown a::after {
+width: 6px;
+height: 6px;
+border-bottom: 0;
+border-right: 1px solid #fff;
+border-top: 1px solid #fff;
+top: 12px;
+}
+/* Changing the color of the arrow on hover */
+.nav ul .dropdown:hover>a::after, .nav ul .dropdown>a:hover::after {
+border-right: 1px solid #0fd0f9;
+border-top: 1px solid #0fd0f9;
+}

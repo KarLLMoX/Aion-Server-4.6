@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decomposable_selectitems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<decomposable_selectitem item_id="188052389" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="GLADIATOR">
+			<item id="100001551" count="1" name="Grendal's Sword"/>
+			<item id="100901206" count="1" name="Grendal's Greatsword"/>
+			<item id="100201354" count="1" name="Grendal's Dagger"/>
+			<item id="100101186" count="1" name="Grendal's Warhammer"/>
+			<item id="101301134" count="1" name="Grendal's Polearm"/>
+			<item id="101701236" count="1" name="Grendal's Bow"/>		
+			<item id="115001592" count="1" name="Grendal's Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052391" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="TEMPLAR">
+			<item id="100001551" count="1" name="Grendal's Sword"/>
+			<item id="100901206" count="1" name="Grendal's Greatsword"/>
+			<item id="100101186" count="1" name="Grendal's Warhammer"/>
+			<item id="115001592" count="1" name="Grendal's Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052395" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="ASSASSIN">
+			<item id="100001551" count="1" name="Grendal's Sword"/>
+			<item id="100201354" count="1" name="Grendal's Dagger"/>
+			<item id="101701236" count="1" name="Grendal's Bow"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052395" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="RANGER">
+			<item id="100001551" count="1" name="Grendal's Sword"/>
+			<item id="100201354" count="1" name="Grendal's Dagger"/>
+			<item id="101701236" count="1" name="Grendal's Bow"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052399" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="SORCERER">
+			<item id="100501186" count="1" name="Grendal's Orb"/>
+			<item id="100601275" count="1" name="Grendal's Spellbook"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052399" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="SPIRIT_MASTER">
+			<item id="100501186" count="1" name="Grendal's Orb"/>
+			<item id="100601275" count="1" name="Grendal's Spellbook"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052403" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="CLERIC">
+			<item id="100101185" count="1" name="Grendal's Mace"/>
+			<item id="100101186" count="1" name="Grendal's Warhammer"/>
+			<item id="101501216" count="1" name="Grendal's Staff"/>
+			<item id="101501231" count="1" name="Grendal's Cane"/>
+			<item id="115001592" count="1" name="Grendal's Shield"/>
+			<item id="115001593" count="1" name="Grendal's Scale Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052403" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="CHANTER">
+			<item id="100101185" count="1" name="Grendal's Mace"/>
+			<item id="100101186" count="1" name="Grendal's Warhammer"/>
+			<item id="101501216" count="1" name="Grendal's Staff"/>
+			<item id="101501231" count="1" name="Grendal's Cane"/>
+			<item id="115001592" count="1" name="Grendal's Shield"/>
+			<item id="115001593" count="1" name="Grendal's Scale Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052409" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="GUNNER">
+			<item id="101801017" count="1" name="Grendal's Pistol"/>
+			<item id="101900980" count="1" name="Grendal's Aethercannon"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052413" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="BARD">
+			<item id="102001043" count="1" name="Grendal's Harp"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052757" decomposeable_selectitem_name="Grendal's Eternal Weapon Box">
+		<items player_class="RIDER">
+			<item id="102100819" count="1" name="Grendal's Cipher-Blade"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052390" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="GLADIATOR">
+			<item id="100001552" count="1" name="Mad Grendal's Sword"/>
+			<item id="100901207" count="1" name="Mad Grendal's Greatsword"/>
+			<item id="100201355" count="1" name="Mad Grendal's Dagger"/>
+			<item id="100101188" count="1" name="Mad Grendal's Warhammer"/>
+			<item id="101301135" count="1" name="Mad Grendal's Polearm"/>
+			<item id="101701237" count="1" name="Mad Grendal's Bow"/>
+			<item id="115001594" count="1" name="Mad Grendal's Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052392" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="TEMPLAR">
+			<item id="100001552" count="1" name="Mad Grendal's Sword"/>
+			<item id="100901207" count="1" name="Mad Grendal's Greatsword"/>
+			<item id="100101188" count="1" name="Mad Grendal's Warhammer"/>
+			<item id="115001594" count="1" name="Mad Grendal's Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052396" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="ASSASSIN">
+			<item id="100001552" count="1" name="Mad Grendal's Sword"/>
+			<item id="100201355" count="1" name="Mad Grendal's Dagger"/>
+			<item id="101701237" count="1" name="Mad Grendal's Bow"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052396" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="RANGER">
+			<item id="100001552" count="1" name="Mad Grendal's Sword"/>
+			<item id="100201355" count="1" name="Mad Grendal's Dagger"/>
+			<item id="101701237" count="1" name="Mad Grendal's Bow"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052400" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="SORCERER">
+			<item id="100501187" count="1" name="Mad Grendal's Orb"/>
+			<item id="100601276" count="1" name="Mad Grendal's Spellbook"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052400" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="SPIRIT_MASTER">
+			<item id="100501187" count="1" name="Mad Grendal's Orb"/>
+			<item id="100601276" count="1" name="Mad Grendal's Spellbook"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052404" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="CLERIC">
+			<item id="101501232" count="1" name="Mad Grendal's Staff"/>
+			<item id="100101188" count="1" name="Mad Grendal's Warhammer"/>
+			<item id="100101187" count="1" name="Mad Grendal's Mace"/>
+			<item id="115001594" count="1" name="Mad Grendal's Shield"/>
+			<item id="115001595" count="1" name="Mad Grendal's Scale Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052404" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="CHANTER">
+			<item id="101501217" count="1" name="Mad Grendal's Staff"/>
+			<item id="100101188" count="1" name="Mad Grendal's Warhammer"/>
+			<item id="100101187" count="1" name="Mad Grendal's Mace"/>
+			<item id="115001594" count="1" name="Mad Grendal's Shield"/>
+			<item id="115001595" count="1" name="Mad Grendal's Scale Shield"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052410" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="GUNNER">
+			<item id="101801018" count="1" name="Mad Grendal's Aether Revolver"/>
+			<item id="101900981" count="1" name="Mad Grendal's Aether Cannon"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052414" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="BARD">
+			<item id="102001044" count="1" name="Mad Grendal's Stringed Instrument"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052758" decomposeable_selectitem_name="Grendal's Mythical Weapons Chest">
+		<items player_class="RIDER">
+			<item id="102100820" count="1" name="Mad Grendal's Aether Key"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052393" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="GLADIATOR">
+			<item id="110601475" count="1" name="Grendal's Breastplate"/>
+			<item id="111601438" count="1" name="Grendal's Gauntlets"/>
+			<item id="112601419" count="1" name="Grendal's Shoulderplates"/>
+			<item id="113601421" count="1" name="Grendal's Greaves"/>
+			<item id="114601426" count="1" name="Grendal's Sabatons"/>
+			<item id="125003649" count="1" name="Grendal's Plate Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052393" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="TEMPLAR">
+			<item id="110601442" count="1" name="Grendal's Breastplate"/>
+			<item id="111601404" count="1" name="Grendal's Gauntlets"/>
+			<item id="112601386" count="1" name="Grendal's Shoulderplates"/>
+			<item id="113601388" count="1" name="Grendal's Greaves"/>
+			<item id="114601392" count="1" name="Grendal's Sabatons"/>
+			<item id="125003502" count="1" name="Grendal's Plate Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052397" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="ASSASSIN">
+			<item id="110301506" count="1" name="Grendal's Jerkin"/>
+			<item id="111301446" count="1" name="Grendal's Vambraces"/>
+			<item id="112301390" count="1" name="Grendal's Shoulderguards"/>
+			<item id="113301470" count="1" name="Grendal's Breeches"/>
+			<item id="114301507" count="1" name="Grendal's Boots"/>
+			<item id="125003508" count="1" name="Grendal's Leather Hat"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052397" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="RANGER">
+			<item id="110301506" count="1" name="Grendal's Jerkin"/>
+			<item id="111301446" count="1" name="Grendal's Vambraces"/>
+			<item id="112301390" count="1" name="Grendal's Shoulderguards"/>
+			<item id="113301470" count="1" name="Grendal's Breeches"/>
+			<item id="114301507" count="1" name="Grendal's Boots"/>
+			<item id="125003508" count="1" name="Grendal's Leather Hat"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052401" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="SORCERER">
+			<item id="110101616" count="1" name="Grendal's Tunic"/>
+			<item id="111101457" count="1" name="Grendal's Gloves"/>
+			<item id="112101411" count="1" name="Grendal's Pauldrons"/>
+			<item id="113101467" count="1" name="Grendal's Leggings"/>
+			<item id="114101504" count="1" name="Grendal's Leggings"/>
+			<item id="125003512" count="1" name="Grendal's Cloth Headband"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052401" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="SPIRIT_MASTER">
+			<item id="110101616" count="1" name="Grendal's Tunic"/>
+			<item id="111101457" count="1" name="Grendal's Gloves"/>
+			<item id="112101411" count="1" name="Grendal's Pauldrons"/>
+			<item id="113101467" count="1" name="Grendal's Leggings"/>
+			<item id="114101504" count="1" name="Grendal's Leggings"/>
+			<item id="125003512" count="1" name="Grendal's Cloth Headband"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052405" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="CLERIC">
+			<item id="110501463" count="1" name="Grendal's Hauberk"/>
+			<item id="111501420" count="1" name="Grendal's Handguards"/>
+			<item id="112501362" count="1" name="Grendal's Spaulders"/>
+			<item id="113501436" count="1" name="Grendal's Chausses"/>
+			<item id="114501445" count="1" name="Grendal's Chainmail Sabatons"/>
+			<item id="125003505" count="1" name="Grendal's Chain Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052407" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="CHANTER">
+			<item id="110501462" count="1" name="Grendal's Hauberk"/>
+			<item id="111501419" count="1" name="Grendal's Chainmail Gauntlets"/>
+			<item id="112501361" count="1" name="Grendal's Spaulders"/>
+			<item id="113501435" count="1" name="Grendal's Chausses"/>
+			<item id="114501444" count="1" name="Grendal's Chainmail Sabatons"/>
+			<item id="125003504" count="1" name="Grendal's Chain Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052411" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="GUNNER">
+			<item id="110301507" count="1" name="Grendal's Jerkin"/>
+			<item id="111301447" count="1" name="Grendal's Vambraces"/>
+			<item id="112301391" count="1" name="Grendal's Shoulderguards"/>
+			<item id="113301471" count="1" name="Grendal's Breeches"/>
+			<item id="114301508" count="1" name="Grendal's Boots"/>
+			<item id="125003509" count="1" name="Grendal's Leather Hat"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052415" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="BARD">
+			<item id="110101617" count="1" name="Grendal's Tunic"/>
+			<item id="111101458" count="1" name="Grendal's Gloves"/>
+			<item id="112101412" count="1" name="Grendal's Pauldrons"/>
+			<item id="113101468" count="1" name="Grendal's Leggings"/>
+			<item id="114101505" count="1" name="Grendal's Shoes"/>
+			<item id="125003513" count="1" name="Grendal's Cloth Headband"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052759" decomposeable_selectitem_name="Grendal's Eternal Armour Chest">
+		<items player_class="RIDER">
+			<item id="110550939" count="1" name="Grendal's Hauberk"/>
+			<item id="111501497" count="1" name="Grendal's Chainmail Fighting Gauntlets"/>
+			<item id="112501439" count="1" name="Grendal's Chainmail Spaulders"/>
+			<item id="113501515" count="1" name="Grendal's Chausses"/>
+			<item id="114501524" count="1" name="Grendal's Chainmail Sabatons"/>
+			<item id="125003790" count="1" name="Grendal's Chainmail Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052394" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="GLADIATOR">
+			<item id="110601476" count="1" name="Mad Grendal's Breastplate"/>
+			<item id="111601439" count="1" name="Mad Grendal's Gauntlets"/>
+			<item id="112601420" count="1" name="Mad Grendal's Shoulderplates"/>
+			<item id="113601422" count="1" name="Mad Grendal's Greaves"/>
+			<item id="114601427" count="1" name="Mad Grendal's Sabatons"/>
+			<item id="125003650" count="1" name="Mad Grendal's Plate Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052394" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="TEMPLAR">
+			<item id="110601443" count="1" name="Mad Grendal's Breastplate"/>
+			<item id="111601405" count="1" name="Mad Grendal's Gauntlets"/>
+			<item id="112601387" count="1" name="Mad Grendal's Shoulderplates"/>
+			<item id="113601389" count="1" name="Mad Grendal's Greaves"/>
+			<item id="114601393" count="1" name="Mad Grendal's Sabatons"/>
+			<item id="125003503" count="1" name="Mad Grendal's Plate Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052398" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="ASSASSIN">
+			<item id="110301508" count="1" name="Mad Grendal's Leather Doublet"/>
+			<item id="111301448" count="1" name="Mad Grendal's Vambraces"/>
+			<item id="112301392" count="1" name="Mad Grendal's Shoulderguards"/>
+			<item id="113301472" count="1" name="Mad Grendal's Breeches"/>
+			<item id="114301509" count="1" name="Mad Grendal's Leather Shoes"/>
+			<item id="125003510" count="1" name="Mad Grendal's Leather Hat"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052398" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="RANGER">
+			<item id="110301508" count="1" name="Mad Grendal's Leather Doublet"/>
+			<item id="111301448" count="1" name="Mad Grendal's Vambraces"/>
+			<item id="112301392" count="1" name="Mad Grendal's Shoulderguards"/>
+			<item id="113301472" count="1" name="Mad Grendal's Breeches"/>
+			<item id="114301509" count="1" name="Mad Grendal's Leather Shoes"/>
+			<item id="125003510" count="1" name="Mad Grendal's Leather Hat"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052402" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="SORCERER">
+			<item id="110101618" count="1" name="Mad Grendal's Tunic"/>
+			<item id="111101459" count="1" name="Mad Grendal's Gloves"/>
+			<item id="112101413" count="1" name="Mad Grendal's Pauldrons"/>
+			<item id="113101469" count="1" name="Mad Grendal's Leggings"/>
+			<item id="114101506" count="1" name="Mad Grendal's Shoes"/>
+			<item id="125003514" count="1" name="Mad Grendal's Cloth Headband"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052402" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="SPIRIT_MASTER">
+			<item id="110101618" count="1" name="Mad Grendal's Tunic"/>
+			<item id="111101459" count="1" name="Mad Grendal's Gloves"/>
+			<item id="112101413" count="1" name="Mad Grendal's Pauldrons"/>
+			<item id="113101469" count="1" name="Mad Grendal's Leggings"/>
+			<item id="114101506" count="1" name="Mad Grendal's Shoes"/>
+			<item id="125003514" count="1" name="Mad Grendal's Cloth Headband"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052406" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="CLERIC">
+			<item id="110501465" count="1" name="Mad Grendal's Hauberk"/>
+			<item id="111501422" count="1" name="Mad Grendal's Handguards"/>
+			<item id="112501364" count="1" name="Mad Grendal's Spaulders"/>
+			<item id="113501438" count="1" name="Mad Grendal's Chausses"/>
+			<item id="114501447" count="1" name="Mad Grendal's Chainmail Sabatons"/>
+			<item id="125003507" count="1" name="Mad Grendal's Chain Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052408" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="CHANTER">
+			<item id="110501464" count="1" name="Mad Grendal's Hauberk"/>
+			<item id="111501421" count="1" name="Mad Grendal's Handguards"/>
+			<item id="112501363" count="1" name="Mad Grendal's Spaulders"/>
+			<item id="113501437" count="1" name="Mad Grendal's Chausses"/>
+			<item id="114501446" count="1" name="Mad Grendal's Chainmail Sabatons"/>
+			<item id="125003506" count="1" name="Mad Grendal's Chain Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052412" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="GUNNER">
+			<item id="110301509" count="1" name="Mad Grendal's Jerkin"/>
+			<item id="111301449" count="1" name="Mad Grendal's Vambraces"/>
+			<item id="112301393" count="1" name="Mad Grendal's Shoulderguards"/>
+			<item id="113301473" count="1" name="Mad Grendal's Breeches"/>
+			<item id="114301510" count="1" name="Mad Grendal's Boots"/>
+			<item id="125003511" count="1" name="Mad Grendal's Leather Hat"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052416" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="BARD">
+			<item id="110101619" count="1" name="Mad Grendal's Tunic"/>
+			<item id="111101460" count="1" name="Mad Grendal's Gloves"/>
+			<item id="112101414" count="1" name="Mad Grendal's Pauldrons"/>
+			<item id="113101470" count="1" name="Mad Grendal's Leggings"/>
+			<item id="114101507" count="1" name="Mad Grendal's Shoes"/>
+			<item id="125003515" count="1" name="Mad Grendal's Cloth Headband"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052760" decomposeable_selectitem_name="Grendal's Mythical Armour Chest">
+		<items player_class="RIDER">
+			<item id="110550940" count="1" name="Mad Grendal's Hauberk"/>
+			<item id="111501498" count="1" name="Mad Grendal's Chainmail Fighting Gauntlets"/>
+			<item id="112501440" count="1" name="Mad Grendal's Chainmail Spaulders"/>
+			<item id="113501516" count="1" name="Mad Grendal's Chausses"/>
+			<item id="114501525" count="1" name="Mad Grendal's Chainmail Sabatons"/>
+			<item id="125003791" count="1" name="Mad Grendal's Chainmail Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052438" decomposeable_selectitem_name="Danuar Reliquary Expedition's Weapon Box">
+		<items player_class="GLADIATOR">
+			<item id="100001553" count="1" name="Sword of the Runadium Expedition Group"/>
+			<item id="100901208" count="1" name="Greatsword of the Runadium Expedition Group"/>
+			<item id="100201356" count="1" name="Dagger of the Runadium Expedition Group"/>
+			<item id="100101190" count="1" name="Warhammer of the Runadium Expedition Group"/>
+			<item id="101701238" count="1" name="Bow of the Runadium Expedition Group"/>
+			<item id="101301136" count="1" name="Polearm of the Runadium Expedition Group"/>
+			<item id="115001596" count="1" name="Shield of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="TEMPLAR">
+			<item id="100001553" count="1" name="Sword of the Runadium Expedition Group"/>
+			<item id="100901208" count="1" name="Greatsword of the Runadium Expedition Group"/>
+			<item id="100101190" count="1" name="Warhammer of the Runadium Expedition Group"/>
+			<item id="115001596" count="1" name="Shield of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="ASSASSIN">
+			<item id="100001553" count="1" name="Sword of the Runadium Expedition Group"/>
+			<item id="100201356" count="1" name="Dagger of the Runadium Expedition Group"/>
+			<item id="101701238" count="1" name="Bow of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="RANGER">
+			<item id="100001553" count="1" name="Sword of the Runadium Expedition Group"/>
+			<item id="100201356" count="1" name="Dagger of the Runadium Expedition Group"/>
+			<item id="101701238" count="1" name="Bow of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="SORCERER">
+			<item id="100501188" count="1" name="Orb of the Runadium Expedition Group"/>
+			<item id="100601277" count="1" name="Spellbook of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="SPIRIT_MASTER">
+			<item id="100501188" count="1" name="Orb of the Runadium Expedition Group"/>
+			<item id="100601277" count="1" name="Spellbook of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="CLERIC">
+			<item id="100101189" count="1" name="Mace of the Runadium Expedition Group"/>
+			<item id="100101190" count="1" name="Warhammer of the Runadium Expedition Group"/>
+			<item id="101501218" count="1" name="Staff of the Runadium Expedition Group"/>
+			<item id="101501233" count="1" name="Staff of the Runadium Expedition Group"/>
+			<item id="115001596" count="1" name="Shield of the Runadium Expedition Group"/>
+			<item id="115001597" count="1" name="Scale Shield of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="CHANTER">
+			<item id="100101189" count="1" name="Mace of the Runadium Expedition Group"/>
+			<item id="100101190" count="1" name="Warhammer of the Runadium Expedition Group"/>
+			<item id="101501218" count="1" name="Staff of the Runadium Expedition Group"/>
+			<item id="101501233" count="1" name="Staff of the Runadium Expedition Group"/>
+			<item id="115001596" count="1" name="Shield of the Runadium Expedition Group"/>
+			<item id="115001597" count="1" name="Scale Shield of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="GUNNER">
+			<item id="101801019" count="1" name="Aether Revolver of the Runadium Expedition Group"/>
+			<item id="101900982" count="1" name="Aether Cannon of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="BARD">
+			<item id="102001045" count="1" name="Stringed Instrument of the Runadium Expedition Group"/>
+		</items>
+		<items player_class="RIDER">
+			<item id="102100821" count="1" name="Aether Key of the Runadium Expedition Group"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052474" decomposeable_selectitem_name="Infinity Shard Equipment Box">
+		<items player_class="GLADIATOR">
+			<item id="110601450" count="1" name="Katalamize Breastplate"/>
+			<item id="113601396" count="1" name="Katalamize Plate Greaves"/>
+			<item id="111601412" count="1" name="Katalamize Plate Gauntlets"/>
+			<item id="112601394" count="1" name="Katalamize Plate Spaulders"/>
+			<item id="114601400" count="1" name="Katalamize Plate Sabatons"/>
+			<item id="125003516" count="1" name="Katalamize Plate Helm"/>
+			<item id="100001558" count="1" name="Katalamize Sword"/>
+			<item id="100901210" count="1" name="Katalamize Greatsword"/>
+			<item id="100201359" count="1" name="Katalamize Dagger"/>
+			<item id="100101194" count="1" name="Katalamize Mace"/>
+			<item id="101301139" count="1" name="Katalamize Polearm"/>
+			<item id="101701242" count="1" name="Katalamize Bow"/>
+			<item id="115001598" count="1" name="Katalamize Shield"/>
+		</items>
+		<items player_class="TEMPLAR">
+			<item id="110601450" count="1" name="Katalamize Breastplate"/>
+			<item id="113601396" count="1" name="Katalamize Plate Greaves"/>
+			<item id="111601412" count="1" name="Katalamize Plate Gauntlets"/>
+			<item id="112601394" count="1" name="Katalamize Plate Spaulders"/>
+			<item id="114601400" count="1" name="Katalamize Plate Sabatons"/>
+			<item id="125003516" count="1" name="Katalamize Plate Helm"/>
+			<item id="100001558" count="1" name="Katalamize Sword"/>
+			<item id="100901210" count="1" name="Katalamize Greatsword"/>
+			<item id="100101194" count="1" name="Katalamize Mace"/>
+			<item id="115001598" count="1" name="Katalamize Shield"/>
+		</items>
+		<items player_class="ASSASSIN">
+			<item id="110301519" count="1" name="Katalamize Leather Doublet"/>
+			<item id="113301483" count="1" name="Katalamize Leather Breeches"/>
+			<item id="111301459" count="1" name="Katalamize Leather Gauntlets"/>
+			<item id="112301403" count="1" name="Katalamize Leather Spaulders"/>
+			<item id="114301520" count="1" name="Katalamize Leather Shoes"/>
+			<item id="125003517" count="1" name="Katalamize Leather Hat"/>
+			<item id="100201359" count="1" name="Katalamize Dagger"/>
+			<item id="100001558" count="1" name="Katalamize Sword"/>
+			<item id="101701242" count="1" name="Katalamize Bow"/>
+		</items>
+		<items player_class="RANGER">
+			<item id="110301519" count="1" name="Katalamize Leather Doublet"/>
+			<item id="113301483" count="1" name="Katalamize Leather Breeches"/>
+			<item id="111301459" count="1" name="Katalamize Leather Gauntlets"/>
+			<item id="112301403" count="1" name="Katalamize Leather Spaulders"/>
+			<item id="114301520" count="1" name="Katalamize Leather Shoes"/>
+			<item id="125003517" count="1" name="Katalamize Leather Hat"/>
+			<item id="100201359" count="1" name="Katalamize Dagger"/>
+			<item id="100001558" count="1" name="Katalamize Sword"/>
+			<item id="101701242" count="1" name="Katalamize Bow"/>
+		</items>
+		<items player_class="SORCERER">
+			<item id="110101629" count="1" name="Katalamize Cloth Tunic"/>
+			<item id="113101480" count="1" name="Katalamize Cloth Breeches"/>
+			<item id="111101470" count="1" name="Katalamize Cloth Gloves"/>
+			<item id="112101424" count="1" name="Katalamize Cloth Spaulders"/>
+			<item id="114101517" count="1" name="Katalamize Cloth Shoes"/>
+			<item id="125003519" count="1" name="Katalamize Cloth Headband"/>
+			<item id="100501192" count="1" name="Katalamize Orb"/>
+			<item id="100601281" count="1" name="Katalamize Spellbook"/>
+		</items>
+		<items player_class="SPIRIT_MASTER">
+			<item id="110101629" count="1" name="Katalamize Cloth Tunic"/>
+			<item id="113101480" count="1" name="Katalamize Cloth Breeches"/>
+			<item id="111101470" count="1" name="Katalamize Cloth Gloves"/>
+			<item id="112101424" count="1" name="Katalamize Cloth Spaulders"/>
+			<item id="114101517" count="1" name="Katalamize Cloth Shoes"/>
+			<item id="125003519" count="1" name="Katalamize Cloth Headband"/>
+			<item id="100501192" count="1" name="Katalamize Orb"/>
+			<item id="100601281" count="1" name="Katalamize Spellbook"/>
+		</items>
+		<items player_class="CLERIC">
+			<item id="110501472" count="1" name="Katalamize Hauberk"/>
+			<item id="113501445" count="1" name="Katalamize Chausses"/>
+			<item id="111501457" count="1" name="Katalamize Chainmail Gauntlets"/>
+			<item id="112501399" count="1" name="Katalamize Chainmail Spaulders"/>
+			<item id="114501454" count="1" name="Katalamize Chainmail Sabatons"/>
+			<item id="125003518" count="1" name="Katalamize Chainmail Helm"/>
+			<item id="115001598" count="1" name="Katalamize Shield"/>
+			<item id="115001599" count="1" name="Katalamize Scale Shield"/>
+			<item id="101501222" count="1" name="Katalamize Staff"/>
+			<item id="100101194" count="1" name="Katalamize Mace"/>
+		</items>
+		<items player_class="CHANTER">
+			<item id="110501502" count="1" name="Katalamize Hauberk"/>
+			<item id="113501475" count="1" name="Katalamize Chausses"/>
+			<item id="111501429" count="1" name="Katalamize Chainmail Gauntlets"/>
+			<item id="112501371" count="1" name="Katalamize Chainmail Spaulders"/>
+			<item id="114501482" count="1" name="Katalamize Chainmail Sabatons"/>
+			<item id="125003651" count="1" name="Katalamize Chainmail Helm"/>
+			<item id="115001598" count="1" name="Katalamize Shield"/>
+			<item id="115001599" count="1" name="Katalamize Scale Shield"/>
+			<item id="101501222" count="1" name="Katalamize Staff"/>
+			<item id="100101194" count="1" name="Katalamize Mace"/>
+		</items>
+		<items player_class="GUNNER">
+			<item id="110301620" count="1" name="Katalamize Leather Doublet"/>
+			<item id="113301586" count="1" name="Katalamize Leather Breeches"/>
+			<item id="111301558" count="1" name="Katalamize Leather Gauntlets"/>
+			<item id="112301499" count="1" name="Katalamize Leather Spaulders"/>
+			<item id="114301624" count="1" name="Katalamize Leather Boots"/>
+			<item id="101801022" count="1" name="Katalamize Aether Revolver"/>
+			<item id="101900984" count="1" name="Katalamize Aether Cannon"/>
+		</items>
+		<items player_class="BARD">
+			<item id="110101629" count="1" name="Katalamize Cloth Tunic"/>
+			<item id="113101480" count="1" name="Katalamize Cloth Breeches"/>
+			<item id="111101470" count="1" name="Katalamize Cloth Gloves"/>
+			<item id="112101424" count="1" name="Katalamize Cloth Spaulders"/>
+			<item id="114101517" count="1" name="Katalamize Cloth Shoes"/>
+			<item id="125003519" count="1" name="Katalamize Cloth Headband"/>
+			<item id="102001049" count="1" name="Katalamize Stringed Instrument"/>
+		</items>
+		<items player_class="RIDER">
+			<item id="110550938" count="1" name="Katalamize Hauberk"/>
+			<item id="113501514" count="1" name="Katalamize Chausses"/>
+			<item id="111501496" count="1" name="Katalamize Chainmail Fighting Gauntlets"/>
+			<item id="112501438" count="1" name="Katalamize Chainmail Spaulders"/>
+			<item id="114501523" count="1" name="Katalamize Chainmail Sabatons"/>
+			<item id="125003789" count="1" name="Katalamize Chainmail Helm"/>
+			<item id="102100824" count="1" name="Katalamize Aether Key"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052828" decomposeable_selectitem_name="Eternal Dynatum Weapons Chest">
+		<items player_class="GLADIATOR">
+			<item id="100001626" count="1" name="Dynatum Sword"/>
+			<item id="100901264" count="1" name="Dynatum Greatsword"/>
+			<item id="100201426" count="1" name="Dynatum Dagger"/>
+			<item id="101301186" count="1" name="Dynatum Polearm"/>
+			<item id="101701289" count="1" name="Dynatum Bow"/>
+			<item id="115001670" count="1" name="Dynatum Shield"/>
+		</items>
+		<items player_class="TEMPLAR">
+			<item id="100901264" count="1" name="Dynatum Greatsword"/>
+			<item id="100101251" count="1" name="Dynatum Mace"/>
+			<item id="100001626" count="1" name="Dynatum Sword"/>
+			<item id="115001670" count="1" name="Dynatum Shield"/>
+		</items>
+		<items player_class="ASSASSIN">
+			<item id="100001626" count="1" name="Dynatum Sword"/>
+			<item id="100201426" count="1" name="Dynatum Dagger"/>
+			<item id="101701289" count="1" name="Dynatum Bow"/>
+		</items>
+		<items player_class="RANGER">
+			<item id="100001626" count="1" name="Dynatum Sword"/>
+			<item id="100201426" count="1" name="Dynatum Dagger"/>
+			<item id="101701289" count="1" name="Dynatum Bow"/>
+		</items>
+		<items player_class="SORCERER">
+			<item id="100501243" count="1" name="Dynatum Orb"/>
+			<item id="100601343" count="1" name="Dynatum Spellbook"/>
+		</items>
+		<items player_class="SPIRIT_MASTER">
+			<item id="100501243" count="1" name="Dynatum Orb"/>
+			<item id="100601343" count="1" name="Dynatum Spellbook"/>
+		</items>
+		<items player_class="CLERIC">
+			<item id="101501274" count="1" name="Dynatum Staff"/>
+			<item id="100101251" count="1" name="Dynatum Mace"/>
+			<item id="115001670" count="1" name="Dynatum Shield"/>
+		</items>
+		<items player_class="CHANTER">
+			<item id="101501274" count="1" name="Dynatum Staff"/>
+			<item id="100101251" count="1" name="Dynatum Mace"/>
+			<item id="115001670" count="1" name="Dynatum Shield"/>
+		</items>
+		<items player_class="GUNNER">
+			<item id="101801140" count="1" name="Dynatum Aether Revolver"/>
+			<item id="101901050" count="1" name="Dynatum Aether Cannon"/>
+		</items>
+		<items player_class="BARD">
+			<item id="102001166" count="1" name="Dynatum Stringed Instrument"/>
+		</items>
+		<items player_class="RIDER">
+			<item id="102100922" count="1" name="Dynatum Aether Key"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052830" decomposeable_selectitem_name="Mythical Dynatum Weapons Chest">
+		<items player_class="GLADIATOR">
+			<item id="100001627" count="1" name="Unique Dynatum Sword"/>
+			<item id="100901265" count="1" name="Unique Dynatum Greatsword"/>
+			<item id="100201427" count="1" name="Unique Dynatum Dagger"/>
+			<item id="100101252" count="1" name="Unique Dynatum Mace"/>
+			<item id="101301187" count="1" name="Unique Dynatum Polearm"/>
+			<item id="101701290" count="1" name="Unique Dynatum Bow"/>
+			<item id="115001671" count="1" name="Unique Dynatum Shield"/>
+		</items>
+		<items player_class="TEMPLAR">
+			<item id="100001627" count="1" name="Unique Dynatum Sword"/>
+			<item id="100901265" count="1" name="Unique Dynatum Greatsword"/>
+			<item id="100101252" count="1" name="Unique Dynatum Mace"/>
+			<item id="115001671" count="1" name="Unique Dynatum Shield"/>
+		</items>
+		<items player_class="ASSASSIN">
+			<item id="100001627" count="1" name="Unique Dynatum Sword"/>
+			<item id="100201427" count="1" name="Unique Dynatum Dagger"/>
+			<item id="101701290" count="1" name="Unique Dynatum Bow"/>
+		</items>
+		<items player_class="RANGER">
+			<item id="100001627" count="1" name="Unique Dynatum Sword"/>
+			<item id="100201427" count="1" name="Unique Dynatum Dagger"/>
+			<item id="101701290" count="1" name="Unique Dynatum Bow"/>
+		</items>
+		<items player_class="SORCERER">
+			<item id="100501244" count="1" name="Unique Dynatum Orb"/>
+			<item id="100601344" count="1" name="Unique Dynatum Spellbook"/>
+		</items>
+		<items player_class="SPIRIT_MASTER">
+			<item id="100501244" count="1" name="Unique Dynatum Orb"/>
+			<item id="100601344" count="1" name="Unique Dynatum Spellbook"/>
+		</items>
+		<items player_class="CLERIC">
+			<item id="101501275" count="1" name="Unique Dynatum Staff"/>
+			<item id="100101252" count="1" name="Unique Dynatum Mace"/>
+			<item id="115001671" count="1" name="Unique Dynatum Shield"/>
+		</items>
+		<items player_class="CHANTER">
+			<item id="101501275" count="1" name="Unique Dynatum Staff"/>
+			<item id="100101252" count="1" name="Unique Dynatum Mace"/>
+			<item id="115001671" count="1" name="Unique Dynatum Shield"/>
+		</items>
+		<items player_class="GUNNER">
+			<item id="101801141" count="1" name="Unique Dynatum Aether Revolver"/>
+			<item id="101901051" count="1" name="Unique Dynatum Aether Cannon"/>
+		</items>	
+		<items player_class="BARD">
+			<item id="102001167" count="1" name="Unique Dynatum Stringed Instrument"/>
+		</items>
+		<items player_class="RIDER">
+			<item id="102100923" count="1" name="Unique Dynatum Aether Key"/>
+		</items>	
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052829" decomposeable_selectitem_name="Eternal Dynatum Armour Chest">
+		<items player_class="GLADIATOR">
+			<item id="110601516" count="1" name="Dynatum Breastplate"/>
+			<item id="111601479" count="1" name="Dynatum Plate Gauntlets"/>
+			<item id="112601460" count="1" name="Dynatum Plate Spaulders"/>
+			<item id="113601462" count="1" name="Dynatum Plate Greaves"/>
+			<item id="114601469" count="1" name="Dynatum Plate Sabatons"/>
+			<item id="125003871" count="1" name="Dynatum Plate Helm"/>
+		</items>
+		<items player_class="TEMPLAR">
+			<item id="110601518" count="1" name="Dynatum Breastplate"/>
+			<item id="111601481" count="1" name="Dynatum Plate Gauntlets"/>
+			<item id="112601462" count="1" name="Dynatum Plate Spaulders"/>
+			<item id="113601464" count="1" name="Dynatum Plate Greaves"/>
+			<item id="114601471" count="1" name="Dynatum Plate Sabatons"/>
+			<item id="125003873" count="1" name="Dynatum Plate Helm"/>
+		</items>
+		<items player_class="ASSASSIN">
+			<item id="110301712" count="1" name="Dynatum Leather Doublet"/>
+			<item id="111301650" count="1" name="Dynatum Leather Gauntlets"/>
+			<item id="112301589" count="1" name="Dynatum Leather Spaulders"/>
+			<item id="113301681" count="1" name="Dynatum Leather Breaches"/>
+			<item id="114301718" count="1" name="Dynatum Leather Shoes"/>
+			<item id="125003875" count="1" name="Dynatum Leather Hat"/>
+		</items>
+		<items player_class="RANGER">
+			<item id="110301712" count="1" name="Dynatum Leather Doublet"/>
+			<item id="111301650" count="1" name="Dynatum Leather Gauntlets"/>
+			<item id="112301589" count="1" name="Dynatum Leather Spaulders"/>
+			<item id="113301681" count="1" name="Dynatum Leather Breaches"/>
+			<item id="114301718" count="1" name="Dynatum Leather Shoes"/>
+			<item id="125003875" count="1" name="Dynatum Leather Hat"/>
+		</items>
+		<items player_class="SORCERER">
+			<item id="110101709" count="1" name="Dynatum Cloth Tunic"/>
+			<item id="111101539" count="1" name="Dynatum Cloth Gloves"/>
+			<item id="112101491" count="1" name="Dynatum Cloth Spaulders"/>
+			<item id="113101553" count="1" name="Dynatum Cloth Breeches"/>
+			<item id="114101587" count="1" name="Dynatum Cloth Shoes"/>
+			<item id="125003883" count="1" name="Dynatum Bandana"/>
+		</items>
+		<items player_class="SPIRIT_MASTER">
+			<item id="110101709" count="1" name="Dynatum Cloth Tunic"/>
+			<item id="111101539" count="1" name="Dynatum Cloth Gloves"/>
+			<item id="112101491" count="1" name="Dynatum Cloth Spaulders"/>
+			<item id="113101553" count="1" name="Dynatum Cloth Breeches"/>
+			<item id="114101587" count="1" name="Dynatum Cloth Shoes"/>
+			<item id="125003883" count="1" name="Dynatum Bandana"/>
+		</items>
+		<items player_class="CLERIC">
+			<item id="110551053" count="1" name="Dynatum Hauberk"/>
+			<item id="111501610" count="1" name="Dynatum Chainmail Gauntlets"/>
+			<item id="112501551" count="1" name="Dynatum Chainmail Spaulders"/>
+			<item id="113501630" count="1" name="Dynatum Chausses"/>
+			<item id="114501639" count="1" name="Dynatum Chainmail Sabatons"/>
+			<item id="125003879" count="1" name="Dynatum Chainmail Helm"/>
+		</items>
+		<items player_class="CHANTER">
+			<item id="110551053" count="1" name="Dynatum Hauberk"/>
+			<item id="111501610" count="1" name="Dynatum Chainmail Gauntlets"/>
+			<item id="112501551" count="1" name="Dynatum Chainmail Spaulders"/>
+			<item id="113501630" count="1" name="Dynatum Chausses"/>
+			<item id="114501639" count="1" name="Dynatum Chainmail Sabatons"/>
+			<item id="125003879" count="1" name="Dynatum Chainmail Helm"/>
+		</items>
+		<items player_class="GUNNER">
+			<item id="110301714" count="1" name="Dynatum Leather Doublet"/>
+			<item id="111301652" count="1" name="Dynatum Leather Gauntlets"/>
+			<item id="112301591" count="1" name="Dynatum Leather Spaulders"/>
+			<item id="113301683" count="1" name="Dynatum Leather Breaches"/>
+			<item id="114301720" count="1" name="Dynatum Leather Shoes"/>
+			<item id="125003877" count="1" name="Dynatum Leather Hat"/>
+		</items>
+		<items player_class="BARD">
+			<item id="110101711" count="1" name="Dynatum Cloth Tunic"/>
+			<item id="111101541" count="1" name="Dynatum Cloth Gloves"/>
+			<item id="112101493" count="1" name="Dynatum Cloth Spaulders"/>
+			<item id="113101555" count="1" name="Dynatum Cloth Breeches"/>
+			<item id="114101589" count="1" name="Dynatum Cloth Shoes"/>
+			<item id="125003885" count="1" name="Dynatum Bandana"/>
+		</items>
+		<items player_class="RIDER">
+			<item id="110551055" count="1" name="Dynatum Hauberk"/>
+			<item id="111501612" count="1" name="Dynatum Chainmail Gauntlets"/>
+			<item id="112501553" count="1" name="Dynatum Chainmail Spaulders"/>
+			<item id="113501632" count="1" name="Dynatum Chausses"/>
+			<item id="114501641" count="1" name="Dynatum Chainmail Sabatons"/>
+			<item id="125003881" count="1" name="Dynatum Chainmail Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188052831" decomposeable_selectitem_name="Mythic Dynatum Armour Chest">
+		<items player_class="GLADIATOR">
+			<item id="110601517" count="1" name="Unique Dynatum Breastplate"/>
+			<item id="111601480" count="1" name="Unique Dynatum Plate Gauntlets"/>
+			<item id="112601461" count="1" name="Unique Dynatum Plate Spaulders"/>
+			<item id="113601463" count="1" name="Unique Dynatum Plate Greaves"/>
+			<item id="114601470" count="1" name="Unique Dynatum Plate Sabatons"/>
+			<item id="125003872" count="1" name="Unique Dynatum Plate Helm"/>
+		</items>
+		<items player_class="TEMPLAR">
+			<item id="110601519" count="1" name="Unique Dynatum Breastplate"/>
+			<item id="111601482" count="1" name="Unique Dynatum Plate Gauntlets"/>
+			<item id="112601463" count="1" name="Unique Dynatum Plate Spaulders"/>
+			<item id="113601465" count="1" name="Unique Dynatum Plate Greaves"/>
+			<item id="114601472" count="1" name="Unique Dynatum Plate Sabatons"/>
+			<item id="125003874" count="1" name="Unique Dynatum Plate Helm"/>
+		</items>
+		<items player_class="ASSASSIN">
+			<item id="110301713" count="1" name="Unique Dynatum Leather Doublet"/>
+			<item id="111301651" count="1" name="Unique Dynatum Leather Gloves"/>
+			<item id="112301590" count="1" name="Unique Dynatum Leather Spaulders"/>
+			<item id="113301682" count="1" name="Unique Dynatum Leather Breeches"/>
+			<item id="114301719" count="1" name="Unique Dynatum Leather Shoes"/>
+			<item id="125003876" count="1" name="Unique Dynatum Leather Hat"/>
+		</items>
+		<items player_class="RANGER">
+			<item id="110301713" count="1" name="Unique Dynatum Leather Doublet"/>
+			<item id="111301651" count="1" name="Unique Dynatum Leather Gloves"/>
+			<item id="112301590" count="1" name="Unique Dynatum Leather Spaulders"/>
+			<item id="113301682" count="1" name="Unique Dynatum Leather Breeches"/>
+			<item id="114301719" count="1" name="Unique Dynatum Leather Shoes"/>
+			<item id="125003876" count="1" name="Unique Dynatum Leather Hat"/>
+		</items>
+		<items player_class="SORCERER">
+			<item id="110101710" count="1" name="Unique Dynatum Cloth Tunic"/>
+			<item id="111101540" count="1" name="Unique Dynatum Cloth Gloves"/>
+			<item id="112101492" count="1" name="Unique Dynatum Cloth Spaulders"/>
+			<item id="113101554" count="1" name="Unique Dynatum Cloth Breeches"/>
+			<item id="114101588" count="1" name="Unique Dynatum Cloth Shoes"/>
+			<item id="125003884" count="1" name="Unique Dynatum Bandana"/>
+		</items>
+		<items player_class="SPIRIT_MASTER">
+			<item id="110101710" count="1" name="Unique Dynatum Cloth Tunic"/>
+			<item id="111101540" count="1" name="Unique Dynatum Cloth Gloves"/>
+			<item id="112101492" count="1" name="Unique Dynatum Cloth Spaulders"/>
+			<item id="113101554" count="1" name="Unique Dynatum Cloth Breeches"/>
+			<item id="114101588" count="1" name="Unique Dynatum Cloth Shoes"/>
+			<item id="125003884" count="1" name="Unique Dynatum Bandana"/>
+		</items>
+		<items player_class="CLERIC">
+			<item id="110551054" count="1" name="Unique Dynatum Hauberk"/>
+			<item id="111501611" count="1" name="Unique Dynatum Chainmail Gauntlets"/>
+			<item id="112501552" count="1" name="Unique Dynatum Chainmail Spaulders"/>
+			<item id="113501631" count="1" name="Unique Dynatum Chausses"/>
+			<item id="114501640" count="1" name="Unique Dynatum Chainmail Sabatons"/>
+			<item id="125003880" count="1" name="Unique Dynatum Chainmail Helm"/>
+		</items>
+		<items player_class="CHANTER">
+			<item id="110551054" count="1" name="Unique Dynatum Hauberk"/>
+			<item id="111501611" count="1" name="Unique Dynatum Chainmail Gauntlets"/>
+			<item id="112501552" count="1" name="Unique Dynatum Chainmail Spaulders"/>
+			<item id="113501631" count="1" name="Unique Dynatum Chausses"/>
+			<item id="114501640" count="1" name="Unique Dynatum Chainmail Sabatons"/>
+			<item id="125003880" count="1" name="Unique Dynatum Chainmail Helm"/>
+		</items>
+		<items player_class="BARD">
+			<item id="110101712" count="1" name="Unique Dynatum Cloth Tunic"/>
+			<item id="111101542" count="1" name="Unique Dynatum Cloth Gloves"/>
+			<item id="112101494" count="1" name="Unique Dynatum Cloth Spaulders"/>
+			<item id="113101556" count="1" name="Unique Dynatum Cloth Breeches"/>
+			<item id="114101590" count="1" name="Unique Dynatum Cloth Shoes"/>
+			<item id="125003886" count="1" name="Unique Dynatum Bandana"/>
+		</items>
+		<items player_class="GUNNER">
+			<item id="110301715" count="1" name="Unique Dynatum Leather Doublet"/>
+			<item id="111301653" count="1" name="Unique Dynatum Leather Gloves"/>
+			<item id="112301592" count="1" name="Unique Dynatum Leather Spaulders"/>
+			<item id="113301684" count="1" name="Unique Dynatum Leather Breeches"/>
+			<item id="114301721" count="1" name="Unique Dynatum Leather Shoes"/>
+			<item id="125003878" count="1" name="Unique Dynatum Leather Hat"/>
+		</items>
+		<items player_class="RIDER">
+			<item id="110551056" count="1" name="Unique Dynatum Hauberk"/>
+			<item id="111501613" count="1" name="Unique Dynatum Chainmail Gauntlets"/>
+			<item id="112501554" count="1" name="Unique Dynatum Chainmail Spaulders"/>
+			<item id="113501633" count="1" name="Unique Dynatum Chausses"/>
+			<item id="114501642" count="1" name="Unique Dynatum Chainmail Sabatons"/>
+			<item id="125003882" count="1" name="Unique Dynatum Chainmail Helm"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188053295" decomposeable_selectitem_name="Empyrean Plume Chest">
+		<items>
+			<item id="187100015" count="1" race="ELYOS"/>
+			<item id="187100016" count="1" race="ELYOS"/>
+			<item id="187100017" count="1" race="ASMODIANS"/>
+			<item id="187100018" count="1" race="ASMODIANS"/>
+		</items>
+	</decomposable_selectitem>
+	<decomposable_selectitem item_id="188053321" decomposeable_selectitem_name="[Event] Empyrean Plume Chest">
+		<items>
+			<item id="187100015" count="1" race="ELYOS"/>
+			<item id="187100016" count="1" race="ELYOS"/>
+			<item id="187100017" count="1" race="ASMODIANS"/>
+			<item id="187100018" count="1" race="ASMODIANS"/>
+		</items>
+	</decomposable_selectitem>
+</decomposable_selectitems>

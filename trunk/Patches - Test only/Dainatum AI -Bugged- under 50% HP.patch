@@ -1,0 +1,445 @@
+Index: AL-Game/data/scripts/system/handlers/ai/instance/illuminaryObelisk/DainatumAI2.java
+===================================================================
+--- AL-Game/data/scripts/system/handlers/ai/instance/illuminaryObelisk/DainatumAI2.java	(Revision 0)
++++ AL-Game/data/scripts/system/handlers/ai/instance/illuminaryObelisk/DainatumAI2.java	(Arbeitskopie)
+@@ -0,0 +1,427 @@
++/**
++ * This file is part of Aion-Lightning <aion-lightning.org>.
++ *
++ *  Aion-Lightning is free software: you can redistribute it and/or modify
++ *  it under the terms of the GNU General Public License as published by
++ *  the Free Software Foundation, either version 3 of the License, or
++ *  (at your option) any later version.
++ *
++ *  Aion-Lightning is distributed in the hope that it will be useful,
++ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *  GNU General Public License for more details. *
++ *  You should have received a copy of the GNU General Public License
++ *  along with Aion-Lightning.
++ *  If not, see <http://www.gnu.org/licenses/>.
++ */
++
++package ai.instance.illuminaryObelisk;
++
++import ai.AggressiveNpcAI2;
++
++import com.aionemu.commons.network.util.ThreadPoolManager;
++import com.aionemu.commons.utils.Rnd;
++import com.aionemu.gameserver.ai2.AIName;
++import com.aionemu.gameserver.ai2.NpcAI2;
++import com.aionemu.gameserver.model.gameobjects.Creature;
++import com.aionemu.gameserver.model.gameobjects.Npc;
++import com.aionemu.gameserver.model.gameobjects.player.Player;
++import com.aionemu.gameserver.services.NpcShoutsService;
++import com.aionemu.gameserver.skillengine.SkillEngine;
++import com.aionemu.gameserver.utils.RndArray;
++import com.aionemu.gameserver.world.WorldPosition;
++
++import java.util.ArrayList;
++import java.util.Collections;
++import java.util.List;
++import java.util.concurrent.Future;
++import java.util.concurrent.atomic.AtomicBoolean;
++
++/**
++ * 
++ * @author Alcapwnd
++ *
++ */
++
++@AIName("dainatum")
++public class DainatumAI2 extends AggressiveNpcAI2 {
++
++	private List<Integer> percents = new ArrayList<Integer>();
++	private Future<?> TimerTasks;
++	protected NpcAI2 ai2;
++	private boolean isCancelled;
++    private Future<?> skillTask;
++    private Future<?> natiskTask;
++    private Future<?> portalTask;
++    private AtomicBoolean isHome = new AtomicBoolean(true);
++
++
++    @Override
++	protected void handleSpawned() {
++		addPercent();
++		super.handleSpawned();
++	}
++
++	@Override
++	protected void handleAttack(Creature creature) {
++		super.handleAttack(creature);
++        if (isHome.compareAndSet(true, false)) {
++            startSkillTask();
++            portalDestroy();
++            startNatiskTask();
++        }
++            checkPercentage(getLifeStats().getHpPercentage());
++	}
++
++	private void checkPercentage(int hpPercentage) {
++		if (hpPercentage > 95 && percents.size() < 6) {
++			addPercent();
++		}
++
++		for (Integer percent : percents) {
++			if (hpPercentage <= percent) {
++				switch (percent) {
++					case 95:
++						bombTimer();
++						break;
++					case 70:
++                        spawnSupportA();
++						break;
++					case 60:
++                        spawnSupportB();
++						break;
++					case 50:
++                        catching();
++						break;
++					case 35:
++						spawnHealers();
++						break;
++					case 10:
++                        gazz();
++						break;
++				}
++
++				percents.remove(percent);
++				break;
++			}
++		}
++	}
++
++	private void addPercent() {
++		percents.clear();
++		Collections.addAll(percents, new Integer[] { 95, 70, 60, 50, 35, 10 });
++	}
++
++	private void bossTimerA() {
++		NpcShoutsService.getInstance().sendMsg(getOwner(), 1402143);
++	}
++
++	private void bossTimerB() {
++		NpcShoutsService.getInstance().sendMsg(getOwner(), 1402144);
++	}
++
++	private void bossTimerC() {
++		NpcShoutsService.getInstance().sendMsg(getOwner(), 1402146);
++	}
++
++	private void bossPortalDestroy() {
++		NpcShoutsService.getInstance().sendMsg(getOwner(), 1402212);
++		Npc portal = getPosition().getWorldMapInstance().getNpc(702216);
++        getOwner().setTarget(portal);
++		if (portal != null) {
++            SkillEngine.getInstance().getSkill(getOwner(), 21527, 1, portal).useNoAnimationSkill();
++			portal.getController().onDelete();
++		}
++	}
++
++	private void dainatumDestroy(int skillId) {
++		SkillEngine.getInstance().getSkill(getOwner(), skillId, 65, getOwner()).useNoAnimationSkill();
++	}
++
++	private void bombTimer() {
++
++		TimerTasks = ThreadPoolManager.getInstance().schedule(new Runnable() {
++
++			@Override
++			public void run() {
++				if (isAlreadyDead() && isCancelled == true) {
++					cancelTask();
++				} else {
++					bossTimerA();
++				}
++			}
++		}, 1000);
++
++		TimerTasks = ThreadPoolManager.getInstance().schedule(new Runnable() {
++
++			@Override
++			public void run() {
++				if (isAlreadyDead() && isCancelled == true) {
++					cancelTask();
++				} else {
++					bossTimerB();
++				}
++			}
++		}, 60000);
++
++		TimerTasks = ThreadPoolManager.getInstance().schedule(new Runnable() {
++
++			@Override
++			public void run() {
++				bossTimerC();
++				dainatumDestroy(21275);
++			}
++		}, 360000);
++
++		TimerTasks = ThreadPoolManager.getInstance().schedule(new Runnable() {
++
++			@Override
++			public void run() {
++				if (isAlreadyDead() && isCancelled == true) {
++					cancelTask();
++				}
++			}
++		}, 365000);
++	}
++
++
++	private void despawnDainatum() {
++		cancelTask();
++		isCancelled = true;
++        cancelNatiskTask();
++        cancelPortalTask();
++        cancelSkillTask();
++
++	}
++
++	private void cancelTask() {
++		if (TimerTasks != null && !TimerTasks.isCancelled()) {
++			TimerTasks.cancel(true);
++		}
++	}
++
++	private void spawnSupportA() {
++		float direction = Rnd.get(0, 199) / 100f;
++		int distance = Rnd.get(0, 10);
++		float x1 = (float) (Math.cos(Math.PI * direction) * distance);
++		float y1 = (float) (Math.sin(Math.PI * direction) * distance);
++		WorldPosition p = getPosition();
++		spawn(284859, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++		spawn(284859, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++		spawn(284859, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++		spawn(284859, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++	}
++
++    private void spawnSupportB() {
++        float direction = Rnd.get(0, 199) / 100f;
++        int distance = Rnd.get(0, 10);
++        float x1 = (float) (Math.cos(Math.PI * direction) * distance);
++        float y1 = (float) (Math.sin(Math.PI * direction) * distance);
++        WorldPosition p = getPosition();
++        spawn(284860, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++        spawn(284860, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++        spawn(284860, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++        spawn(284860, p.getX() + x1, p.getY() + y1, p.getZ(), p.getHeading());
++    }
++
++	private void spawnHealers() {
++		spawn(284861, 265.34f, 254.80f, 455.12f, (byte) 60);
++		spawn(284861, 255.59f, 264.44f, 455.12f, (byte) 89);
++		spawn(284861, 248.42f, 247.52f, 455.12f, (byte) 15);
++	}
++	
++	private void deleteNpcs(List<Npc> npcs) {
++		for (Npc npc : npcs) {
++			if (npc != null) {
++				npc.getController().onDelete();
++			}
++		}
++	}
++
++	private List<Npc> getNpcs(int npcId) {
++		return getPosition().getWorldMapInstance().getNpcs(npcId);
++	}
++
++	@Override
++	protected void handleDespawned() {
++		percents.clear();
++		cancelTask();
++		isCancelled = true;
++		super.handleDespawned();
++        cancelNatiskTask();
++        cancelPortalTask();
++        cancelSkillTask();
++	}
++
++	@Override
++	protected void handleDied() {
++        despawnDainatum();
++		percents.clear();
++		cancelTask();
++		isCancelled = true;
++		super.handleDied();
++		deleteNpcs(getNpcs(284861));
++        cancelNatiskTask();
++        cancelPortalTask();
++        cancelSkillTask();
++	}
++
++	@Override
++	protected void handleBackHome() {
++		addPercent();
++        isHome.set(true);
++        super.handleBackHome();
++        cancelNatiskTask();
++        cancelPortalTask();
++        cancelSkillTask();
++	}
++
++
++    private void startSkillTask() {
++        skillTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new Runnable() {
++			
++            @Override
++            public void run() {
++                if (isAlreadyDead()) {
++                    cancelSkillTask();
++                }
++                if (getOwner().isCasting()) {
++
++                } else {
++                    vnez();
++                }
++            }
++        }, 20000, Rnd.get(10000,40000));
++    }
++
++    private void portalDestroy() {
++        portalTask = ThreadPoolManager.getInstance().schedule(new Runnable() {
++			
++            @Override
++            public void run() {
++                if (isAlreadyDead()) {
++                    cancelPortalTask();
++                }
++                if (getOwner().isCasting()) {
++                    getOwner().getController().cancelCurrentSkill();
++                } else {
++                    bossPortalDestroy();
++                }
++            }
++        }, 60000);
++    }
++
++    private void startNatiskTask() {
++        natiskTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new Runnable() {
++			
++            @Override
++            public void run() {
++                if (isAlreadyDead()) {
++                    cancelSkillTask();
++                } else {
++                    if (getOwner().isCasting() && getOwner().getCastingSkillId() != 21530) {
++                        getOwner().getController().cancelCurrentSkill();
++                    } else if (getOwner().isCasting() && getOwner().getCastingSkillId() == 21530) {
++
++                    } else
++                    natisk();
++                }
++            }
++        }, 2000, Rnd.get(25000, 60000));
++    }
++
++    private void vnez() {
++        int[] rndskl = {21526, 21525, 21536, 21528};
++        Player target = getRandomTarget();
++        if (target == null) {
++        }
++        SkillEngine.getInstance().getSkill(getOwner(), RndArray.get(rndskl), 1, target).useNoAnimationSkill();
++    }
++
++    private void gazz() {
++        Player target = getRandomTarget();
++        if (target == null) {
++		}
++        SkillEngine.getInstance().getSkill(getOwner(), 21533, 1, target).useNoAnimationSkill();
++	}
++	
++    private void natisk() {
++        int variant = Rnd.get(1, 2);
++        Player target = getRandomTarget();
++        if (target == null) {
++        }
++		
++        if (variant == 1) {
++            SkillEngine.getInstance().getSkill(getOwner(), 21531, 1, getOwner()).useNoAnimationSkill();
++            ThreadPoolManager.getInstance().schedule(new Runnable() {
++			   
++                @Override
++                public void run() {
++                    if (isAlreadyDead()) {
++                        cancelSkillTask();
++                    } else {
++                        if (getOwner().isCasting()) {
++                            getOwner().getController().cancelCurrentSkill();
++                        }
++                        SkillEngine.getInstance().getSkill(getOwner(), 21532, 1, getOwner()).useNoAnimationSkill();
++                    }
++                }
++            }, 4000);
++        } else {
++            }
++            SkillEngine.getInstance().getSkill(getOwner(), 21532, 1, getOwner()).useNoAnimationSkill();
++            ThreadPoolManager.getInstance().schedule(new Runnable() {
++				
++                @Override
++                public void run() {
++                    if (isAlreadyDead()) {
++                        cancelSkillTask();
++                    } else {
++                        if (getOwner().isCasting()) {
++                            getOwner().getController().cancelCurrentSkill();
++                        }
++                        SkillEngine.getInstance().getSkill(getOwner(), 21531, 1, getOwner()).useNoAnimationSkill();
++                    }
++                }
++            }, 4000);
++        }
++
++    private void catching() {
++        Player target = getRandomTarget();
++        if (target == null) {
++        }
++        SkillEngine.getInstance().getSkill(getOwner(), 21529, 1, target).useNoAnimationSkill();
++        ThreadPoolManager.getInstance().schedule(new Runnable() {
++			
++            @Override
++            public void run() {
++                if (isAlreadyDead()) {
++                    cancelSkillTask();
++                    } else {
++                        if (getOwner().isCasting()) {
++                            getOwner().getController().cancelCurrentSkill();
++                        }
++						SkillEngine.getInstance().getSkill(getOwner(), 21530, 1, getOwner().getTarget()).useNoAnimationSkill();
++                }
++            }
++        }, 4000);
++    }
++
++    private void cancelSkillTask() {
++        if (skillTask != null && !skillTask.isCancelled()) {
++            skillTask.cancel(true);
++        }
++
++    }
++    private void cancelPortalTask() {
++        if (portalTask != null && !portalTask.isCancelled()) {
++            portalTask.cancel(true);
++        }
++    }
++
++    private void cancelNatiskTask() {
++        if (natiskTask != null && !natiskTask.isCancelled()) {
++            natiskTask.cancel(true);
++        }
++    }
++}
+Index: AL-Game/data/static_data/npcs/npc_templates.xml
+===================================================================
+--- AL-Game/data/static_data/npcs/npc_templates.xml	(Revision 271)
++++ AL-Game/data/static_data/npcs/npc_templates.xml	(Arbeitskopie)
+@@ -163468,7 +163468,7 @@
+         </equipment>
+         <bound_radius front="2.0" side="1.5" upper="3.5"/>
+     </npc_template>
+-    <npc_template npc_id="233740" level="65" name="Test Weapon Dynatoum" name_id="330577" height="7.0" rank="VETERAN" rating="NORMAL" race="DRAKAN" tribe="VRITRASUPPORT" type="MONSTER" ai="aggressive" srange="30" arange="4" adelay="2100" arate="1000" hpgauge="21" ammo_speed="80">
++    <npc_template npc_id="233740" level="65" name="Test Weapon Dynatoum" name_id="330577" height="7.0" rank="VETERAN" rating="NORMAL" race="DRAKAN" tribe="VRITRASUPPORT" type="MONSTER" ai="dainatum" srange="30" arange="4" adelay="2100" arate="1000" hpgauge="21" ammo_speed="80">
+         <stats maxHp="2927908" maxXp="18153030" main_hand_attack="2100" main_hand_accuracy="1023" pdef="980" mresist="1023" power="603" evasion="1023" accuracy="1284">
+             <speeds walk="2.2" group_walk="2.2" run="6.66" run_fight="6.66" group_run_fight="6.66"/>
+         </stats>

@@ -1,0 +1,330 @@
+Index: data/static_data/portals/portal_template2.xml
+===================================================================
+--- data/static_data/portals/portal_template2.xml	(revision 46)
++++ data/static_data/portals/portal_template2.xml	(working copy)
+@@ -12,6 +12,43 @@
+     <portal_use npc_id="730358">
+         <portal_path loc_id="3002103" race="ASMODIANS"/>
+     </portal_use>
++    <!-- The new transport increase -->
++    <portal_use npc_id="258285">
++        <portal_path loc_id="6000515" race="ELYOS"/>
++    </portal_use>
++    <portal_use npc_id="258286">
++        <portal_path loc_id="6000515" race="ASMODIANS"/>
++    </portal_use>
++    <portal_use npc_id="258289">
++        <portal_path loc_id="6000516" race="ELYOS"/>
++    </portal_use>
++    <portal_use npc_id="258290">
++        <portal_path loc_id="6000516" race="ASMODIANS"/>
++    </portal_use>
++    <portal_use npc_id="258293">
++        <portal_path loc_id="6000517" race="ELYOS"/>
++    </portal_use>
++    <portal_use npc_id="258294">
++        <portal_path loc_id="6000517" race="ASMODIANS"/>
++    </portal_use>
++    <portal_use npc_id="258297">
++        <portal_path loc_id="6000518" race="ELYOS"/>
++    </portal_use>
++    <portal_use npc_id="258298">
++        <portal_path loc_id="6000518" race="ASMODIANS"/>
++    </portal_use>
++    <portal_use npc_id="258305">
++        <portal_path loc_id="6000519" race="ELYOS"/>
++    </portal_use>
++    <portal_use npc_id="258306">
++        <portal_path loc_id="6000519" race="ASMODIANS"/>
++    </portal_use>
++    <portal_use npc_id="258301">
++        <portal_path loc_id="6000520" race="ELYOS"/>
++    </portal_use>
++    <portal_use npc_id="258302">
++        <portal_path loc_id="6000520" race="ASMODIANS"/>
++    </portal_use>
+     <!-- Dredgion Center Teleport Portside -->
+     <portal_use npc_id="730311">
+         <portal_path loc_id="3002102"/>
+@@ -37,7 +74,7 @@
+     <portal_use npc_id="730563">
+         <portal_path loc_id="3004400" race="ASMODIANS"/>
+     </portal_use>
+-    <!-- Starboard Midship Teleporter --> 
++    <!-- Starboard Midship Teleporter -->
+     <portal_use npc_id="730559">
+         <portal_path loc_id="3004401"/>
+     </portal_use>
+@@ -52,7 +89,7 @@
+     <!--  Port Supply Room Teleporter -->
+     <portal_use npc_id="730560">
+         <portal_path loc_id="3004404"/>
+-    </portal_use> 
++    </portal_use>
+     <!-- END TERATH DREDGION -->
+     <!-- END DREDGION -->
+ 	
+@@ -560,12 +597,12 @@
+         </portal_path>
+     </portal_use>
+     <portal_use npc_id="730675">
+-        <portal_path loc_id="3005203" >
++        <portal_path loc_id="3005203">
+             <portal_req min_level="60"/>
+         </portal_path>
+     </portal_use>
+     <portal_use npc_id="730676">
+-        <portal_path loc_id="3005204" >
++        <portal_path loc_id="3005204">
+             <portal_req min_level="60"/>
+         </portal_path>
+     </portal_use>
+@@ -575,7 +612,7 @@
+         </portal_path>
+     </portal_use>
+     <portal_use npc_id="730634">
+-        <portal_path loc_id="3005206" >
++        <portal_path loc_id="3005206">
+             <portal_req min_level="60"/>
+         </portal_path>
+     </portal_use>
+@@ -2315,7 +2352,7 @@
+     <portal_dialog npc_id="730850">
+         <portal_path dialog="10000" loc_id="3011700" player_count="6" siege_id="6021" instance="true" race="ELYOS">
+             <portal_req min_level="65"/>
+-           <!-- <legion_req="true"/> -->
++            <!-- legion_req="true"/> -->
+         </portal_path>
+     </portal_dialog>
+     <!-- Idgel Research Center Asmodians Entrance (Legion) -->
+@@ -2322,7 +2359,7 @@
+     <portal_dialog npc_id="730851">
+         <portal_path dialog="10000" loc_id="3011700" player_count="6" siege_id="6021" instance="true" race="ASMODIANS">
+             <portal_req min_level="65"/>
+-           <!-- <legion_req="true"/> -->
++            <!-- legion_req="true"/> -->
+         </portal_path>
+     </portal_dialog>
+     <!-- Void Cube Elyos Entrance (Legion) -->
+@@ -2329,7 +2366,7 @@
+     <portal_dialog npc_id="730852">
+         <portal_path dialog="10000" loc_id="3011800" player_count="6" siege_id="6011" instance="true" race="ELYOS">
+             <portal_req min_level="65"/>
+-           <!-- <legion_req="true"/> -->
++            <!-- legion_req="true"/> -->
+         </portal_path>
+     </portal_dialog>
+     <!-- Void Cube Asmodians Entrance (Legion) -->
+@@ -2336,7 +2373,7 @@
+     <portal_dialog npc_id="730853">
+         <portal_path dialog="10000" loc_id="3011800" player_count="6" siege_id="6011" instance="true" race="ASMODIANS">
+             <portal_req min_level="65"/>
+-           <!-- <legion_req="true"/> -->
++            <!-- legion_req="true"/> -->
+         </portal_path>
+     </portal_dialog>
+     <!-- Danuar Mysticarium Elyos Entrance (Legion) -->
+@@ -2343,7 +2380,7 @@
+     <portal_dialog npc_id="730854">
+         <portal_path dialog="10000" loc_id="3011900" player_count="6" siege_id="5011" instance="true" race="ELYOS">
+             <portal_req min_level="65"/>
+-         <!--   <legion_req="true"/> -->
++            <!-- legion_req="true"/> -->
+         </portal_path>
+     </portal_dialog>
+     <!-- Danuar Mysticarium Asmodians Entrance (Legion) -->
+@@ -2350,7 +2387,7 @@
+     <portal_dialog npc_id="730855">
+         <portal_path dialog="10000" loc_id="3011900" player_count="6" siege_id="5011" instance="true" race="ASMODIANS">
+             <portal_req min_level="65"/>
+-           <!-- <legion_req="true"/> -->
++            <!-- legion_req="true"/> -->
+         </portal_path>
+     </portal_dialog>
+     <!-- Danuar Reliquary Entrance -->
+@@ -2426,32 +2463,66 @@
+             </portal_req>
+         </portal_path>
+     </portal_dialog>
+-	
++    <!-- Underground mobile point -->
++    <portal_dialog npc_id="801801">
++        <portal_path dialog="104" loc_id="6007006">
++            <portal_req min_level="65" kinah_req="64650">
++            </portal_req>
++        </portal_path>
++    </portal_dialog>
++    <!-- Underground mobile point -->
++    <portal_dialog npc_id="801812">
++        <portal_path dialog="104" loc_id="6006006">
++            <portal_req min_level="65" kinah_req="64650">
++            </portal_req>
++        </portal_path>
++    </portal_dialog>
+     <!-- STEEL ROSE  -->
+     <!-- Steel Rose (1st Deck) -->
+     <portal_dialog npc_id="801552">
+         <portal_path dialog="1097" loc_id="3010300" player_count="3" instance="true">
+-            <portal_req min_level="61"/>
++            <portal_req min_level="60"/>
+         </portal_path>
+         <portal_path dialog="1012" loc_id="3010100" instance="true">
+-            <portal_req min_level="61"/>
++            <portal_req min_level="60"/>
+         </portal_path>
+     </portal_dialog>
++    <portal_dialog npc_id="804489">
++        <portal_path dialog="1012" loc_id="3010100" instance="true">
++            <portal_req min_level="60"/>
++        </portal_path>
++        <portal_path dialog="1097" loc_id="3010100" player_count="6" instance="true">
++            <portal_req min_level="60"/>
++        </portal_path>
++    </portal_dialog>
+     <!-- Steel Rose (2nd Deck) -->
+     <portal_dialog npc_id="801553">
+         <portal_path dialog="1097" loc_id="3010400" player_count="3" instance="true">
+-            <portal_req min_level="61"/>
++            <portal_req min_level="60"/>
+         </portal_path>
+         <portal_path dialog="1012" loc_id="3010200" instance="true">
+-            <portal_req min_level="61"/>
++            <portal_req min_level="60"/>
+         </portal_path>
+     </portal_dialog>
++    <portal_dialog npc_id="804490">
++        <portal_path dialog="1012" loc_id="3010200" instance="true">
++            <portal_req min_level="60"/>
++        </portal_path>
++        <portal_path dialog="1097" loc_id="3010400" player_count="6" instance="true">
++            <portal_req min_level="60"/>
++        </portal_path>
++    </portal_dialog>
+     <!-- Steel Rose (3rd Deck) -->
+     <portal_dialog npc_id="801554">
+         <portal_path dialog="1012" loc_id="3010500" player_count="3" instance="true">
+-            <portal_req min_level="61"/>
++            <portal_req min_level="60"/>
+         </portal_path>
+     </portal_dialog>
++    <portal_dialog npc_id="804491">
++        <portal_path dialog="1012" loc_id="3010500" player_count="6" instance="true">
++            <portal_req min_level="60"/>
++        </portal_path>
++    </portal_dialog>
+     <!-- STEEL ROSE END -->
+ 	
+     <!-- SAURO SUPPLY BASE  -->
+@@ -2511,7 +2582,7 @@
+             </portal_req>
+         </portal_path>
+     </portal_dialog>
+-    <!-- SAURO SUPPLY BASE END -->	
++    <!-- SAURO SUPPLY BASE END -->
+     <!-- KATALAM 4.3 TELEPORTER -->
+     <!-- Danuar Spire To Danaria [Dalerunerk] -->
+     <portal_dialog npc_id="801399">
+@@ -2521,6 +2592,74 @@
+             </portal_req>
+         </portal_path>
+     </portal_dialog>
++    <portal_dialog npc_id="209676">
++        <portal_path dialog="10000" loc_id="1300900" race="ELYOS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="209677">
++        <portal_path dialog="10000" loc_id="1400100" race="ASMODIANS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804687">
++        <portal_path dialog="104" loc_id="1100102" race="ELYOS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804688">
++        <portal_path dialog="104" loc_id="1200104" race="ASMODIANS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804677">
++        <portal_path dialog="10000" loc_id="2100407" race="ELYOS"/>
++        <portal_path dialog="10001" loc_id="2100601" race="ELYOS"/>
++        <portal_path dialog="10002" loc_id="2100601" race="ELYOS"/>
++        <portal_path dialog="10003" loc_id="2100405" race="ELYOS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804678">
++        <portal_path dialog="10000" loc_id="2100511" race="ELYOS"/>
++        <portal_path dialog="10001" loc_id="2100505" race="ELYOS"/>
++        <portal_path dialog="10002" loc_id="2100506" race="ELYOS"/>
++        <portal_path dialog="10003" loc_id="6000102" race="ELYOS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804679">
++        <portal_path dialog="10000" loc_id="6000211" race="ELYOS"/>
++        <portal_path dialog="10001" loc_id="6000304" race="ELYOS"/>
++        <portal_path dialog="10002" loc_id="6000404" race="ELYOS"/>
++        <portal_path dialog="10003" loc_id="6000406" race="ELYOS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804680">
++        <portal_path dialog="10000" loc_id="6001004" race="ELYOS"/>
++        <portal_path dialog="10001" loc_id="6001005" race="ELYOS"/>
++        <portal_path dialog="10002" loc_id="6001006" race="ELYOS"/>
++        <portal_path dialog="10003" loc_id="6000610" race="ELYOS"/>
++        <portal_path dialog="10004" loc_id="6000610" race="ELYOS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804682">
++        <portal_path dialog="10000" loc_id="2200401" race="ASMODIANS"/>
++        <portal_path dialog="10001" loc_id="2200501" race="ASMODIANS"/>
++        <portal_path dialog="10002" loc_id="2200501" race="ASMODIANS"/>
++        <portal_path dialog="10003" loc_id="2200408" race="ASMODIANS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804683">
++        <portal_path dialog="10000" loc_id="2200711" race="ASMODIANS"/>
++        <portal_path dialog="10001" loc_id="2200705" race="ASMODIANS"/>
++        <portal_path dialog="10002" loc_id="2200706" race="ASMODIANS"/>
++        <portal_path dialog="10003" loc_id="6000102" race="ASMODIANS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804684">
++        <portal_path dialog="10000" loc_id="6000211" race="ASMODIANS"/>
++        <portal_path dialog="10001" loc_id="6000304" race="ASMODIANS"/>
++        <portal_path dialog="10002" loc_id="6000404" race="ASMODIANS"/>
++        <portal_path dialog="10003" loc_id="6000405" race="ASMODIANS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="804685">
++        <portal_path dialog="10000" loc_id="6001001" race="ASMODIANS"/>
++        <portal_path dialog="10001" loc_id="6001002" race="ASMODIANS"/>
++        <portal_path dialog="10002" loc_id="6001003" race="ASMODIANS"/>
++        <portal_path dialog="10003" loc_id="6000611" race="ASMODIANS"/>
++        <portal_path dialog="10004" loc_id="6000611" race="ASMODIANS"/>
++    </portal_dialog>
++    <portal_dialog npc_id="731464">
++        <portal_path dialog="104" loc_id="2100516"/>
++    </portal_dialog>
++    <portal_dialog npc_id="731465">
++        <portal_path dialog="104" loc_id="2200716"/>
++    </portal_dialog>
+     <!-- Kaisinel Beacon To Danaria [Avorinrinerk] -->
+     <portal_dialog npc_id="801466">
+         <portal_path dialog="10000" loc_id="6000600">
+@@ -2568,6 +2707,16 @@
+             <portal_req kinah_req="9300"/>
+         </portal_path>
+     </portal_dialog>
++    <portal_dialog npc_id="802451">
++        <portal_path dialog="104" loc_id="6000513">
++            <portal_req kinah_req="9300"/>
++        </portal_path>
++    </portal_dialog>
++    <portal_dialog npc_id="802452">
++        <portal_path dialog="104" loc_id="6000514">
++            <portal_req kinah_req="9300"/>
++        </portal_path>
++    </portal_dialog>
+     <!-- Gelkmaros To Sarpan [Esde] -->
+     <portal_dialog npc_id="206312">
+         <portal_path dialog="10000" loc_id="6000203">
+@@ -2969,4 +3118,10 @@
+     <portal_scroll name="LDF4A_RETURN_AREA_1">
+         <portal_path loc_id="6000210"/>
+     </portal_scroll>
++    <portal_scroll name="LDF4_ADVANCE_RETURN_AREA_L">
++        <portal_path loc_id="6001007"/>
++    </portal_scroll>
++    <portal_scroll name="LDF4_ADVANCE_RETURN_AREA_D">
++        <portal_path loc_id="6001008"/>
++    </portal_scroll>
+ </portal_templates2>
+\ No newline at end of file

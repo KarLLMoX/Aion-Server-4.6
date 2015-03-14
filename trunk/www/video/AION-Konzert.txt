@@ -1,0 +1,12 @@
+
+Client-Modifikation:
+
+  Datei:  Aion\L10N\enu\data\Data.pak\Strings\client_strings_etc.xml
+
+  <string>
+    <id>610007</id>
+    <name>STR_ETC_EVENT_IU_WEB_URL</name>
+    <body>http://localhost/video/flvplayer/flashvideoplayer.html?video=content/aion.mp4&autoscale=false&autoplay=true&videowidth=640&videoheight=360&skin=skin-applestyle.swf&skincolor=0x000000&loop=true</body>
+  </string>
+
+//spawn 831592

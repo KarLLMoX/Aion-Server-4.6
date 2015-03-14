@@ -1,0 +1,32 @@
+﻿**********
+* Source *
+**********
+- GM Skills werden nicht entfernt wenn man kein GM mehr ist
+
+**************
+* Additional *
+**************
+- BattleGround dont get portet to map tryed with 1v1 BG
+- PvP Map open close restart not possible Error also in the server if i try with the command
+
+*************
+* Instances *
+*************
+- Shugo Imperal Tomb Ini - Bitte Testen / Drops / Ausgänge
+- Sauro Ini - Testen - Portal
+- Beshmundirs Temple Spawns
+- Instance Spawns korrigieren
+
+**********
+* Spawns *
+**********
+- Weitere Maps korrigieren
+
+**********
+* Skills *
+**********
+
+*********
+* Drops *
+*********
+- Droplisten korrigieren
