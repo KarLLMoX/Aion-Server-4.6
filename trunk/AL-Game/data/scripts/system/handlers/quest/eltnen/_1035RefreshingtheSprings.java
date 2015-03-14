@@ -25,6 +25,7 @@ import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
 import com.aionemu.gameserver.services.teleport.TeleportService2;
+import com.aionemu.gameserver.model.TeleportAnimation;
 
 /**
  * Talk with Gaia (203917). Talk with Ophelos (203992). Retrieve a Life Bead
@@ -110,7 +111,10 @@ public class _1035RefreshingtheSprings extends QuestHandler {
 							return defaultCloseDialog(env, 1, 2); // 2
 						}
 						case SETPRO3: {
-							return defaultCloseDialog(env, 3, 4); // 4
+							qs.setQuestVarById(0, var + 1);
+							updateQuestStatus(env);
+							TeleportService2.teleportTo(player, 210020000, 645.600f, 436.980f, 331.875f, (byte) 119, TeleportAnimation.BEAM_ANIMATION);
+							return true;
 						}
 						default:
 							break;
@@ -148,7 +152,10 @@ public class _1035RefreshingtheSprings extends QuestHandler {
 							}
 						}
 						case SETPRO5: {
-							return defaultCloseDialog(env, 5, 6); // 6
+							qs.setQuestVarById(0, var + 1);
+							updateQuestStatus(env);
+							TeleportService2.teleportTo(player, 210020000, 1056.378f, 345.040f, 306.911f, (byte) 119, TeleportAnimation.BEAM_ANIMATION);
+							return true;
 						}
 						default:
 							break;
@@ -175,15 +182,17 @@ public class _1035RefreshingtheSprings extends QuestHandler {
 							return sendQuestSelectionDialog(env);
 						}
 						case SETPRO7: {
-							TeleportService2.teleportTo(env.getPlayer(), 210020000, 1526.212f, 521.0421f, 356.7938f);
-							return defaultCloseDialog(env, 8, 9, 182201025, 1, 0, 0); // 9
+							qs.setQuestVarById(0, var + 1);
+							updateQuestStatus(env);
+							TeleportService2.teleportTo(player, 210020000, 1526.212f, 521.0421f, 356.7938f, (byte) 119, TeleportAnimation.BEAM_ANIMATION);							
+							return true;
 						}
 						default:
 							break;
 					}
 					break;
 				}
-				case 700160: { // Desert Life Stone
+				case 700160: { // Desert Life Stones
 					if (var == 7) {
 						if (dialog == DialogAction.USE_OBJECT && player.getInventory().getItemCountByItemId(182201024) == 1) {
 							return playQuestMovie(env, 31);
@@ -202,6 +211,7 @@ public class _1035RefreshingtheSprings extends QuestHandler {
 						}
 						case SETPRO8: {
 							if (var == 9) {
+								giveQuestItem(env, 182201025, 1);
 								return defaultCloseDialog(env, 9, 10); // 10
 							} else if (var == 11) {
 								return defaultCloseDialog(env, 11, 11, true, false); // reward

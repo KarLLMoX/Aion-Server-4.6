@@ -127,9 +127,9 @@ public class _1040ScoutingtheScouts extends QuestHandler {
 							playQuestMovie(env, 183);
 						}
 					case SETPRO1:
-						defaultCloseDialog(env, 0, 1); // 1
+						return defaultCloseDialog(env, 0, 1); // 1
 					case SETPRO2:
-						defaultCloseDialog(env, 4, 5); // 5
+						return defaultCloseDialog(env, 4, 5); // 5
 					default:
 						break;
 				}
@@ -153,7 +153,7 @@ public class _1040ScoutingtheScouts extends QuestHandler {
 				switch (env.getDialog()) {
 					case USE_OBJECT:
 						if (var == 7) {
-							return sendQuestDialog(env, 2034);
+							return sendQuestDialog(env, 2035);
 						}
 					case QUEST_SELECT:
 						if (var == 6) {
@@ -184,7 +184,7 @@ public class _1040ScoutingtheScouts extends QuestHandler {
 							return sendQuestDialog(env, 2716);
 						}
 					case SETPRO5:
-						defaultCloseDialog(env, 7, 8); // 8
+						return defaultCloseDialog(env, 7, 8); // 8
 					case SETPRO6:
 						if (var == 9) {
 							TeleportService2.teleportTo(player, 210020000, 1606, 1529, 318);

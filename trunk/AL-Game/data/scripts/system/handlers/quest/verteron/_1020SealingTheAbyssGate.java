@@ -26,6 +26,7 @@ import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
 import com.aionemu.gameserver.services.teleport.TeleportService2;
+import com.aionemu.gameserver.utils.ThreadPoolManager;
 
 /**
  * @author Atomics
@@ -78,7 +79,7 @@ public class _1020SealingTheAbyssGate extends QuestHandler {
 					}
 					break;
 				}
-				case 700142: { // Abyss Gate Guardian Stone // TODO: add a check if Kuninasha is spawned already, to avoid multiple spawns.
+				case 700142: {  // Abyss Gate Guardian Stone // TODO: add a check if Kuninasha is spawned already, to avoid multiple spawns.
 					if (var == 2) {
 						if (env.getDialog() == DialogAction.USE_OBJECT) {
 							QuestService.addNewSpawn(310030000, player.getInstanceId(), 210753, (float) 258.89917, (float) 237.20166, (float) 217.06035, (byte) 0);
@@ -86,16 +87,15 @@ public class _1020SealingTheAbyssGate extends QuestHandler {
 							}
 						}
 				}
-				case 700143: { // Abyss Gate
+				case 700143:  // Abyss Gate
 					long Seal = player.getInventory().getItemCountByItemId(182200024);
 					if (Seal == 1) {
-						if (env.getDialog() == DialogAction.USE_OBJECT) {
-							changeQuestStep(env, 2, 3, true);
-							return playQuestMovie(env, 153);
-						}
+						destroy(-2, env);
+						return false;
 					}
+					break;
 				}
-			}
+
 		} else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203098) { // Spatalos
 				if (env.getDialog() == DialogAction.QUEST_SELECT) {
@@ -164,5 +164,26 @@ public class _1020SealingTheAbyssGate extends QuestHandler {
 	public boolean onLvlUpEvent(QuestEnv env) {
 		int[] verteronQuests = { 1130, 1011, 1012, 1013, 1014, 1015, 1021, 1016, 1018, 1017, 1019, 1022, 1023 };
 		return defaultOnLvlUpEvent(env, verteronQuests, true);
+	}
+
+	private void destroy(final int var, final QuestEnv env) { 
+		final int targetObjectId = env.getVisibleObject().getObjectId();
+
+		final Player player = env.getPlayer();
+		ThreadPoolManager.getInstance().schedule(new Runnable() {
+			@Override
+			public void run() {
+				if (player.getTarget().getObjectId() != targetObjectId) {
+					return;
+				}
+				QuestState qs = player.getQuestStateList().getQuestState(questId);
+				switch (var) {
+					case -2:
+						changeQuestStep(env, 2, 3, true);
+						playQuestMovie(env, 153);
+						break;
+				}
+			}
+		}, 3000);
 	}
 }
