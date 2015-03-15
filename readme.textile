@@ -1,19 +1,31 @@
 h1. Aion 4.6 EU 
 
-Aion 4.6 EU 
+Aion 4.6 EU
 
-- integrated Mobrate (config\main: rates.properties) 
+- integrated Mobrate (config\main: rates.properties)
 
-- Admin Panel (Shift+F1) 
+- Admin Panel (Shift+F1)
 
-- Event Engine (orginal by flashman) 
+- Event Engine (orginal by flashman)
 
-We are looking for people to continue to XML and JAVA 
+-------------------------------------------------------------------------------
 
-Download Game Client: 
+We are looking for people to continue to XML and JAVA
 
-AionEU: http://en.aion.gameforge.com/website/download 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
-Logo by Voidstar 
+Download Game Client:
 
-Forum: http://falke34.bplaced.net
+AionEU: http://en.aion.gameforge.com/website/download
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Logo by Voidstar
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Forum:
+http://falke34.bplaced.net
