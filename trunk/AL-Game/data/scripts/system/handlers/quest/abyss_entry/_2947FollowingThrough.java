@@ -25,6 +25,9 @@ import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.services.QuestService;
 import com.aionemu.gameserver.services.teleport.TeleportService2;
+import com.aionemu.gameserver.world.WorldMapInstance;
+import com.aionemu.gameserver.world.zone.ZoneName;
+import com.aionemu.gameserver.services.instance.InstanceService;
 
 /**
  * Meet Kvasir (204053) and choose your mission.<br>
@@ -51,6 +54,7 @@ import com.aionemu.gameserver.services.teleport.TeleportService2;
  * @modified Gigi
  * @reworked vlog Please don't touch commented code. There is no more dialog to
  *           choose a mission. But maybe there will be one.
+ * @reworked FrozenKiller
  */
 public class _2947FollowingThrough extends QuestHandler {
 
@@ -63,12 +67,13 @@ public class _2947FollowingThrough extends QuestHandler {
 
 	@Override
 	public void register() {
-		int[] npcs = { 204053, 204301, 204089, 700268 };
-		int[] mobs = { 212396, 212611, 212408, 213583, 290048, 211987, 290047, 290050, 211986, 290049, 213584, 211982 };
+		int[] npcs = { 204053, 204301, 204089};
+		int[] mobs = { 213583, 290048, 211987, 290047, 290050, 211986, 290049, 213584, 211982 };
 		qe.registerOnLevelUp(questId);
 		qe.registerOnQuestTimerEnd(questId);
 		qe.registerOnEnterWorld(questId);
 		qe.registerOnMovieEndQuest(168, questId);
+		qe.registerOnMovieEndQuest(167, questId);
 		for (int npc : npcs) {
 			qe.registerQuestNpc(npc).addOnTalkEvent(questId);
 		}
@@ -98,15 +103,7 @@ public class _2947FollowingThrough extends QuestHandler {
 							} else if (var == 4) {
 								return sendQuestDialog(env, 1019);
 							}
-							// else if (var == 1 || var == 4 || var == 9) {
-							// return sendQuestDialog(env, 2375); // to have a
-							// possibility to change the choice
-							// }
 						}
-						// case SETPRO11: {
-						// choice = 0;
-						// return defaultCloseDialog(env, 0, 1); // 1
-						// }
 						case SETPRO12: {
 							choice = 1;
 							if (var == 0) {
@@ -115,10 +112,6 @@ public class _2947FollowingThrough extends QuestHandler {
 								return defaultCloseDialog(env, 4, 4);
 							}
 						}
-						// case SETPRO13: {
-						// choice = 2;
-						// return defaultCloseDialog(env, 0, 9); // 9
-						// }
 						case FINISH_DIALOG: {
 							if (var == 0) {
 								return defaultCloseDialog(env, 0, 0);
@@ -131,39 +124,9 @@ public class _2947FollowingThrough extends QuestHandler {
 				}
 				case 204301: { // Aegir
 					switch (dialog) {
-						case USE_OBJECT: {
-							// if (var == 1) {
-							// return sendQuestDialog(env, 1352);
-							// }
-							// else if (var == 9) {
-							// return sendQuestDialog(env, 4080);
-							// }
-							// else if (var == 3 && choice == 1) {
-							// return sendQuestDialog(env, 3398);
-							// }
-							if (var == 7) {
-								return sendQuestDialog(env, 3739);
-							}
-						}
-						// case SETPRO2: {
-						// return defaultCloseDialog(env, 1, 2); // 2
-						// }
 						case SELECT_QUEST_REWARD: {
-							qs.setStatus(QuestStatus.REWARD);
-							updateQuestStatus(env);
-							return sendQuestDialog(env, 6);
-							// else if (var == 3) {
-							// return defaultCloseDialog(env, 3, 3, true, true);
-							// // reward
-							// }
+							return false;
 						}
-						// case SELECT_ACTION_4081: {
-						// return checkQuestItems(env, 9, 9, true, 7, 4081); //
-						// reward
-						// }
-						// case FINISH_DIALOG: {
-						// return defaultCloseDialog(env, 9, 9);
-						// }
 						default:
 							break;
 					}
@@ -177,27 +140,24 @@ public class _2947FollowingThrough extends QuestHandler {
 							} else if (qs.getQuestVarById(4) == 10) {
 								return sendQuestDialog(env, 2034);
 							}
-							// else if (var == 6) { doesn't work :(
-							// return sendQuestDialog(env, 1779);
-							// }
 						}
 						case SETPRO3: {
-							return defaultCloseDialog(env, 4, 5); // 5
+							WorldMapInstance newInstance = InstanceService.getNextAvailableInstance(320090000);
+							InstanceService.registerPlayerWithInstance(newInstance, player);
+							TeleportService2.teleportTo(player, 320090000, newInstance.getInstanceId(), 276, 294, 163, (byte) 90);
+							changeQuestStep(env, 4, 5, false); // 5
+							return closeDialogWindow(env);
 						}
 						case SETPRO4: {
-							qs.setQuestVar(7);
-							updateQuestStatus(env);
-							return defaultCloseDialog(env, 7, 7); // 7
+							 qs.setStatus(QuestStatus.REWARD);
+							 qs.setQuestVar(9);
+							 updateQuestStatus(env);
+							return defaultCloseDialog(env, 9, 9, true, false); // reward
 						}
 						default:
 							break;
 					}
 					break;
-				}
-				case 700268: { // Statue of Urgasch
-					if (var == 9 && dialog == DialogAction.USE_OBJECT) {
-						return true; // loot
-					}
 				}
 			}
 		} else if (qs.getStatus() == QuestStatus.REWARD) {
@@ -216,42 +176,7 @@ public class _2947FollowingThrough extends QuestHandler {
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 		if (qs != null && qs.getStatus() == QuestStatus.START) {
 			int var = qs.getQuestVarById(0);
-			if (var == 2) {
-				int var1 = qs.getQuestVarById(1);
-				int var2 = qs.getQuestVarById(2);
-				int var3 = qs.getQuestVarById(3);
-				switch (env.getTargetId()) {
-					case 212396: { // Guzzling Kurin
-						if (var2 == 3 && var3 == 3) {
-							qs.setQuestVar(3); // 3
-							updateQuestStatus(env);
-							playQuestMovie(env, 168);
-							return true;
-						}
-						changeQuestStep(env, var1, var1 + 1, false, 1); // 1: 1
-																		// - 3
-					}
-					case 212611: { // Klaw Scouter
-						if (var1 == 3 && var3 == 3) {
-							qs.setQuestVar(3); // 3
-							updateQuestStatus(env);
-							playQuestMovie(env, 168);
-							return true;
-						}
-						changeQuestStep(env, var2, var2 + 1, false, 2); // 2: 1
-																		// - 3
-					}
-					case 212408: { // Dark Lake Spirit
-						if (var1 == 3 && var2 == 3) {
-							qs.setQuestVar(3); // 3
-							updateQuestStatus(env);
-							return true;
-						}
-						changeQuestStep(env, var3, var3 + 1, false, 3); // 3: 1
-																		// - 3
-					}
-				}
-			} else if (var == 5) {
+			if (var == 5) {
 				int var4 = qs.getQuestVarById(4);
 				int[] mobs = { 213583, 290048, 211987, 290047, 290050, 211986, 290049, 213584, 211982 };
 				if (var4 < 9) {
