@@ -147,20 +147,16 @@ public class _2007WheresRaeThisTime extends QuestHandler {
 							}
 						case SETPRO5:
 							if (var == 4) {
-								qs.setQuestVar(5);
+								qs.setQuestVarById(0, var + 1);
 								updateQuestStatus(env);
-								closeDialogWindow(env);
+								sendQuestSelectionDialog(env);
 								return true;
 							}
 							break;
 						case SETPRO6:
 							if (var == 8) {
-								qs.setQuestVar(9);
-								updateQuestStatus(env);
-								qs.setQuestVar(8);
 								qs.setStatus(QuestStatus.REWARD);
 								updateQuestStatus(env);
-								closeDialogWindow(env);
 								TeleportService2.teleportTo(env.getPlayer(), 220010000, 590.01886f, 2453.0552f, 278.375f, (byte) 86, TeleportAnimation.BEAM_ANIMATION);
 								return true;
 							}
@@ -182,11 +178,12 @@ public class _2007WheresRaeThisTime extends QuestHandler {
 					break;
 				case 700087: // Violet Power Generator
 					if (var == 7) {
-						destroy(-1, env);
+						destroy(8, env);
 						return false;
 					}
 					break;
 			}
+			
 		} else if (qs.getStatus() == QuestStatus.REWARD) {
 			if (targetId == 203516) { // Ulgorn
 				if (env.getDialog() == DialogAction.USE_OBJECT) {
@@ -214,7 +211,6 @@ public class _2007WheresRaeThisTime extends QuestHandler {
 
 	private void destroy(final int var, final QuestEnv env) { //TODO: add Emotion for destroying generators
 		final int targetObjectId = env.getVisibleObject().getObjectId();
-
 		final Player player = env.getPlayer();
 		ThreadPoolManager.getInstance().schedule(new Runnable() {
 			@Override
@@ -228,13 +224,14 @@ public class _2007WheresRaeThisTime extends QuestHandler {
 					case 7:
 						qs.setQuestVar(var);
 						break;
-					case -1:
+					case 8:
+						
+						qs.setQuestVar(var);
 						playQuestMovie(env, 56);
-						qs.setQuestVar(8);
 						break;
 				}
 				updateQuestStatus(env);
 			}
-		}, 3000);
+		}, 100);
 	}
 }
