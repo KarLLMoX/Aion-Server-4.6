@@ -38,6 +38,7 @@ public final class DataManager {
 
 	static Logger log = LoggerFactory.getLogger(DataManager.class);
 	public static NpcData NPC_DATA;
+  	public static XmlNpcDropData XML_NPC_DROP_DATA;
 	public static NpcDropData NPC_DROP_DATA;
 	public static NpcShoutData NPC_SHOUT_DATA;
 	public static GatherableData GATHERABLE_DATA;
@@ -141,6 +142,7 @@ public final class DataManager {
 		StaticData data = loader.loadStaticData();
 		long time = System.currentTimeMillis() - start;
 
+    	XML_NPC_DROP_DATA = data.xmlNpcDropData;
 		WORLD_MAPS_DATA = data.worldMapsData;
 		MATERIAL_DATA = data.materiaData;
 		MAP_WEATHER_DATA = data.mapWeatherData;
@@ -222,7 +224,6 @@ public final class DataManager {
 		SERIAL_KILLER_DATA = data.serialKillerData;
 		BASE_DATA = data.baseData;
 		ABSOLUTE_STATS_DATA = data.absoluteStatsData;
-		NPC_DROP_DATA = NpcDropData.load();
 		ROBOT_DATA = data.robotData;
 		DECOMPOSABLE_SELECT_ITEM_DATA = data.decomposableSelectItemsData;
 		ITEM_DATA.cleanup();

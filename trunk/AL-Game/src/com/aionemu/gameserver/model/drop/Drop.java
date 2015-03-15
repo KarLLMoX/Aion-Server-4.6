@@ -22,6 +22,7 @@ import java.util.Set;
 
 import com.aionemu.commons.utils.Rnd;
 import com.aionemu.gameserver.dataholders.DataManager;
+import com.aionemu.gameserver.dataholders.ItemData;
 import com.aionemu.gameserver.model.Race;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.model.templates.item.ItemTemplate;
@@ -49,6 +50,15 @@ public class Drop implements DropCalculator {
 		this.noReduce = noReduce;
 		template = DataManager.ITEM_DATA.getItemTemplate(itemId);
 	}
+
+  	public Drop(int itemId, int minAmount, int maxAmount, float chance, boolean noReduce, boolean eachMember) {
+    	this.itemId = itemId;
+    	this.minAmount = minAmount;
+    	this.maxAmount = maxAmount;
+    	this.chance = chance;
+    	this.noReduce = noReduce;
+    	this.eachMember = eachMember;
+  	}
 
 	/**
      *

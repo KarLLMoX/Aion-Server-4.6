@@ -17,6 +17,12 @@
 
 package com.aionemu.gameserver.dataholders;
 
+import com.aionemu.gameserver.model.Race;
+import com.aionemu.gameserver.model.drop.Drop;
+import com.aionemu.gameserver.model.drop.DropGroup;
+import com.aionemu.gameserver.model.drop.NpcDrop;
+import com.aionemu.gameserver.model.templates.npc.NpcTemplate;
+
 import gnu.trove.map.hash.TIntObjectHashMap;
 import gnu.trove.procedure.TObjectProcedure;
 
@@ -26,17 +32,18 @@ import java.io.RandomAccessFile;
 import java.nio.ByteOrder;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.channels.FileChannel.MapMode;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.aionemu.gameserver.model.Race;
-import com.aionemu.gameserver.model.drop.Drop;
-import com.aionemu.gameserver.model.drop.DropGroup;
-import com.aionemu.gameserver.model.drop.NpcDrop;
-import com.aionemu.gameserver.model.templates.npc.NpcTemplate;
 
 /**
  * @author MrPoke
@@ -74,9 +81,9 @@ public class NpcDropData {
 		List<NpcDrop> npcDrops = new ArrayList<NpcDrop>();
 		FileChannel roChannel = null;
 		MappedByteBuffer buffer;
-
+		HashMap<Integer, ArrayList<DropGroup>> xmlGroup = DataManager.XML_NPC_DROP_DATA.getDrops();
 		try {
-			roChannel = new RandomAccessFile("data/static_data/npc_drop.dat", "r").getChannel();
+			roChannel = new RandomAccessFile("data/static_data/npc_drops/npc_drop.dat", "r").getChannel();
 			int size = (int) roChannel.size();
 			buffer = roChannel.map(FileChannel.MapMode.READ_ONLY, 0, size).load();
 			buffer.order(ByteOrder.LITTLE_ENDIAN);
@@ -126,6 +133,10 @@ public class NpcDropData {
 					DropGroup dropGroup = new DropGroup(dropList, race, useCategory, groupName);
 					dropGroupList.add(dropGroup);
 				}
+        		if (xmlGroup.get(npcId) != null) {
+          			dropGroupList.addAll((Collection<DropGroup>)xmlGroup.get(npcId));
+          			xmlGroup.remove(Integer.valueOf(npcId));
+        		}
 				NpcDrop npcDrop = new NpcDrop(dropGroupList, npcId);
 				npcDrops.add(npcDrop);
 
@@ -134,10 +145,34 @@ public class NpcDropData {
 					npcTemplate.setNpcDrop(npcDrop);
 				}
 			}
+      		if (!xmlGroup.isEmpty()) {
+        		Iterator<Map.Entry<Integer, ArrayList<DropGroup>>> iter = xmlGroup.entrySet().iterator();
+        		while (iter.hasNext()) {
+          			Map.Entry<Integer, ArrayList<DropGroup>> entry = (Map.Entry)iter.next();
+          			NpcDrop npcDrop = new NpcDrop((List)entry.getValue(), ((Integer)entry.getKey()).intValue());
+          			npcDrops.add(npcDrop);
+          			NpcTemplate npcTemplate = DataManager.NPC_DATA.getNpcTemplate(((Integer)entry.getKey()).intValue());
+          			if (npcTemplate != null) {
+            			npcTemplate.setNpcDrop(npcDrop);
+          			}
+        		}
+      		}
 			drops.clear();
 			drops = null;
 			names.clear();
 			names = null;
+      		xmlGroup.clear();
+      		xmlGroup = null;
+      		DataManager.XML_NPC_DROP_DATA.clear();
+      		try {
+        		if (roChannel != null) {
+          			roChannel.close();
+        		}
+      		}
+      		catch (IOException e) {
+        		log.error("Drop loader: IO error in drop Loading.");
+      		}
+      		NpcDropData dropData = new NpcDropData();
 		} catch (FileNotFoundException e) {
 			log.error("Drop loader: Missing npc_drop.dat!!!");
 		} catch (IOException e) {
