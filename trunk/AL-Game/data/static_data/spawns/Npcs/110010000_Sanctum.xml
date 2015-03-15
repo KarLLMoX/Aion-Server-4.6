@@ -1313,12 +1313,6 @@
 		<spawn npc_id="205471" respawn_time="295">
 			<spot h="86" x="1364.3328" y="1543.649" z="569.03815"/>
 		</spawn>
-		<spawn npc_id="804188" respawn_time="295">
-			<spot h="60" x="1623.7324" y="1512.7844" z="573.6294"/>
-		</spawn>
-		<spawn npc_id="832843" respawn_time="295">
-			<spot h="60" x="1620.0466" y="1521.4489" z="573.62933"/>
-		</spawn>
 		<spawn npc_id="801212" respawn_time="295">
 			<spot h="13" x="1412.9231" y="1627.1357" z="573.6577"/>
 		</spawn>

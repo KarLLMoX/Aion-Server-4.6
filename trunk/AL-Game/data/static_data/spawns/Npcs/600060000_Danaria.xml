@@ -6623,12 +6623,6 @@
 			<spot h="73" x="1055.3347" y="2781.3416" z="299.19403"/>
 			<spot h="15" x="811.33563" y="248.55563" z="466.19177"/>
 		</spawn>
-		<spawn npc_id="804613" respawn_time="295">
-			<spot h="109" x="1055.1459" y="2777.436" z="299.26505"/>
-		</spawn>
-		<spawn npc_id="804614" respawn_time="295">
-			<spot h="15" x="810.6298" y="252.01776" z="465.99744"/>
-		</spawn>
 		<!-- Sokorunerk (Cuperine Development Union) -->
 		<spawn respawn_time="295" npc_id="832743">
 			<spot h="91" z="300.25" y="2809.2532" x="1022.8044"/>
