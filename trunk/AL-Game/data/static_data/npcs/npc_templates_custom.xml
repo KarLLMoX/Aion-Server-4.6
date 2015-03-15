@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<npc_templates>
+	<npc_template npc_id="798514" level="55" name="Adrass" name_id="465199" height="2.0" title_id="465203" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110601553</item>
+			<item>113601499</item>
+			<item>114601506</item>
+			<item>112601498</item>
+			<item>111601516</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="798515" level="55" name="Perna" name_id="465200" height="2.0" title_id="465204" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110601553</item>
+			<item>113601499</item>
+			<item>114601506</item>
+			<item>112601498</item>
+			<item>111601516</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>	
+	<npc_template npc_id="798718" level="65" name="Halia" name_id="465201" height="1.8" title_id="465203" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110601554</item>
+			<item>113601500</item>
+			<item>114601507</item>
+			<item>112601499</item>
+			<item>111601517</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="1.8"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="798719" level="65" name="Eldran" name_id="465202" height="1.8" title_id="465204" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110601554</item>
+			<item>113601500</item>
+			<item>114601507</item>
+			<item>112601499</item>
+			<item>111601517</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="1.8"/>
+		<talk_info distance="5"/>
+	</npc_template>		
+	<npc_template npc_id="802213" level="55" name="Millen" name_id="464242" height="2.0" title_id="370719" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="8" group_run_fight="6"/>
+		</stats>
+		<equipment>
+			<item>110101768</item>
+			<item>113101600</item>
+			<item>114101634</item>
+			<item>112101538</item>
+			<item>111101588</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="3"/>
+	</npc_template>
+	<npc_template npc_id="802214" level="55" name="Patuhan" name_id="464243" height="2.0" title_id="370720" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101769</item>
+			<item>113101601</item>
+			<item>114101635</item>
+			<item>112101539</item>
+			<item>111101589</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="3"/>
+	</npc_template>
+	<npc_template npc_id="802453" level="55" name="Poprunerk" name_id="356841" height="1.375" title_id="463499" rank="VETERAN" rating="NORMAL" race="BROWNIE" tribe="GENERAL_DARK" type="GENERAL" ai="portal" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="4" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<bound_radius front="1.4" side="0.888" upper="1.375"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="802454" level="55" name="Tarunerk" name_id="356842" height="1.375" title_id="463499" rank="VETERAN" rating="NORMAL" race="BROWNIE" tribe="GENERAL" type="GENERAL" ai="portal" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="4" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<bound_radius front="1.4" side="0.888" upper="1.375"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="802540" level="55" name="Cadmar" name_id="356923" title_id="357057" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2100" arate="1000" hpgauge="11">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="8" group_run_fight="6"/>
+		</stats>
+		<equipment>
+			<!-- <item>110601637</item>
+			<item>113601583</item>
+			<item>114601590</item>
+			<item>112601582</item>
+			<item>111601600</item> -->
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="802541" level="55" name="Allona" name_id="356924" height="2.0" title_id="357057" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2100" arate="1000" hpgauge="11">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="8" group_run_fight="6"/>
+		</stats>
+		<equipment>
+			<!-- <item>110601639</item>
+			<item>113601585</item>
+			<item>114601592</item>
+			<item>112601584</item>
+			<item>111601602</item> -->
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="802542" level="65" name="Lander" name_id="356925" height="2.0" title_id="357057" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2100" arate="1000" hpgauge="11">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="8" group_run_fight="6"/>
+		</stats>
+		<equipment>
+			<!-- <item>110601638</item>
+			<item>113601584</item>
+			<item>114601591</item>
+			<item>112601583</item>
+			<item>111601601</item> -->
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804184" level="55" name="Agaron" name_id="464888" height="2.0" title_id="464908" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101758</item>
+			<item>113101595</item>
+			<item>114101629</item>
+			<item>112101533</item>
+			<item>111101583</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804185" level="55" name="Athea" name_id="464889" height="2.0" title_id="464909" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101758</item>
+			<item>113101595</item>
+			<item>114101629</item>
+			<item>112101533</item>
+			<item>111101583</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804186" level="55" name="Chthonios" name_id="464890" height="2.0" title_id="464910" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110551088</item>
+			<item>113501665</item>
+			<item>114501675</item>
+			<item>112501586</item>
+			<item>111501647</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804187" level="55" name="Artemis" name_id="464891" height="2.0" title_id="464911" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101770</item>
+			<item>113101602</item>
+			<item>114101636</item>
+			<item>112101540</item>
+			<item>111101590</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804188" level="55" name="Teleios" name_id="464892" height="2.0" title_id="464912" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<!-- <item>110101832</item>
+			<item>113101658</item>
+			<item>114101692</item>
+			<item>112101596</item>
+			<item>111101646</item> -->
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804194" level="65" name="Ruz" name_id="464898" height="2.0" title_id="464908" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101759</item>
+			<item>113101596</item>
+			<item>114101630</item>
+			<item>112101534</item>
+			<item>111101584</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804195" level="65" name="Bilskirnir" name_id="464899" height="2.0" title_id="464909" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101759</item>
+			<item>113101596</item>
+			<item>114101630</item>
+			<item>112101534</item>
+			<item>111101584</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804196" level="65" name="Carreto" name_id="464900" height="2.0" title_id="464910" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110551089</item>
+			<item>113501666</item>
+			<item>114501676</item>
+			<item>112501587</item>
+			<item>111501648</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804197" level="55" name="Brisingamen" name_id="464901" height="2.0" title_id="464911" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101771</item>
+			<item>113101603</item>
+			<item>114101637</item>
+			<item>112101541</item>
+			<item>111101591</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804198" level="55" name="Karantania" name_id="464902" height="2.0" title_id="464912" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<!-- <item>110101833</item>
+			<item>113101659</item>
+			<item>114101693</item>
+			<item>112101597</item>
+			<item>111101647</item> -->
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804596" level="55" name="Pythagoras" name_id="465633" height="2.0" title_id="465635" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="8" group_run_fight="6"/>
+		</stats>
+		<equipment>
+			<item>110101768</item>
+			<item>113101600</item>
+			<item>114101634</item>
+			<item>112101538</item>
+			<item>111101588</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="3"/>
+	</npc_template>
+	<npc_template npc_id="804597" level="55" name="Carolinger" name_id="465634" height="2.0" title_id="465635" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101769</item>
+			<item>113101601</item>
+			<item>114101635</item>
+			<item>112101539</item>
+			<item>111101589</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="3"/>
+	</npc_template>
+	<npc_template npc_id="804613" level="55" name="Canas" name_id="465657" height="1.8" title_id="463611" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2100" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110601440</item>
+			<item>113601386</item>
+			<item>114601390</item>
+			<item>112601384</item>
+			<item>111601402</item>
+			<item>100901200</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="1.8"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804614" level="55" name="Gronte" name_id="465658" height="1.8" title_id="463612" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2100" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110601441</item>
+			<item>113601387</item>
+			<item>114601391</item>
+			<item>112601385</item>
+			<item>111601403</item>
+			<item>100901201</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="1.8"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804673" level="55" name="Allea" name_id="360117" height="2.0" title_id="360121" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101758</item>
+			<item>113101595</item>
+			<item>114101629</item>
+			<item>112101533</item>
+			<item>111101583</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804674" level="55" name="Hypsitos" name_id="360118" height="2.0" title_id="360122" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101758</item>
+			<item>113101595</item>
+			<item>114101629</item>
+			<item>112101533</item>
+			<item>111101583</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804675" level="65" name="Jacksen" name_id="360119" height="2.0" title_id="360121" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110101759</item>
+			<item>113101596</item>
+			<item>114101630</item>
+			<item>112101534</item>
+			<item>111101584</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="804676" level="65" name="Baiern" name_id="360120" height="2.0" title_id="360122" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110551089</item>
+			<item>113501666</item>
+			<item>114501676</item>
+			<item>112501587</item>
+			<item>111501648</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="832842" level="55" name="Legia" name_id="465659" height="2.0" title_id="465661" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110100319</item>
+			<item>113100271</item>
+			<item>114100289</item>
+			<item>112100251</item>
+			<item>111100272</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="832843" level="55" name="Neperphon" name_id="465660" height="2.0" title_id="465661" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="10" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110100318</item>
+			<item>113100270</item>
+			<item>114100288</item>
+			<item>112100250</item>
+			<item>111100271</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>		
+	<npc_template npc_id="832909" level="55" name="Glorea" name_id="465763" height="2.0" title_id="465768" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110100322</item>
+			<item>113100276</item>
+			<item>114100294</item>
+			<item>112100256</item>
+			<item>111100277</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="832910" level="55" name="Marnes" name_id="465764" height="2.0" title_id="465769" rank="VETERAN" rating="NORMAL" race="ELYOS" tribe="GENERAL" type="GENERAL" ai="general" srange="20" arange="2" adelay="2000" arate="1000" hpgauge="3">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110100322</item>
+			<item>113100276</item>
+			<item>114100294</item>
+			<item>112100256</item>
+			<item>111100277</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="832911" level="55" name="Barkel" name_id="465765" height="2.0" title_id="465768" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="1900" arate="1000" hpgauge="12">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110600551</item>
+			<item>113600516</item>
+			<item>114600507</item>
+			<item>112600503</item>
+			<item>111600521</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+	<npc_template npc_id="832912" level="55" name="Darnel" name_id="465766" height="2.0" title_id="465769" rank="VETERAN" rating="NORMAL" race="ASMODIANS" tribe="GENERAL_DARK" type="GENERAL" ai="general" srange="20" arange="2" adelay="1900" arate="1000" hpgauge="12">
+		<stats maxHp="35000" maxXp="1000000" main_hand_attack="1000" main_hand_accuracy="1000" pdef="4000" power="100" evasion="1000" accuracy="1000">
+			<speeds walk="1" group_walk="1" run="6" run_fight="4" group_run_fight="4"/>
+		</stats>
+		<equipment>
+			<item>110600551</item>
+			<item>113600516</item>
+			<item>114600507</item>
+			<item>112600503</item>
+			<item>111600521</item>
+		</equipment>
+		<bound_radius front="0.5" side="0.7" upper="2.0"/>
+		<talk_info distance="5"/>
+	</npc_template>
+</npc_templates>
