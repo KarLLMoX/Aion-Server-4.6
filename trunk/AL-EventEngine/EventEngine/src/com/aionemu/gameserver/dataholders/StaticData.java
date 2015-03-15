@@ -35,6 +35,8 @@ import pirate.events.xml.EventsData;
 @XmlAccessorType(XmlAccessType.NONE)
 public class StaticData {
 
+  	@XmlElement(name="npc_drops")
+  	public XmlNpcDropData xmlNpcDropData;
 	@XmlElement(name = "world_maps")
 	public WorldMapsData worldMapsData;
 	@XmlElement(name = "weather")
@@ -139,8 +141,6 @@ public class StaticData {
 	public AssembledNpcsData assembledNpcData;
 	@XmlElement(name = "cosmetic_items")
 	public CosmeticItemsData cosmeticItemsData;
-	// @XmlElement(name = "npc_drops")
-	// public NpcDropData npcDropData;
 	@XmlElement(name = "auto_groups")
 	public AutoGroupData autoGroupData;
 	@XmlElement(name = "events_config")
@@ -185,33 +185,24 @@ public class StaticData {
 	public ChallengeData challengeData;
 	@XmlElement(name = "town_spawns_data")
 	public TownSpawnsData townSpawnsData;
-	
 	@XmlElement(name = "abyss_race_bonuses")
 	public AbyssRaceBonusData abyssRaceBonusData;
-	
 	@XmlElement(name = "skill_charge")
 	public SkillChargeData skillChargeData;
-	
 	@XmlElement(name = "serial_killers")
 	public SerialKillerData serialKillerData;
-	
 	@XmlElement(name = "base_locations")
 	public BaseData baseData;
-	
 	@XmlElement(name = "absolute_stats")
 	public AbsoluteStatsData absoluteStatsData;
-	
 	@XmlElement(name = "walker_versions")
 	public WalkerVersionsData walkerVersionsData;
-	
 	@XmlElement(name = "robots")
 	public RobotData robotData;
 	@XmlElement(name = "enchant_templates")
 	public ItemEnchantData itemEnchantData;
-	
 	@XmlElement(name = "decomposable_selectitems")
 	public DecomposableSelectItemsData decomposableSelectItemsData;
-	
 	@XmlElement(name="events")
   	public EventsData f14_eventsData;
 
@@ -275,7 +266,6 @@ public class StaticData {
 		DataManager.log.info("Loaded " + windstreamsData.size() + " windstream entries");
 		DataManager.log.info("Loaded " + assembledNpcData.size() + " assembled npcs entries");
 		DataManager.log.info("Loaded " + cosmeticItemsData.size() + " cosmetic items entries");
-		// DataManager.log.info("Loaded " + npcDropData.size() + " npc drop entries");
 		DataManager.log.info("Loaded " + autoGroupData.size() + " auto group entries");
 		DataManager.log.info("Loaded " + spawnsData2.size() + " spawn maps entries");
 		DataManager.log.info("Loaded " + eventData.size() + " active events");
@@ -303,6 +293,7 @@ public class StaticData {
 		DataManager.log.info("Loaded " + robotData.size() + " robot armor entries");
 		DataManager.log.info("Loaded " + itemEnchantData.size() + " item enchant Data");
 		DataManager.log.info("Loaded " + decomposableSelectItemsData.size() + " decomposable selected items");
+		DataManager.log.info("Loaded " + xmlNpcDropData.size() + " custom npc drop data");
 		DataManager.log.info("Loaded " + f14_eventsData.size() + " event engine holders.");
 	}
 }
