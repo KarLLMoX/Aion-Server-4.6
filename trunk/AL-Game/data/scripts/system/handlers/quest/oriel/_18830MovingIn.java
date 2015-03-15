@@ -111,6 +111,19 @@ public class _18830MovingIn extends QuestHandler {
 				default:
 					break;
 			}
+		}else if (qs.getStatus() == QuestStatus.START && targetId == 830645) {
+			switch (dialog) {
+				case USE_OBJECT:
+					changeQuestStep(env, 1, 1, true);
+					return sendQuestDialog(env, 2375);
+				case SELECT_QUEST_REWARD:
+					return sendQuestDialog(env, 5);
+				case SELECTED_QUEST_NOREWARD:
+					sendQuestEndDialog(env);
+					return true;
+				default:
+					break;
+			}
 		}
 
 		return false;
