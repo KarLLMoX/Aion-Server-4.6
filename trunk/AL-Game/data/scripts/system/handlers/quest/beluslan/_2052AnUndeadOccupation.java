@@ -119,10 +119,11 @@ public class _2052AnUndeadOccupation extends QuestHandler {
 						return sendQuestDialog(env, 1693);
 					}
 				case SETPRO2:
-					if (var == 1) {
-						qs.setQuestVarById(0, var + 1);
-						updateQuestStatus(env);
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+					if (var == 7) {
+					qs.setQuestVar(10);
+					qs.setStatus(QuestStatus.REWARD);
+					updateQuestStatus(env);
+					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
 						return true;
 					}
 				case SETPRO3:
