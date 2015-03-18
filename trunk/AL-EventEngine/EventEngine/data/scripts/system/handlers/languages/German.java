@@ -38,12 +38,12 @@ public class German extends Language {
 		addTranslatedMessage(CustomMessageId.INFO3, "Warnung: Werben anderer Aion Server oder abwerben von Spieler hier auf dem Server, ist untersagt.");
 		addTranslatedMessage(CustomMessageId.INFO4, "Anmerkung: Das Team wird Sie niemals nach Ihrem Account Passwort fragen!");
 		addTranslatedMessage(CustomMessageId.INFO5, "Chat: Benutze .faction, .ely, ,asmo <text> um im Chat zu schreiben. ");
-		addTranslatedMessage(CustomMessageId.INFO6, "Chat: Benutze /1 /2 /3, um in den Chatkanälen zu schreiben.");
-		addTranslatedMessage(CustomMessageId.INFO7, "Befehle: Benutze .help, um zu sehen welche Spielerbefehle noch zur Verfügung stehen.");
+		addTranslatedMessage(CustomMessageId.INFO6, "Chat: Benutze /1 /2 /3, um in den Chatkanaelen zu schreiben.");
+		addTranslatedMessage(CustomMessageId.INFO7, "Befehle: Benutze .help, um zu sehen welche Spielerbefehle noch zur Verfuegung stehen.");
 		addTranslatedMessage(CustomMessageId.SERVERVERSION, "Supported NCSoft Version ");
 		addTranslatedMessage(CustomMessageId.ENDMESSAGE, "Viel Spass auf unserem Server: ");
-		addTranslatedMessage(CustomMessageId.ANNOUNCE_GM_CONNECTION, " Ist jetzt für den Support verfügbar!");
-		addTranslatedMessage(CustomMessageId.ANNOUNCE_GM_DECONNECTION, " Ist für den Support nicht mehr verfügbar!");
+		addTranslatedMessage(CustomMessageId.ANNOUNCE_GM_CONNECTION, " Ist jetzt fuer den Support verfuegbar!");
+		addTranslatedMessage(CustomMessageId.ANNOUNCE_GM_DECONNECTION, " Ist fuer den Support nicht mehr verfuegbar!");
 		addTranslatedMessage(CustomMessageId.ANNOUNCE_MEMBER_CONNECTION, "%s ist der Welt von Atreia beigetreten.");
 		addTranslatedMessage(CustomMessageId.COMMAND_NOT_ENOUGH_RIGHTS, "Sie haben keine Berechtigung zur Verwendung dieses Befehls");
 		addTranslatedMessage(CustomMessageId.PLAYER_NOT_ONLINE, "Spieler nicht online");
@@ -52,7 +52,7 @@ public class German extends Language {
 		addTranslatedMessage(CustomMessageId.SOMETHING_WRONG_HAPPENED, "Etwas ging schief");
 		addTranslatedMessage(CustomMessageId.COMMAND_DISABLED, "Befehl deaktiviert");
 		addTranslatedMessage(CustomMessageId.COMMAND_ADD_SYNTAX, "Syntax: //add <player name> <itemid> [<amount>]");
-		addTranslatedMessage(CustomMessageId.COMMAND_ADD_ADMIN_SUCCESS, "Item erfolgreich dem Spieler %s hinzugefügt ");
+		addTranslatedMessage(CustomMessageId.COMMAND_ADD_ADMIN_SUCCESS, "Item erfolgreich dem Spieler %s hinzugefuegt ");
 		addTranslatedMessage(CustomMessageId.COMMAND_ADD_PLAYER_SUCCESS, "Administrator %s give you %d item(s)");
 		addTranslatedMessage(CustomMessageId.COMMAND_ADD_FAILURE, "Item %d not exist or cant be added %s");
 		addTranslatedMessage(CustomMessageId.COMMAND_ADDDROP_SYNTAX, "Syntax: //adddrop <npc id> <itemid> <min> <max> <chance>");
@@ -241,7 +241,7 @@ public class German extends Language {
 		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_GOLD, "Sie besitzen nicht genug Gold Medaillen.");
 		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_PLATIN, "Sie besitzen nicht genug Platin Medaillen.");
 		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MITHRIL, "Sie besitzen nicht genug Mithril Medaillen.");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_AP2, "Sie besitzen nicht genug AP, Sie benötigen: ");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_AP2, "Sie besitzen nicht genug AP, Sie benoetigen: ");
 		addTranslatedMessage(CustomMessageId.EXCHANGE_SILVER, "You have exchange [item:186000031] to [item:186000030].");
 		addTranslatedMessage(CustomMessageId.EXCHANGE_GOLD, "You have exchange [item:186000030] to [item:186000096].");
 		addTranslatedMessage(CustomMessageId.EXCHANGE_PLATIN, "You have exchange [item:186000096] to [item:186000147].");
@@ -254,25 +254,25 @@ public class German extends Language {
 		/**
 		 * Legendary Raid Spawn Events
 		 */
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ASMO, "[Spawn Event] Ragnarok ist für die Asmodier in Beluslan erschienen!");
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ELYOS, "[Spawn Event] Omega ist für die Elyos in Heiron erschienen!");
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ASMO, "[Spawn Event] Ragnarok ist verschwunden, niemand hat ihn getötet!");
-		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ELYOS, "[Spawn Event] Omega ist verschwunden, niemand hat ihn getötet!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ASMO, "[Spawn Event] Ragnarok ist fuer die Asmodier in Beluslan erschienen!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_SPAWNED_ELYOS, "[Spawn Event] Omega ist fuer die Elyos in Heiron erschienen!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ASMO, "[Spawn Event] Ragnarok ist verschwunden, niemand hat ihn getoetet!");
+		addTranslatedMessage(CustomMessageId.LEGENDARY_RAID_DESPAWNED_ELYOS, "[Spawn Event] Omega ist verschwunden, niemand hat ihn getoetet!");
 
 		/**
 		 * HonorItems Command
 		 */
-		addTranslatedMessage(CustomMessageId.PLATE_ARMOR, "Platten Rüstung");
-		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR, "Leder Rüstung");
-		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR, "Stoff Rüstung");
-		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR, "Ketten Rüstung");
+		addTranslatedMessage(CustomMessageId.PLATE_ARMOR, "Platten Ruestung");
+		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR, "Leder Ruestung");
+		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR, "Stoff Ruestung");
+		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR, "Ketten Ruestung");
 		addTranslatedMessage(CustomMessageId.WEAPONS, "Waffen");
-		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_PRICES, "Platten rüstungs Preis");
-		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_PRICES, "Leder Rüstungs Preis");
-		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_PRICES, "Stoff Rüstung Preis");
-		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR_PRICES, "Ketten Rüstungs Preis");
+		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_PRICES, "Platten ruestungs Preis");
+		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_PRICES, "Leder Ruestungs Preis");
+		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_PRICES, "Stoff Ruestung Preis");
+		addTranslatedMessage(CustomMessageId.CHAIN_ARMOR_PRICES, "Ketten Ruestungs Preis");
 		addTranslatedMessage(CustomMessageId.WEAPONS_PRICES, "Waffen Preis");
-		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MEDALS, "Sie besitzen nicht genügend Medaillen, Sie benötigen: ");
+		addTranslatedMessage(CustomMessageId.NOT_ENOUGH_MEDALS, "Sie besitzen nicht genuegend Medaillen, Sie benoetigen: ");
 		addTranslatedMessage(CustomMessageId.PLATE_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 1");
 		addTranslatedMessage(CustomMessageId.LEATHER_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 6");
 		addTranslatedMessage(CustomMessageId.CLOTH_ARMOR_USE_INFO, "Use .items and the equal ID (Example: .items 11");
@@ -312,7 +312,7 @@ public class German extends Language {
 		 */
 		addTranslatedMessage(CustomMessageId.SPREE1, "Blutiger Sturm");
 		addTranslatedMessage(CustomMessageId.SPREE2, "Blutbad");
-		addTranslatedMessage(CustomMessageId.SPREE3, "Völkermord");
+		addTranslatedMessage(CustomMessageId.SPREE3, "Voelkermord");
 		addTranslatedMessage(CustomMessageId.KILL_COUNT, "Kills in Folge: ");
 		addTranslatedMessage(CustomMessageId.CUSTOM_MSG1, " von ");
 		addTranslatedMessage(CustomMessageId.MSG_SPREE1, " hat begonnen ein ");
