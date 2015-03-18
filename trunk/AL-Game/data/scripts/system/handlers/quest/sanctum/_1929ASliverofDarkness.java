@@ -102,7 +102,7 @@ public class _1929ASliverofDarkness extends QuestHandler {
 					if (env.getDialog() == DialogAction.QUEST_SELECT && var == 1) {
 						return sendQuestDialog(env, 1352);
 					} else if (env.getDialog() == DialogAction.SETPRO2) {
-						TeleportService2.teleportTo(player, 110010000, 1825.7473f, 2204.9075f, 528.51184f);
+						TeleportService2.teleportTo(player, 210030000, 2325.1685f, 1808.1615f, 194.2152f);
 						changeQuestStep(env, 1, 2, false); // 2
 						return closeDialogWindow(env);
 					}
