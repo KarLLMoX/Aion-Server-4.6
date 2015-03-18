@@ -18,6 +18,7 @@
 package ai.portals;
 
 import com.aionemu.gameserver.ai2.AIName;
+import com.aionemu.gameserver.ai2.handler.*;
 import com.aionemu.gameserver.dataholders.DataManager;
 import com.aionemu.gameserver.model.DialogAction;
 import com.aionemu.gameserver.model.autogroup.AutoGroupType;
@@ -43,17 +44,13 @@ import java.util.List;
 @AIName("portal_dialog")
 public class PortalDialogAI2 extends PortalAI2 {
 
-	/**
-	 * Standard value. Can be changed through override
-	 */
+	/** Standard value. Can be changed through override */
+	protected int teleportationDialogId = 1011;
+	/** Standard value. Can be changed through override */
 	protected int rewardDialogId = 5;
-	/**
-	 * Standard value. Can be changed through override
-	 */
+	/** Standard value. Can be changed through override */
 	protected int startingDialogId = 10;
-	/**
-	 * Standard value. Can be changed through override
-	 */
+	/** Standard value. Can be changed through override */
 	protected int questDialogId = 10;
 
 	@Override
@@ -79,40 +76,38 @@ public class PortalDialogAI2 extends PortalAI2 {
 				PacketSendUtility.sendPacket(player, new SM_AUTO_GROUP(agt.getInstanceMaskId()));
 			}
 			PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 0));
-		} 
-		//else if (dialogId == DialogAction.SELECT_ACTION_1012.id()) {
-		//	PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 1182));
-		//} 
+		}
 		else if (dialogId == DialogAction.OPEN_INSTANCE_RECRUIT.id()) {
 			AutoGroupType agt = AutoGroupType.getAutoGroup(player.getLevel(), getNpcId());
 			if (agt != null) {
 				PacketSendUtility.sendPacket(player, new SM_FIND_GROUP(0x1A, agt.getInstanceMapId()));
 			}
-		} 
+		}
 		else {
-			if (dialogId == DialogAction.SELECT_ACTION_1012.id()) {
+			/*if (dialogId == DialogAction.SELECT_ACTION_1012.id()) {
 				AutoGroupType agt = AutoGroupType.getAutoGroup(player.getLevel(), getNpcId());
 				if (agt != null) {
 					if (agt.getPlayerSize() <= 6) {
-						if (!player.isInGroup2()) {
+						if (!player.isInGroup()) {
 							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 1182));
 							return true;
 						}
 					}
 					else {
-						if (!player.isInAlliance2()) {
+						if (!player.isInAlliance()) {
 							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 1182));
 							return true;
 						}
 					}
 				}
-			}
+			}}*/
 			if (questId == 0) {
 				PortalPath portalPath = DataManager.PORTAL2_DATA.getPortalDialog(getNpcId(), dialogId, player.getRace());
 				if (portalPath != null) {
 					PortalService.port(portalPath, player, getObjectId());
 				}
-			} else {
+			}
+			else {
 				PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), dialogId, questId));
 			}
 		}
@@ -126,7 +121,7 @@ public class PortalDialogAI2 extends PortalAI2 {
 
 	private void checkDialog(Player player) {
 		int npcId = getNpcId();
-		int teleportationDialogId = DataManager.PORTAL2_DATA.getTeleportDialogId(npcId);
+		teleportationDialogId = 1011; // so far it's 1011
 		List<Integer> relatedQuests = QuestEngine.getInstance().getQuestNpc(npcId).getOnTalkEvent();
 		boolean playerHasQuest = false;
 		boolean playerCanStartQuest = false;
@@ -136,7 +131,8 @@ public class PortalDialogAI2 extends PortalAI2 {
 				if (qs != null && (qs.getStatus() == QuestStatus.START || qs.getStatus() == QuestStatus.REWARD)) {
 					playerHasQuest = true;
 					break;
-				} else if (qs == null || qs.getStatus() == QuestStatus.NONE || qs.canRepeat()) {
+				}
+				else if (qs == null || qs.getStatus() == QuestStatus.NONE || qs.canRepeat()) {
 					if (QuestService.checkStartConditions(new QuestEnv(getOwner(), player, questId, 0), false)) {
 						playerCanStartQuest = true;
 						continue;
@@ -164,6 +160,12 @@ public class PortalDialogAI2 extends PortalAI2 {
 		else // show teleportation dialog 
 		{
 			switch (npcId) {
+				case 804621:				
+				case 804622:	
+				case 730841:			
+				case 730883:
+					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), questDialogId));
+					break;					
 				case 831117:
 				case 831131:
 					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(getObjectId(), 1012, 0));
