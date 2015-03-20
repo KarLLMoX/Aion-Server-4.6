@@ -143,16 +143,21 @@ public abstract class PlayerInfo extends AionServerPacket {
 			ItemTemplate itemTemplate = item.getItemTemplate();
 			if (itemTemplate == null) {
 				log.warn("Missing item. PlayerId: " + pbd.getPlayerObjId() + " ItemId: " + item.getObjectId());
-			} else if (((itemTemplate.isArmor()) || (itemTemplate.isWeapon())) && (itemTemplate.getItemSlot() <= ItemSlot.PANTS.getSlotIdMask())) {
-				writeC((int) item.getEquipmentSlot());
-				writeD(item.getItemSkinTemplate().getTemplateId());
-				GodStone godStone = item.getGodStone();
-				writeD(godStone != null ? godStone.getItemId() : 0);
-				writeD(item.getItemColor());
+                continue;
+            }
 
-				itemsDataSize += 13;
+            if (itemTemplate.isArmor() || itemTemplate.isWeapon()) {
+                if (itemTemplate.getItemSlot() <= ItemSlot.PANTS.getSlotIdMask()) {
+            		writeC(1); // this flas is needed to show equipment on selection screen
+					writeD(item.getItemSkinTemplate().getTemplateId());
+					GodStone godStone = item.getGodStone();
+					writeD(godStone != null ? godStone.getItemId() : 0);
+					writeD(item.getItemColor());
+
+					itemsDataSize += 13;
+				}
 			}
-		}
+        }
 
 		byte[] stupidNc = new byte[208 - itemsDataSize];
 		writeB(stupidNc);
