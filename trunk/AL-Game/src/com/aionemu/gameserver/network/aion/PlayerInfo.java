@@ -140,24 +140,24 @@ public abstract class PlayerInfo extends AionServerPacket {
 				break;
 			}
 
+			long slot = item.getEquipmentSlot();
+			if (slot == 393216 || slot == 131072 || slot == 262144) {
+			continue;
+		}			
+
 			ItemTemplate itemTemplate = item.getItemTemplate();
 			if (itemTemplate == null) {
 				log.warn("Missing item. PlayerId: " + pbd.getPlayerObjId() + " ItemId: " + item.getObjectId());
-                continue;
-            }
+			} else if (((itemTemplate.isArmor()) || (itemTemplate.isWeapon())) && (itemTemplate.getItemSlot() <= ItemSlot.PANTS.getSlotIdMask())) {
+				writeC(slot == 2 || slot == 64 || slot == 256 ? 2 : 1);
+				writeD(item.getItemSkinTemplate().getTemplateId());
+				GodStone godStone = item.getGodStone();
+				writeD(godStone != null ? godStone.getItemId() : 0);
+				writeD(item.getItemColor());
 
-            if (itemTemplate.isArmor() || itemTemplate.isWeapon()) {
-                if (itemTemplate.getItemSlot() <= ItemSlot.PANTS.getSlotIdMask()) {
-            		writeC(1); // this flas is needed to show equipment on selection screen
-					writeD(item.getItemSkinTemplate().getTemplateId());
-					GodStone godStone = item.getGodStone();
-					writeD(godStone != null ? godStone.getItemId() : 0);
-					writeD(item.getItemColor());
-
-					itemsDataSize += 13;
-				}
+				itemsDataSize += 13;
 			}
-        }
+		}
 
 		byte[] stupidNc = new byte[208 - itemsDataSize];
 		writeB(stupidNc);
