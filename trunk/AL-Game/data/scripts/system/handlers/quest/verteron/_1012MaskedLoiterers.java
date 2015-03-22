@@ -44,7 +44,9 @@ public class _1012MaskedLoiterers extends QuestHandler {
 	@Override
 	public void register() {
 		qe.registerQuestNpc(203111).addOnTalkEvent(questId);
-		qe.registerOnEnterZone(ZoneName.get("VERTERON_SWAMP_210030000"), questId);
+		qe.registerOnEnterZone(ZoneName.get("LF1A_SENSORYAREA_Q1012_1_206004_8_210030000"), questId);
+		qe.registerOnEnterZone(ZoneName.get("LF1A_SENSORYAREA_Q1012_2_206005_4_210030000"), questId);
+		qe.registerOnEnterZone(ZoneName.get("LF1A_SENSORYAREA_Q1012_3_206006_6_210030000"), questId);
 		qe.registerOnEnterZoneMissionEnd(questId);
 		qe.registerOnLevelUp(questId);
 	}
@@ -107,8 +109,7 @@ public class _1012MaskedLoiterers extends QuestHandler {
 
 	@Override
 	public boolean onEnterZoneEvent(QuestEnv env, ZoneName zoneName) {
-		if (zoneName == ZoneName.get("VERTERON_SWAMP_210030000")) {
-			final Player player = env.getPlayer();
+		final Player player = env.getPlayer();
 			if (player == null) {
 				return false;
 			}
@@ -122,7 +123,6 @@ public class _1012MaskedLoiterers extends QuestHandler {
 				updateQuestStatus(env);
 				return true;
 			}
-		}
 		return false;
 	}
 }
