@@ -30,6 +30,8 @@ import com.aionemu.gameserver.world.WorldMapInstance;
 
 /**
  * @author Gigi
+ *
+ * Workaround FrozenKiller
  */
 public class _18602NightmareinShiningArmor extends QuestHandler {
 
@@ -49,6 +51,8 @@ public class _18602NightmareinShiningArmor extends QuestHandler {
 		}
 		qe.registerQuestNpc(205229).addOnQuestStart(questId);
 		qe.registerQuestNpc(217005).addOnKillEvent(questId);
+		// Instance Spawns 217006  IF NOT ALL BOSSES ARE KILLED
+		qe.registerQuestNpc(217006).addOnKillEvent(questId);
 		qe.registerQuestNpc(700939).addOnAtDistanceEvent(questId);
 		qe.registerOnMovieEndQuest(454, questId);
 	}
@@ -83,12 +87,23 @@ public class _18602NightmareinShiningArmor extends QuestHandler {
 		return false;
 	}
 
+	// Changed if Player didnt kill NPC's 217002 217000 216982 Instance will spawn 217006 for this Quest we need 217005	
+	// Workaround Both NPC's working
+	
 	@Override
 	public boolean onKillEvent(QuestEnv env) {
 		Player player = env.getPlayer();
+		int targetId = env.getTargetId();
 		QuestState qs = player.getQuestStateList().getQuestState(questId);
 		if (qs != null && qs.getStatus() == QuestStatus.START) {
-			return defaultOnKillEvent(env, 217005, 3, true);
+			if (targetId == 217005) {
+				return defaultOnKillEvent(env, 217005, 3, true);
+			}
+			if (targetId == 217006) {
+				qs.setStatus(QuestStatus.REWARD);
+				updateQuestStatus(env);
+				return true;
+			}
 		}
 		return false;
 	}
