@@ -28,7 +28,7 @@
         <sphere x="2507" y="787" z="412.0" r="10.0"/>
     </zone>
     <zone mapid="210020000" name="LF2_SENSORYAREA_Q1041_B_206042_23_210020000" area_type="SPHERE" zone_type="SUB">
-        <sphere x="1831.1919" y="2528.628" z="273.76776" r="10.0"/>
+        <sphere x="1833.3395" y="2536.8853" z="266.47015" r="10.0"/>
     </zone>
     <zone mapid="210020000" name="LF2_SENSORYAREA_TEST_1_206032_1_210020000" area_type="SPHERE" zone_type="SUB">
         <sphere x="456.13684" y="2835.6003" z="163.97682" r="10.0"/>
@@ -91,7 +91,7 @@
         <sphere x="1920.9468" y="2542.016" z="355.88" r="10.0"/>
     </zone>
     <zone mapid="210020000" name="LF2_SENSORYAREA_Q1041_A_206040_21_210020000" area_type="SPHERE" zone_type="SUB">
-        <sphere x="2264.9202" y="2346.6995" z="285.0" r="10.0"/>
+        <sphere x="2270.2554" y="2349.1829" z="275.1223" r="10.0"/>
     </zone>
     <zone mapid="210020000" name="LF2_SENSORYAREA_Q1336_1_206020_22_210020000" area_type="SPHERE" zone_type="SUB">
         <sphere x="410.34964" y="940.7636" z="296.0" r="10.0"/>
