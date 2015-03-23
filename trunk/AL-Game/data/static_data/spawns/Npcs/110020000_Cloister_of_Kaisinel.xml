@@ -113,26 +113,25 @@
 		<spawn npc_id="798604" respawn_time="295">
 			<spot x="2175.6619" y="1593.6228" z="1206.114" h="70"/>
 		</spawn>
+		<!-- Iosthes -->
 		<spawn npc_id="801216" respawn_time="295">
 			<spot h="80" x="2183.3132" y="1609.9476" z="1212.266"/>
-		</spawn>	   
+		</spawn>	
+		<!-- Yupir -->   
 		<spawn npc_id="801217" respawn_time="295">
 			<spot h="60" x="2197.1807" y="1586.2917" z="1212.266"/>
-		</spawn>	
+		</spawn>
+		<!-- Yuroin -->	
 		<spawn npc_id="206352" respawn_time="295">
 			<spot h="66" x="2187.1606" y="1555.7588" z="1204.9725"/>
-		</spawn>	
+		</spawn>
+		<!-- Kantar -->
 		<spawn npc_id="206353" respawn_time="295">
 			<spot h="66" x="2188.0232" y="1554.2131" z="1204.9725"/>
 		</spawn>
+		<!-- Lidamis -->
 		<spawn npc_id="206331" respawn_time="295">
 			<spot h="39" x="2182.9495" y="1541.1444" z="1204.9725"/>
 		</spawn>	  
-		<spawn npc_id="798714" respawn_time="295">
-			<spot h="0" x="2183.529" y="1569.46" z="1212.0796"/>
-		</spawn>
-		<spawn npc_id="798715" respawn_time="295">
-			<spot h="0" x="2184.632" y="1572.5099" z="1212.0774"/>
-		</spawn>	
 	</spawn_map>
 </spawns>
