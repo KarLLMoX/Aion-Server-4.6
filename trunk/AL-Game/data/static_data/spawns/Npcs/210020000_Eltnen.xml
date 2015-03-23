@@ -100,11 +100,11 @@
 		</spawn>
 		<!-- Brunto -->
 		<spawn npc_id="800518" respawn_time="295">
-			<spot x="327.4" y="2730.6" z="263.4721" h="15"/>
+			<spot x="289.3881" y="2743.1594" z="263.4984" h="15"/>
 		</spawn>
 		<!-- Rogan -->
 		<spawn npc_id="800509" respawn_time="295">
-			<spot x="327.1" y="2732.0" z="263.4721" h="15"/>
+			<spot x="288.7081" y="2743.7625" z="263.4984" h="15"/>
 		</spawn>
 		<!-- Suspicious Box -->
 		<spawn npc_id="700174" respawn_time="295">

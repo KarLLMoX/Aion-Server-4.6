@@ -9192,13 +9192,37 @@
 		<spawn npc_id="800397" respawn_time="295">
 			<spot x="759.435" y="2884.16" z="107.208" h="93"/>
 		</spawn>
-		<!-- Protector Siz (Event Quest) -->
-		<spawn npc_id="831837" respawn_time="295">
-			<spot x="2047.531" y="1431.436" z="125.04263" h="12"/>
-		</spawn>
-		<!-- Protector Mosswing (Event Quest) -->
-		<spawn npc_id="831844" respawn_time="295">
-			<spot x="2017.0975" y="1461.3235" z="126.60903" h="12"/>
-		</spawn>
+
+		<!-- Protectors Captain -->	
+		
+        <!-- Protectors Captain Asif -->
+        <spawn npc_id="831834" respawn_time="295">
+            <spot x="2466.6001" y="352.4000" z="410.9000" h="22"/>
+        </spawn>
+        <!-- Protectors Captain Sherylin -->
+        <spawn npc_id="831833" respawn_time="295">
+            <spot x="2465.7000" y="353.1000" z="411.0000" h="9"/>
+        </spawn>
+        <!-- Protector Siz -->
+        <spawn npc_id="831837" respawn_time="295">
+            <spot x="2465.1001" y="354.4000" z="411.0000" h="12"/>
+        </spawn>        
+        <!-- Protector Paige -->
+        <spawn npc_id="831839" respawn_time="295">
+            <spot x="2464.5000" y="355.4000" z="411.1000" h="8"/>
+        </spawn>  
+        <!-- Protector Perma -->
+        <spawn npc_id="831844" respawn_time="295">
+            <spot x="2464.3999" y="356.3000" z="411.0000" h="8"/>
+            <spot z="118.31208" y="1397.2076" x="1996.9933" h="8"/>
+        </spawn> 
+         <!-- Protector Jacques -->
+        <spawn npc_id="831838" respawn_time="295">
+            <spot x="2464.8000" y="357.4000" z="411.0000"/>
+        </spawn>        
+        <!-- Protector Kentro -->
+        <spawn npc_id="831840" respawn_time="295">
+            <spot x="2465.3999" y="358.8000" z="411.0000" h="113"/>
+        </spawn>                    			
 	</spawn_map>
 </spawns>
