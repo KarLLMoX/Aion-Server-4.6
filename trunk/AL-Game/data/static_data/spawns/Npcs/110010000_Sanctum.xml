@@ -293,6 +293,10 @@
 		<spawn npc_id="203729" respawn_time="295">
 			<spot h="50" x="1618.8271" y="1469.7363" z="573.34503"/>
 		</spawn>
+		<!-- Berus -->
+		<spawn npc_id="203730" respawn_time="295">
+			<spot x="1623.78" y="1513.10" z="573.629" h="60"/>
+		</spawn>		
 		<!-- Berus
 		<spawn npc_id="203730" respawn_time="295">
 			<spot x="1623.65" y="1513" z="573.629" h="60"/>
@@ -1263,7 +1267,7 @@
 		<!-- Usiros -->
 		<spawn npc_id="800061" respawn_time="295">
 			<spot x="1902.000" y="1429.368" z="590.210" h="75"/>
-		</spawn>
+		</spawn>		
 		<!-- Amirinrinerk -->
 		<spawn npc_id="798462" respawn_time="295">
 			<spot x="1867.790" y="2062.195" z="517.907" h="53"/>
