@@ -8853,5 +8853,13 @@
 		<spawn npc_id="730117" respawn_time="295">
 			<spot x="2525.210" y="1808.390" z="97.837" static_id="1305"/>
 		</spawn>
+		<!-- Alfhild -->
+        <spawn npc_id="804520">
+            <spot h="35" x="228.85027" y="2322.2498" z="446.31625"/>
+        </spawn>
+        <!-- Gyrda -->
+        <spawn npc_id="804521">
+            <spot h="95" x="225.77785" y="2333.897" z="446.31622"/>
+        </spawn>        		
 	</spawn_map>
 </spawns>
