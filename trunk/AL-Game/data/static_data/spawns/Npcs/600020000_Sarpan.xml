@@ -2202,12 +2202,20 @@
 		</spawn>
 		<!-- Hucorinerk -->
 		<spawn npc_id="205632" respawn_time="295">
-			<spot x="1208.595" y="1588.460" z="585.027" h="105"/>
+			<spot h="96" x="1208.0754" y="1588.0684" z="585.02655"/>
 		</spawn>
 		<!-- Chicorunerk -->
 		<spawn npc_id="205631" respawn_time="295">
-			<spot x="1204.780" y="1587.002" z="585.027" h="105"/>
+			<spot h="96" x="1205.5148" y="1586.7101" z="585.02655"/>
 		</spawn>
+		<!-- Muarinerk -->
+        <spawn npc_id="205629">
+            <spot h="96" x="1206.8773" y="1591.5763" z="585.02655"/>
+        </spawn>
+        <!-- Jeparinerk -->
+        <spawn npc_id="205628">
+            <spot h="105" x="1203.3817" y="1590.4211" z="585.02655"/>
+        </spawn>      		
 		<!-- Harumi -->
 		<spawn npc_id="800236" respawn_time="295">
 			<spot x="1190.138" y="1576.473" z="585.027" h="105"/>
@@ -3847,10 +3855,6 @@
 		<spawn npc_id="205745" respawn_time="295">
 			<spot x="1954.203" y="843.904" z="567.631" h="30"/>
 		</spawn>
-		<!-- Jeparinerk -->
-		<spawn npc_id="205628" respawn_time="295">
-			<spot x="1956.733" y="835.411" z="567.750" h="15"/>
-		</spawn>
 		<!-- Horinrinerk -->
 		<spawn npc_id="205630" respawn_time="295">
 			<spot x="2631.78" y="440.11" z="625.8185" h="3"/>
@@ -4920,10 +4924,6 @@
 		<!-- Estotia -->
 		<spawn npc_id="205781" respawn_time="295">
 			<spot x="1398.590" y="2448.042" z="489.742" h="16"/>
-		</spawn>
-		<!-- Muarinerk -->
-		<spawn npc_id="205629" respawn_time="295">
-			<spot x="1435.676" y="2465.802" z="485.669" h="105"/>
 		</spawn>
 		<!-- Nia -->
 		<spawn npc_id="205707" respawn_time="295">
@@ -6810,6 +6810,29 @@
 		<spawn npc_id="801228" respawn_time="295">
 			<spot h="70" x="1582.9956" y="1608.6547" z="1357.5114"/>
 		</spawn>
-		<!-- END STATICS NPC -->
+		<!-- Tiseron -->
+        <spawn npc_id="802207">
+            <spot h="30" x="1182.0498" y="1596.0215" z="598.625"/>
+        </spawn>
+        <!-- Kionos -->
+        <spawn npc_id="804499">
+            <spot h="56" x="1187.8823" y="1601.3411" z="598.625"/>
+        </spawn>  
+        <!-- Mallakos -->
+        <spawn npc_id="804498">
+            <spot h="53" x="1188.9602" y="1605.4965" z="598.625"/>
+        </spawn>
+        <!-- Runia -->
+        <spawn npc_id="802208">
+            <spot h="53" x="1335.8424" y="1669.4469" z="598.71545"/>
+        </spawn> 
+        <!-- Siiri -->
+        <spawn npc_id="804508">
+            <spot h="15" x="1330.1364" y="1665.4874" z="598.75"/>
+        </spawn>
+        <!-- Akiv -->
+        <spawn npc_id="804509">
+            <spot h="15" x="1325.3429" y="1667.774" z="598.75"/>
+        </spawn>                                   		
 	</spawn_map>
 </spawns>
