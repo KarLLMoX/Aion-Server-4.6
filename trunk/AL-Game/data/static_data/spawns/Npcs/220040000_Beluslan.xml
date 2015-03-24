@@ -8719,5 +8719,36 @@
 		<spawn npc_id="730135" respawn_time="295">
 			<spot x="507.59708" y="2207.5833" z="383.08344" static_id="43"/>
 		</spawn>
+		
+		<!-- Protectors Captain -->	
+
+        <!-- Protector Eddval --> 
+        <spawn npc_id="831845" respawn_time="295">
+            <spot h="112" x="318.4" y="374.2" z="229.1846"/>
+        </spawn>       
+        <!-- Protector Idmund --> 
+        <spawn npc_id="831846">
+            <spot h="113" x="317.4" y="372.8" z="229.18507"/>
+        </spawn>
+        <!-- Protector Melnir -->
+        <spawn npc_id="831848">
+            <spot h="117" x="316.8" y="370.9" z="229.18523"/>
+        </spawn>
+        <!-- Protector Mirian -->
+        <spawn npc_id="831852">
+            <spot h="117" x="316.3" y="369.1" z="229.18529"/>
+        </spawn>
+        <!-- Protector Ketil --> 
+        <spawn npc_id="831847">
+            <spot h="2" x="315.7" y="367.3" z="229.18529"/>
+        </spawn>        
+        <!-- Claw Captain Jaysif -->
+        <spawn npc_id="831836">
+            <spot h="8" x="315.6" y="365.5" z="229.18529"/>
+        </spawn>        
+        <!-- Claw Captain Lailin --> 
+        <spawn npc_id="831835">
+            <spot x="315.8" y="363.5" z="229.18489" h="9"/>
+        </spawn>                                       				
 	</spawn_map>
 </spawns>

@@ -574,10 +574,10 @@
 		<spawn npc_id="204185" respawn_time="295">
 			<spot x="1393" y="1426" z="208.085"/>
 		</spawn>
-		<!-- Genoti 
+		<!-- Genoti -->
 		<spawn npc_id="204186" respawn_time="295">
 			<spot x="1402.43" y="1439.63" z="208.1" h="90"/>
-		</spawn>-->
+		</spawn>
 		<!-- Keruthis -->
 		<spawn npc_id="204187" respawn_time="295">
 			<spot h="90" x="1414.6224" y="1439.4393" z="208.10016"/>
@@ -1436,23 +1436,29 @@
 		<spawn npc_id="206342" respawn_time="295">    
 			<spot h="30" x="1197.5643" y="1467.5312" z="214.16386"/>
 		</spawn>
+		<!-- Mezaina -->
 		<spawn npc_id="801220" respawn_time="295">
 			<spot h="118" x="1438.063" y="1431.8315" z="177.2285"/>
 		</spawn>
+		<!-- Machi -->
 		<spawn npc_id="801221"  respawn_time="295">
 			<spot h="0" x="1438.1311" y="1444.5084" z="177.22652"/>
 		</spawn>
+		<!-- Hadubrant -->
 		<spawn npc_id="801222" respawn_time="295">
 			<spot h="9" x="1243.3137" y="1210.3683" z="215.09265"/>
 		</spawn>
+		<!-- Brynhilde -->
 		<spawn npc_id="801223" respawn_time="295">
 			<spot h="60" x="1306.778" y="1210.3683" z="215.10422"/>
 		</spawn>
+		<!-- Katla -->
 		<spawn npc_id="801330" respawn_time="295">
 			<spot h="30" x="1293.5449" y="1205.0863" z="214.35849"/>
 		</spawn>
+		<!-- Plume Tuner Fedo -->
 		<spawn npc_id="832827" respawn_time="295">
-			<spot h="90" x="1412.849" y="1439.3125" z="208.10016"/>
+			<spot x="1413.0981" y="1439.3469" z="208.10017" h="90"/>
 		</spawn>	  
 	</spawn_map>
 </spawns>
