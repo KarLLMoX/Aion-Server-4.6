@@ -983,7 +983,6 @@
 			<spot x="1368.42" y="1972.49" z="42.625" h="78"/>
 			<spot x="1311.8" y="1935.32" z="51.18" h="14" walker_id="DDADB1970E12B70BFC65162EE35B8D1915E6E72B"/>
 			<spot x="1326.41" y="1982.79" z="43.2491" h="106"/>
-			<spot x="1393.06" y="2010.88" z="51.5" h="77"/>
 			<spot x="1400.06" y="2020.16" z="51.4962" h="84"/>
 			<spot x="1394.94" y="1921.47" z="48.1381" h="38"/>
 			<spot x="1306.34" y="1979.78" z="46.228752" h="5" walker_id="6D1EE4E8EB34BC433B34D8EE25C21D0A9E38E849"/>
@@ -7598,7 +7597,7 @@
 		</spawn>
 		<!-- Alaum -->
 		<spawn npc_id="799849" respawn_time="295">
-			<spot x="1411" y="2025" z="51.375" h="112"/>
+			<spot h="43" x="1405.8855" y="2007.292" z="51.5"/>
 		</spawn>
 		<!-- Pale Karnif -->
 		<spawn npc_id="214370" respawn_time="295">
@@ -7878,7 +7877,7 @@
 		</spawn>
 		<!-- Vedrani -->
 		<spawn npc_id="799856" respawn_time="295">
-			<spot x="1408.95" y="2023.49" z="51.4405" h="88"/>
+			<spot h="23" x="1400.9176" y="2008.1007" z="51.5"/>
 		</spawn>
 		<!-- Elder Spirit Healer -->
 		<spawn npc_id="214393" respawn_time="295">
@@ -7905,11 +7904,11 @@
 		</spawn>
 		<!-- Anguilla -->
 		<spawn npc_id="799861" respawn_time="295">
-			<spot x="1403.16" y="2006.46" z="51.5" h="32"/>
+			<spot h="20" x="1403.1157" y="2007.0267" z="51.5"/>
 		</spawn>
 		<!-- Cintia -->
 		<spawn npc_id="799860" respawn_time="295">
-			<spot x="1399.96" y="2008.25" z="51.5013" h="19"/>
+			<spot h="46" x="1397.3007" y="2009.9843" z="51.5"/>
 		</spawn>
 		<!-- Elder Spirit Mage -->
 		<spawn npc_id="214399" respawn_time="295">
@@ -7960,7 +7959,7 @@
 		</spawn>
 		<!-- Pulmo -->
 		<spawn npc_id="799862" respawn_time="295">
-			<spot x="1405.68" y="2006.51" z="51.5" h="31"/>
+			<spot h="43" x="1407.2688" y="2008.7415" z="51.5"/>
 		</spawn>
 		<!-- Elder Spirit Archer -->
 		<spawn npc_id="214397" respawn_time="295">
@@ -8509,5 +8508,27 @@
 		<spawn npc_id="730182" respawn_time="295">
 			<spot x="519.225" y="863.609" z="76.959" static_id="293"/>
 		</spawn>
+
+        <!-- Marccum -->
+        <spawn npc_id="802172">
+            <spot h="110" x="1403.2261" y="2041.9308" z="52.580894"/>
+        </spawn>
+        <!-- Dante -->
+        <spawn npc_id="802173">
+            <spot h="50" x="1410.9053" y="2037.5443" z="52.580894"/>
+        </spawn>
+        
+        <!-- Protector Vaetild -->
+        <spawn npc_id="831851">
+            <spot h="66" x="1416.3" y="2020.8" z="51.4925"/>
+        </spawn>
+        <!-- Protector Kolfrosta -->
+        <spawn npc_id="831849">
+            <spot h="59" x="1428.2974" y="2021.0911" z="51.5"/>
+        </spawn>
+        <!-- Protector Geirrid -->
+        <spawn npc_id="831850">
+            <spot h="66" x="1426.8832" y="2025.8146" z="51.5"/>
+        </spawn>                                		
 	</spawn_map>
 </spawns>
