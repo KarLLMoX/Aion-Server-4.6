@@ -1352,7 +1352,7 @@
 		</spawn>
 		<!-- Tusen -->
 		<spawn npc_id="205124" respawn_time="295">
-			<spot x="2916.64" y="2415.52" z="15.2452" h="22"/>
+			<spot h="26" x="2919.5173" y="2418.3564" z="15.245249"/>
 		</spawn>
 		<!-- Vehova -->
 		<spawn npc_id="205123" respawn_time="295">
@@ -1360,7 +1360,7 @@
 		</spawn>
 		<!-- Dunkel -->
 		<spawn npc_id="205122" respawn_time="295">
-			<spot x="2934.27" y="2417.6" z="14.875" h="54"/>
+			<spot h="43" x="2930.0068" y="2422.19" z="15.137726"/>
 		</spawn>
 		<!-- Jarnsaxa -->
 		<spawn npc_id="205121" respawn_time="295">
@@ -2605,7 +2605,7 @@
 		</spawn>
 		<!-- Ullur -->
 		<spawn npc_id="205207" respawn_time="295">
-			<spot x="2916.09" y="2419.29" z="15.2452" h="33"/>
+			<spot h="23" x="2916.089" y="2419.2952" z="15.245249"/>
 		</spawn>
 		<!-- Healer Spirit -->
 		<spawn npc_id="213882" respawn_time="295">
@@ -8535,6 +8535,10 @@
         <!-- Protector Geirrid -->
         <spawn npc_id="831850">
             <spot h="66" x="1426.8832" y="2025.8146" z="51.5"/>
-        </spawn>                                		
+        </spawn>
+        <!-- Protector Captain Jayshif -->
+        <spawn npc_id="831836">
+            <spot h="0" x="2912.7" y="2422.4" z="15.0"/>
+        </spawn>                                        		
 	</spawn_map>
 </spawns>
