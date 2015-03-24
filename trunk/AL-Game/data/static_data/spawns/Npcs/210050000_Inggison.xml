@@ -8477,5 +8477,18 @@
 		<spawn npc_id="802171" respawn_time="295">
 			<spot h="36" x="1319.2964" y="285.49152" z="589.3381"/>
 		</spawn>
+
+        <!-- Temista -->		
+        <spawn npc_id="802209">
+            <spot h="10" x="1323.8845" y="360.8525" z="589.9695"/>
+        </spawn>
+        <!-- Obillos -->
+        <spawn npc_id="804500">
+            <spot h="5" x="1321.3824" y="367.8803" z="589.9695"/>
+        </spawn>
+        <!-- Fenia -->
+        <spawn npc_id="804501">
+            <spot h="5" x="1320.7257" y="369.76855" z="589.9695"/>
+        </spawn>                      		
 	</spawn_map>
 </spawns>
