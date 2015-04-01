@@ -90,19 +90,12 @@
     </xml_quest>
     <xml_quest start_npc_id="798008" end_npc_id="798008" id="1127">
         <on_talk_event ids="700001">
-            <conditions operate="AND">
-                <quest_status value="START" op="EQUAL"/>
-            </conditions>
             <var value="0">
                 <npc id="700001">
                     <dialog id="-1">
                         <operations>
-                            <npc_use>
-                                <finish>
                                     <give_item item_id="182200215" count="1"/>
                                     <set_quest_var var_id="0" value="1"/>
-                                </finish>
-                            </npc_use>
                         </operations>
                     </dialog>
                 </npc>
