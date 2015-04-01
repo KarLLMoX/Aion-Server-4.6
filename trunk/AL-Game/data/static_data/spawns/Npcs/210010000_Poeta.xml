@@ -1482,6 +1482,11 @@
 		</spawn>
 		<spawn npc_id="801032"  respawn_time="295">
 			<spot h="0" x="830.73926" y="1249.6381" z="118.875"/>
-		</spawn>  
+		</spawn>
+
+		<!-- Tutty -->
+		<spawn npc_id="206001" respawn_time="295">
+			<spot x="222.512" y="1901.246" z="170.75" h="52"/>
+		</spawn>
 	</spawn_map>
 </spawns>
