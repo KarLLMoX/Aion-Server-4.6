@@ -132,17 +132,13 @@ public class _4200ASuspiciousCall extends QuestHandler {
 					default:
 						break;
 				}
-			} else if (targetId == 700522 && var == 2) // Haorunerks Bag, loc:
-														// 401.24 503.19 885.76
-														// 119
+			} else if (targetId == 700522 && var == 2) // Haorunerks Bag, 
 			{
-				ThreadPoolManager.getInstance().schedule(new Runnable() {
-					@Override
-					public void run() {
-						updateQuestStatus(env);
-					}
-				}, 3000);
-				return true;
+				qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+				updateQuestStatus(env);
+				TeleportService2.teleportTo(player, 400010000, 3419.16f, 2445.43f, 2766.54f, (byte) 57);
+				return false;
+				
 			} else if (targetId == 279006 && var == 3)// Garkbinerk
 			{
 				switch (env.getDialog()) {
@@ -159,36 +155,5 @@ public class _4200ASuspiciousCall extends QuestHandler {
 			}
 		}
 		return false;
-	}
-
-	@Override
-	public HandlerResult onItemUseEvent(final QuestEnv env, Item item) {
-		final Player player = env.getPlayer();
-		final int id = item.getItemTemplate().getTemplateId();
-		final int itemObjId = item.getObjectId();
-		final QuestState qs = player.getQuestStateList().getQuestState(questId);
-
-		if (id != 182209097 || qs == null) {
-			return HandlerResult.UNKNOWN;
-		}
-
-		if (qs.getQuestVarById(0) != 2) {
-			return HandlerResult.FAILED;
-		}
-
-		PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjId, id, 3000, 0, 0), true);
-		ThreadPoolManager.getInstance().schedule(new Runnable() {
-			@Override
-			public void run() {
-				PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjId, id, 0, 1, 0), true);
-				removeQuestItem(env, 182209097, 1);
-				// teleport location(BlackCloudIsland): 400010000 3419.16
-				// 2445.43 2766.54 57
-				TeleportService2.teleportTo(player, 400010000, 3419.16f, 2445.43f, 2766.54f, (byte) 57);
-				qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
-				updateQuestStatus(env);
-			}
-		}, 3000);
-		return HandlerResult.SUCCESS;
 	}
 }

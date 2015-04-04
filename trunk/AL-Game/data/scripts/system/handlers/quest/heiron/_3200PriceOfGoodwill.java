@@ -21,7 +21,6 @@ import com.aionemu.gameserver.model.DialogAction;
 import com.aionemu.gameserver.model.gameobjects.Item;
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
-import com.aionemu.gameserver.model.TeleportAnimation;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_ITEM_USAGE_ANIMATION;
 import com.aionemu.gameserver.questEngine.handlers.HandlerResult;
@@ -37,7 +36,6 @@ import com.aionemu.gameserver.world.WorldMapInstance;
 
 /**
  * @author kecimis
- * @modified apozema
  */
 public class _3200PriceOfGoodwill extends QuestHandler {
 
@@ -50,8 +48,8 @@ public class _3200PriceOfGoodwill extends QuestHandler {
 
 	@Override
 	public void register() {
-		qe.registerQuestNpc(204658).addOnQuestStart(questId);
-		qe.registerQuestItem(182209082, questId);
+		qe.registerQuestNpc(204658).addOnQuestStart(questId); // Uikinerk
+		qe.registerQuestItem(182209082, questId); // Teleport Scroll
 		for (int npc_id : npc_ids) {
 			qe.registerQuestNpc(npc_id).addOnTalkEvent(questId);
 		}
@@ -68,13 +66,13 @@ public class _3200PriceOfGoodwill extends QuestHandler {
 		}
 
 		if (qs == null || qs.getStatus() == QuestStatus.NONE) {
-			if (targetId == 204658) { // Roikinerk
+			if (targetId == 204658) // Roikinerk
+			{
 				if (env.getDialog() == DialogAction.QUEST_SELECT) {
 					return sendQuestDialog(env, 4762);
 				} else {
 					return sendQuestStartDialog(env);
 				}
-
 			}
 			return false;
 		}
@@ -82,7 +80,8 @@ public class _3200PriceOfGoodwill extends QuestHandler {
 		int var = qs.getQuestVarById(0);
 
 		if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 798322) { // Kuruminerk
+			if (targetId == 798322) // Kuruminerk
+			{
 				if (env.getDialog() == DialogAction.USE_OBJECT) {
 					return sendQuestDialog(env, 10002);
 				} else if (env.getDialogId() == DialogAction.SELECT_QUEST_REWARD.id()) {
@@ -92,87 +91,65 @@ public class _3200PriceOfGoodwill extends QuestHandler {
 				}
 			}
 			return false;
-
 		} else if (qs.getStatus() == QuestStatus.START) {
-			if (targetId == 204658) { // Roikinerk
+			if (targetId == 204658) // Roikinerk
+			{
 				switch (env.getDialog()) {
 					case QUEST_SELECT:
 						return sendQuestDialog(env, 1003);
 					case SELECT_ACTION_1011:
 						return sendQuestDialog(env, 1011);
 					case SETPRO1:
+						// Create instance
 						WorldMapInstance newInstance = InstanceService.getNextAvailableInstance(300100000);
 						InstanceService.registerPlayerWithInstance(newInstance, player);
-						TeleportService2.teleportTo(player, 300100000, newInstance.getInstanceId(), 408.45093f, 508.07065f, 885.7603f, (byte) 31, TeleportAnimation.BEAM_ANIMATION);
+						// teleport to cell in steel rake: 300100000 403.55
+						// 508.11 885.77 0
+						TeleportService2.teleportTo(player, 300100000, newInstance.getInstanceId(), 403.55f, 508.11f, 885.77f);
 						qs.setQuestVarById(0, var + 1);
 						updateQuestStatus(env);
 						return true;
 					default:
 						break;
 				}
-			}
-
-		} else if (targetId == 798332 && var == 1) { // Haorunerk
-			switch (env.getDialog()) {
-				case QUEST_SELECT:
-					return sendQuestDialog(env, 1352);
-				case SELECT_ACTION_1353:
-					playQuestMovie(env, 431);
-					break;
-				case SETPRO2:
-					qs.setQuestVarById(0, var + 1);
-					updateQuestStatus(env);
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-					return true;
-				default:
-					break;
-			}
-		} else if (targetId == 700522 && var == 2) { // Haorunerks Bag
-			ThreadPoolManager.getInstance().schedule(new Runnable() {
-				@Override
-				public void run() {
-					updateQuestStatus(env);
+			} else if (targetId == 798332 && var == 1) // Haorunerk
+			{
+				switch (env.getDialog()) {
+					case QUEST_SELECT:
+						return sendQuestDialog(env, 1352);
+					case SELECT_ACTION_1353:
+						playQuestMovie(env, 431);
+						break;
+					case SETPRO2:
+						qs.setQuestVarById(0, var + 1);
+						updateQuestStatus(env);
+						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+						return true;
+					default:
+						break;
 				}
-			}, 3000);
-			return true;
-		} else if (targetId == 279006 && var == 3) { // Garkbinerk
-			switch (env.getDialog()) {
-				case QUEST_SELECT:
-					return sendQuestDialog(env, 2034);
-				case SET_SUCCEED:
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-					qs.setStatus(QuestStatus.REWARD);
-					updateQuestStatus(env);
-					return true;
-				default:
-					break;
+			} else if (targetId == 700522 && var == 2) // Haorunerks Bag, 
+			{
+				qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
+				updateQuestStatus(env);
+				TeleportService2.teleportTo(player, 400010000, 3419.16f, 2445.43f, 2766.54f, (byte) 57);
+				return false;
+				
+			} else if (targetId == 279006 && var == 3)// Garkbinerk
+			{
+				switch (env.getDialog()) {
+					case QUEST_SELECT:
+						return sendQuestDialog(env, 2034);
+					case SET_SUCCEED:
+						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+						qs.setStatus(QuestStatus.REWARD);
+						updateQuestStatus(env);
+						return true;
+					default:
+						break;
+				}
 			}
 		}
 		return false;
-	}
-
-	@Override
-	public HandlerResult onItemUseEvent(final QuestEnv env, Item item) {
-		final Player player = env.getPlayer();
-		final int id = item.getItemTemplate().getTemplateId();
-		final int itemObjId = item.getObjectId();
-		final QuestState qs = player.getQuestStateList().getQuestState(questId);
-
-		if (id != 182209082 || qs == null || qs.getQuestVarById(0) != 2) {
-			return HandlerResult.UNKNOWN;
-		}
-
-		PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjId, id, 3000, 0, 0), true);
-		ThreadPoolManager.getInstance().schedule(new Runnable() {
-			@Override
-			public void run() {
-				PacketSendUtility.broadcastPacket(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), itemObjId, id, 0, 1, 0), true);
-				removeQuestItem(env, 182209082, 1);
-				TeleportService2.teleportTo(player, 400010000, 3411.0608f, 2419.0928f, 2763.1975f, (byte) 0, TeleportAnimation.BEAM_ANIMATION);
-				qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
-				updateQuestStatus(env);
-			}
-		}, 3000);
-		return HandlerResult.SUCCESS;
 	}
 }
