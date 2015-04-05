@@ -1010,6 +1010,7 @@
 		<!-- Uikinerk -->
 		<spawn npc_id="204839" respawn_time="295">
 			<spot x="2485" y="2200.5" z="558.688" h="40"/>
+			<spot x="499.12054" y="2036.7605" z="216.3351" h="111"/>
 		</spawn>
 		<!-- Snowfur -->
 		<spawn npc_id="213706" respawn_time="1800">
