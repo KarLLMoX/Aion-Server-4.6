@@ -17,6 +17,8 @@
 
 package quest.heiron;
 
+import com.aionemu.gameserver.model.gameobjects.Creature;
+import com.aionemu.gameserver.model.gameobjects.VisibleObject;
 import com.aionemu.gameserver.model.DialogAction;
 import com.aionemu.gameserver.model.gameobjects.Npc;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
@@ -146,6 +148,11 @@ public class _1055EternalRest extends QuestHandler {
 					break;
 			}
 		} else if (targetId == 204628) {
+					if (var == 2) {
+						if (player.getInventory().getItemCountByItemId(182201609) == 1) {
+							return closeDialogWindow(env);
+						}
+					}
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
 					if (var == 2) {
@@ -157,15 +164,23 @@ public class _1055EternalRest extends QuestHandler {
 							if (!giveQuestItem(env, 182201609, 1)) {
 								return true;
 							}
+								VisibleObject target = player.getTarget();
+								Creature creature = (Creature) target;
+								creature.getController().onAttack(player, creature.getLifeStats().getMaxHp() + 1, true);
+								PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+								return true;
 						}
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
 					}
 					return false;
 				default:
 					break;
 			}
 		} else if (targetId == 204627) {
+					if (var == 2) {
+						if (player.getInventory().getItemCountByItemId(182201610) == 1) {
+							return closeDialogWindow(env);
+						}
+					}
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
 					if (var == 2) {
@@ -177,15 +192,23 @@ public class _1055EternalRest extends QuestHandler {
 							if (!giveQuestItem(env, 182201610, 1)) {
 								return true;
 							}
+								VisibleObject target = player.getTarget();
+								Creature creature = (Creature) target;
+								creature.getController().onAttack(player, creature.getLifeStats().getMaxHp() + 1, true);
+								PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+								return true;
 						}
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
 					}
 					return false;
 				default:
 					break;
 			}
 		} else if (targetId == 204626) {
+					if (var == 2) {
+						if (player.getInventory().getItemCountByItemId(182201611) == 1) {
+							return closeDialogWindow(env);
+						}
+					}
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
 					if (var == 2) {
@@ -197,15 +220,23 @@ public class _1055EternalRest extends QuestHandler {
 							if (!giveQuestItem(env, 182201611, 1)) {
 								return true;
 							}
+								VisibleObject target = player.getTarget();
+								Creature creature = (Creature) target;
+								creature.getController().onAttack(player, creature.getLifeStats().getMaxHp() + 1, true);
+								PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+								return true;
 						}
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
 					}
 					return false;
 				default:
 					break;
 			}
 		} else if (targetId == 204622) {
+						if (var == 2) {
+							if (player.getInventory().getItemCountByItemId(182201612) == 1) {
+								return true;
+							}
+						}
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
 					if (var == 2) {
@@ -217,9 +248,12 @@ public class _1055EternalRest extends QuestHandler {
 							if (!giveQuestItem(env, 182201612, 1)) {
 								return true;
 							}
+								VisibleObject target = player.getTarget();
+								Creature creature = (Creature) target;
+								creature.getController().onAttack(player, creature.getLifeStats().getMaxHp() + 1, true);
+								PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+								return true;
 						}
-						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-						return true;
 					}
 					return false;
 				default:

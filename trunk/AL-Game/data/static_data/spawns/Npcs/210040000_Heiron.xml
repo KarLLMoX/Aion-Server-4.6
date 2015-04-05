@@ -1100,7 +1100,7 @@
 			<spot x="2886.85" y="2204.67" z="144.803" h="112"/>
 		</spawn>
 		<!-- Mempion -->
-		<spawn npc_id="204627" respawn_time="295">
+		<spawn npc_id="204627" respawn_time="60">
 			<spot x="435" y="1975" z="116" h="59"/>
 		</spawn>
 		<!-- Iron Horn Drakie -->
@@ -1115,7 +1115,7 @@
 			<spot x="2850.18" y="2349.45" z="130" h="24"/>
 		</spawn>
 		<!-- Spina -->
-		<spawn npc_id="204626" respawn_time="295">
+		<spawn npc_id="204626" respawn_time="60">
 			<spot x="503" y="1943" z="119" h="120"/>
 		</spawn>
 		<!-- Indratu Sansua -->
@@ -1141,7 +1141,7 @@
 			<spot x="2865.41" y="2236.23" z="147.661" h="52"/>
 		</spawn>
 		<!-- Kalkas -->
-		<spawn npc_id="204628" respawn_time="295">
+		<spawn npc_id="204628" respawn_time="60">
 			<spot x="401.64" y="1794.61" z="112" h="88"/>
 		</spawn>
 		<!-- Captain Zorejas -->
@@ -1204,7 +1204,7 @@
 			<spot x="2359.01" y="1985.3" z="129.31" h="95"/>
 		</spawn>
 		<!-- Ladon -->
-		<spawn npc_id="204622" respawn_time="295">
+		<spawn npc_id="204622" respawn_time="60">
 			<spot x="294.858" y="1982.59" z="110" h="70"/>
 		</spawn>
 		<!-- Indratu Patrol Head -->
