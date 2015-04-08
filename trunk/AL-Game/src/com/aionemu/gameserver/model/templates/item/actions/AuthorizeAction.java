@@ -77,11 +77,10 @@ public class AuthorizeAction extends AbstractItemAction {
                         PacketSendUtility.broadcastPacketAndReceive(player, new SM_ITEM_USAGE_ANIMATION(player.getObjectId(), player.getObjectId(), parentItem.getObjectId(), parentItem.getItemId(), 0, 2, 0));
                         targetItem.setAuthorize(0);
                     if (targetItem.getItemTemplate().isFeather()) {
-					if (targetItem.isEquipped()) {
+					if (targetItem.isEquipped())
 						player.getEquipment().getEquippedItemByObjId(targetItem.getObjectId()).decreaseItemCount(targetItem.getItemCount());
-					} else {
+					  else
 						player.getInventory().decreaseByObjectId(targetItem.getObjectId(), targetItem.getItemCount());
-						}
 					}
                         PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MSG_ITEM_AUTHORIZE_FAILED(targetItem.getNameId()));
                     } else {
