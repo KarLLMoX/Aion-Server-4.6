@@ -316,7 +316,7 @@
     <report_to id="4902" start_npc_ids="204081" end_npc_ids="204057" item_id="182207068"/>
     <report_to id="4903" start_npc_ids="204082" end_npc_ids="204058" item_id="182207069"/>
     <report_to id="4904" start_npc_ids="204083" end_npc_ids="204059" item_id="182207070"/>
-    <report_to id="4913" start_npc_ids="204182" end_npc_ids="279027"/>
+    <report_to id="4913" start_npc_ids="204182" end_npc_ids="204837"/>
     <report_to id="4921" start_npc_ids="798358" end_npc_ids="279022" item_id="182207128"/>
     <report_to id="4954" start_npc_ids="204100" end_npc_ids="204052"/>
     <report_to id="4947" start_npc_ids="204104" end_npc_ids="204052" item_id="182207129"/>
