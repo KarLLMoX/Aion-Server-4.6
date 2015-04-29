@@ -84,7 +84,7 @@ public class _23500InspecttheKatalamBase extends QuestHandler {
                 }
                 if (env.getDialog() == DialogAction.SELECT_QUEST_REWARD)
                 {
-                    changeQuestStep(env, 0, 1,true);
+                    changeQuestStep(env, 1, 1,true);
                     return sendQuestDialog(env, 5);
                 }
 
@@ -97,7 +97,7 @@ public class _23500InspecttheKatalamBase extends QuestHandler {
                 }
                 if (env.getDialog() == DialogAction.SELECT_QUEST_REWARD)
                 {
-                    changeQuestStep(env, 0, 2,true);
+                    changeQuestStep(env, 2, 2,true);
                     return sendQuestDialog(env, 6);
                 }
 
@@ -109,7 +109,7 @@ public class _23500InspecttheKatalamBase extends QuestHandler {
                 }
                 if (env.getDialog() == DialogAction.SELECT_QUEST_REWARD)
                 {
-                    changeQuestStep(env, 0, 3,true);
+                    changeQuestStep(env, 3, 3,true);
                     return sendQuestDialog(env, 7);
                 }
 
