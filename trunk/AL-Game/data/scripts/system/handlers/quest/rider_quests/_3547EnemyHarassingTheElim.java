@@ -88,16 +88,9 @@ public class _3547EnemyHarassingTheElim extends QuestHandler {
 						break;
 				}
 			}
-		} else if (qs.getStatus() == QuestStatus.REWARD) {
-			if (targetId == 204647) {
-				switch (dialog) {
-					case USE_OBJECT:
-						return sendQuestDialog(env, 10002);
-					case SELECT_QUEST_REWARD:
-						return sendQuestDialog(env, 5);
-					default:
-						return sendQuestEndDialog(env);
-				}
+		}  else if (qs.getStatus() == QuestStatus.REWARD) {
+			if (targetId == 204647) { // Voice of Arbolu
+				return sendQuestEndDialog(env);
 			}
 		}
 		return false;
