@@ -26,6 +26,7 @@ import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.world.zone.ZoneName;
 import com.aionemu.gameserver.services.teleport.TeleportService2;
+import com.aionemu.gameserver.model.TeleportAnimation;
 
 /**
  * @author Xitanium
@@ -80,7 +81,9 @@ public class _1041ADangerousArtifact extends QuestHandler {
 							return defaultCloseDialog(env, 0, 1); // 1
 						}
 						case SETPRO3: {
-							return defaultCloseDialog(env, 3, 4); // 4
+							TeleportService2.teleportTo(player, 110010000, 2044.4564f, 1486.5933f, 581.1387f, (byte) 119, TeleportAnimation.BEAM_ANIMATION);
+							changeQuestStep(env, 3, 4, false); // 4
+							return closeDialogWindow(env);
 						}
 						case SETPRO6: {
 							return defaultCloseDialog(env, 6, 7); // 7
@@ -128,7 +131,7 @@ public class _1041ADangerousArtifact extends QuestHandler {
 							}
 						}
 						case SETPRO5: {
-							TeleportService2.teleportTo(player, 210020000, 267.9352f, 2790.1128f, 272.47702f);
+							TeleportService2.teleportTo(player, 210020000, 267.9352f, 2790.1128f, 272.47702f, (byte) 119, TeleportAnimation.BEAM_ANIMATION);
 							changeQuestStep(env, 5, 6, false); // 6
 							return closeDialogWindow(env);
 						}
