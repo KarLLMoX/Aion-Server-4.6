@@ -60,18 +60,24 @@ public class _50008SoloriusShugoSlackers extends QuestHandler {
         return false;
     }
 
-    @Override
+	@Override
     public boolean onNpcReachTargetEvent(QuestEnv env) {
+        if(env != null && env.getPlayer() != null) {
+            if(env.getQuestId() != questId)
+                return false;
             Player player = env.getPlayer();
             QuestState qs = player.getQuestStateList().getQuestState(questId);
-            int var = qs.getQuestVarById(0);
-            if (var == 0) {
-                return defaultFollowEndEvent(env, var, var + 1, false); // 3
+            if(qs != null){
+                int var = qs.getQuestVarById(0);
+                if(var == 0) {
+                    return defaultFollowEndEvent(env, var, var + 1, false);
+                }
+                if(var == 1) {
+                    return defaultFollowEndEvent(env, var, var + 1, true);
+                }
             }
-            if (var == 1) {
-                return defaultFollowEndEvent(env, var, var + 1, true); // 3
-            }
-            return false;
+        }
+        return false;
     }
 
 

@@ -260,15 +260,15 @@ public class QuestEngine implements GameEngine {
 		try {
 			for (int index = 0; index < reachTarget.size(); index++) {
 				QuestHandler questHandler = getQuestHandlerByQuestId(reachTarget.get(index));
-				if (questHandler != null) {
+				if (questHandler != null && env.getQuestId() == reachTarget.get(index)) {
 					env.setQuestId(reachTarget.get(index));
 					questHandler.onNpcReachTargetEvent(env);
 				}
 			}
-		} catch (Exception ex) {
-			log.error("QE: exception in onProtectEndEvent", ex);
-		}
-	}
+      } catch (Exception ex) {
+         log.error("QE: exception in onProtectEndEvent", ex);
+      }
+   }
 
 	public void onNpcLostTarget(QuestEnv env) {
 		try {

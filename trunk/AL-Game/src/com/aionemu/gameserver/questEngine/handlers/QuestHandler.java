@@ -718,6 +718,21 @@ public abstract class QuestHandler extends AbstractQuestHandler implements Const
 			return defaultCloseDialog(env, step, nextStep);
 		}
 	}
+	
+	public boolean defaultStartFollowEvent(QuestEnv env, Npc follower, ZoneName zone1, ZoneName zone2, int step, int nextStep) {
+      final Player player = env.getPlayer();
+      if (!(env.getVisibleObject() instanceof Npc)) {
+         return false;
+      }
+      PacketSendUtility.sendPacket(player, new SM_NPC_INFO(follower, player));
+      follower.getAi2().onCreatureEvent(AIEventType.FOLLOW_ME, player);
+      player.getController().addTask(TaskId.QUEST_FOLLOW, QuestTasks.newFollowingToTargetCheckTask(env, follower, zone1, zone2));
+      if (step == 0 && nextStep == 0) {
+         return true;
+      } else {
+         return defaultCloseDialog(env, step, nextStep);
+      }
+   }
 
 	/**
 	 * NPC stops following the player. Used in both onLostTargetEvent and

@@ -62,7 +62,7 @@ public class _51008NonHelpingHands extends QuestHandler {
         return false;
     }
 
-    @Override
+	@Override
     public boolean onNpcReachTargetEvent(QuestEnv env) {
             Player player = env.getPlayer();
             QuestState qs = player.getQuestStateList().getQuestState(questId);
@@ -73,7 +73,7 @@ public class _51008NonHelpingHands extends QuestHandler {
             if (var == 1) {
                 return defaultFollowEndEvent(env, var, var + 1, true); // 3
             }
-            return false;
+        return false;
     }
 
 
