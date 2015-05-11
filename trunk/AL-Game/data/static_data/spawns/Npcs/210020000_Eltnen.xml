@@ -857,11 +857,8 @@
 			<spot x="2602.02" y="629.1" z="463.9875" h="29" walker_id="C685972061B3FAEF7C7344894858281EE4D0939F"/>
 		</spawn>
 		<!-- Nimble Aramis -->
-		<spawn npc_id="213797" respawn_time="1800">
-			<temporary_spawn/>
-			<spot x="583.41" y="1723.98" z="238.09062" h="79" walker_id="5E214B2F2016FA251780B543B81E4B078D52E536">
-				<temporary_spawn spawn_time="21.*.*" despawn_time="4.*.*"/>
-			</spot>
+		<spawn npc_id="213797" respawn_time="180">
+			<spot x="583.41" y="1723.98" z="238.09062" h="79" walker_id="5E214B2F2016FA251780B543B81E4B078D52E536"/>
 		</spawn>
 		<!-- Grand Chieftain Saendukal -->
 		<spawn npc_id="211040" respawn_time="21600">
