@@ -171,7 +171,7 @@ public class _1007ACeremonyinSanctum extends QuestHandler {
 					case 15:
 					case 16:
 					case 18:
-						if (QuestService.finishQuest(env, 0)) {
+						if (QuestService.finishQuest(env)) {
 							return sendQuestSelectionDialog(env);
 						}
 				}
@@ -191,7 +191,7 @@ public class _1007ACeremonyinSanctum extends QuestHandler {
 					case 15:
 					case 16:
 					case 18:
-						if (QuestService.finishQuest(env, 1)) {
+						if (QuestService.finishQuest(env)) {
 							return sendQuestSelectionDialog(env);
 						}
 				}
@@ -211,7 +211,7 @@ public class _1007ACeremonyinSanctum extends QuestHandler {
 					case 15:
 					case 16:
 					case 18:
-						if (QuestService.finishQuest(env, 2)) {
+						if (QuestService.finishQuest(env)) {
 							return sendQuestSelectionDialog(env);
 						}
 				}
@@ -231,7 +231,7 @@ public class _1007ACeremonyinSanctum extends QuestHandler {
 					case 15:
 					case 16:
 					case 18:
-						if (QuestService.finishQuest(env, 3)) {
+						if (QuestService.finishQuest(env)) {
 							return sendQuestSelectionDialog(env);
 						}
 				}
@@ -251,7 +251,7 @@ public class _1007ACeremonyinSanctum extends QuestHandler {
 					case 15:
 					case 16:
 					case 18:
-						if (QuestService.finishQuest(env, 4)) {
+						if (QuestService.finishQuest(env)) {
 							return sendQuestSelectionDialog(env);
 						}
 				}
@@ -271,7 +271,7 @@ public class _1007ACeremonyinSanctum extends QuestHandler {
 					case 15:
 					case 16:
 					case 18:
-						if (QuestService.finishQuest(env, 5)) {
+						if (QuestService.finishQuest(env)) {
 							return sendQuestSelectionDialog(env);
 						}
 				}
