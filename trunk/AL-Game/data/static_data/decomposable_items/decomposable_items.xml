@@ -14001,6 +14001,28 @@
     <decomposable item_id="188051812" decomposable_name="[Event] Crown Box"/>
     <decomposable item_id="188051813" decomposable_name="[Event] Draupnir Cave Fabled Glove Box"/>
     <decomposable item_id="188051814" decomposable_name="[Event] Fighting Bundle"/>
+	<decomposable item_id="188052812" decomposable_name="Bronze Coin Lockbox">
+		<items chance="80">
+			<item id="186000001" name="Iron Coin" count="5"/>
+		</items>
+		<items chance="35">
+			<item id="186000001" name="Iron Coin" count="8"/>
+		</items>
+		<items chance="15">
+			<item id="186000001" name="Iron Coin" count="10"/>
+		</items>
+	</decomposable>
+	<decomposable item_id="188052817" decomposable_name="Bronze Coin Lockbox">
+		<items chance="80">
+			<item id="186000006" name="Iron Coin" count="5"/>
+		</items>
+		<items chance="35">
+			<item id="186000006" name="Iron Coin" count="8"/>
+		</items>
+		<items chance="15">
+			<item id="186000006" name="Iron Coin" count="10"/>
+		</items>
+	</decomposable>
     <decomposable item_id="188052833" decomposable_name="Tatar's Aether Key Box">
 		<items>
 			<item id="102100749" name="Tatar's Aether Key"/>
