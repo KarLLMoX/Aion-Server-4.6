@@ -114,22 +114,19 @@ public class _2052AnUndeadOccupation extends QuestHandler {
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
 					if (var == 1) {
-						qs.setQuestVarById(0, var + 1);
-						updateQuestStatus(env);
 						return sendQuestDialog(env, 1352);
-					} else if (var == 12) {
+					} else if (var == 7) {
 						return sendQuestDialog(env, 1693);
 					}
 				case SETPRO2:
-					if (var == 7) {
-					qs.setQuestVar(10);
-					qs.setStatus(QuestStatus.REWARD);
-					updateQuestStatus(env);
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+					if (var == 1) {
+						qs.setQuestVarById(0, var + 1);
+						updateQuestStatus(env);
+						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
 						return true;
-					}
+					}					
 				case SETPRO3:
-					if (var == 12) {
+					if (var == 7) {
 						qs.setQuestVarById(0, var + 1);
 						updateQuestStatus(env);
 						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
@@ -141,10 +138,10 @@ public class _2052AnUndeadOccupation extends QuestHandler {
 		} else if (targetId == 204805) {
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
-					if (var == 13) {
+					if (var == 8) {
 						return sendQuestDialog(env, 2034);
 					}
-					if (var == 14) {
+					if (var == 9) {
 						return sendQuestDialog(env, 2375);
 					}
 				case CHECK_USER_HAS_QUEST_ITEM:
@@ -159,7 +156,7 @@ public class _2052AnUndeadOccupation extends QuestHandler {
 						return sendQuestDialog(env, 10001);
 					}
 				case SETPRO4:
-					if (var == 13) {
+					if (var == 8) {
 						qs.setQuestVarById(0, var + 1);
 						updateQuestStatus(env);
 						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
@@ -196,6 +193,6 @@ public class _2052AnUndeadOccupation extends QuestHandler {
 
 	@Override
 	public HandlerResult onItemUseEvent(final QuestEnv env, Item item) {
-		return HandlerResult.fromBoolean(useQuestItem(env, item, 15, 15, true, 234));
+		return HandlerResult.fromBoolean(useQuestItem(env, item, 10, 10, true, 234));
 	}
 }
