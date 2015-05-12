@@ -114,6 +114,8 @@ public class _2052AnUndeadOccupation extends QuestHandler {
 			switch (env.getDialog()) {
 				case QUEST_SELECT:
 					if (var == 1) {
+						qs.setQuestVarById(0, var + 1);
+						updateQuestStatus(env);
 						return sendQuestDialog(env, 1352);
 					} else if (var == 12) {
 						return sendQuestDialog(env, 1693);
