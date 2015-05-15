@@ -42,8 +42,7 @@ public class _3913ASecretSummons extends QuestHandler {
 	public void register() {
 		qe.registerQuestNpc(203725).addOnQuestStart(questId);
 		qe.registerQuestNpc(203725).addOnTalkEvent(questId);
-		qe.registerQuestNpc(203752).addOnTalkEvent(questId);
-		qe.registerQuestNpc(278536).addOnTalkEvent(questId);
+		qe.registerQuestNpc(204656).addOnTalkEvent(questId);
 	}
 
 	@Override
@@ -62,20 +61,7 @@ public class _3913ASecretSummons extends QuestHandler {
 					return sendQuestStartDialog(env);
 				}
 			}
-		} else if (targetId == 203752) {
-			if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 0) {
-				if (env.getDialog() == DialogAction.QUEST_SELECT) {
-					return sendQuestDialog(env, 1352);
-				} else if (env.getDialog() == DialogAction.SETPRO1) {
-					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
-					updateQuestStatus(env);
-					PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-					return true;
-				} else {
-					return sendQuestStartDialog(env);
-				}
-			}
-		} else if (targetId == 278536) {
+		}else if (targetId == 204656) {
 			if (qs != null) {
 				if (env.getDialog() == DialogAction.QUEST_SELECT && qs.getStatus() == QuestStatus.START) {
 					return sendQuestDialog(env, 2375);
