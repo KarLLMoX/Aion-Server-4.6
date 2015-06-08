@@ -127,7 +127,7 @@ public class _2061SuppressingtheBakarmaLegion extends QuestHandler {
 						return sendQuestDialog(env, 1011);
 					} else if (var == 2) {
 						return sendQuestDialog(env, 1693);
-					} else if (var == 13) {
+					} else if (var == 9) {
 						return sendQuestDialog(env, 2375);
 					}
 				case SELECT_ACTION_1694:
@@ -148,7 +148,7 @@ public class _2061SuppressingtheBakarmaLegion extends QuestHandler {
 						return true;
 					}
 				case SET_SUCCEED:
-					if (var == 13) {
+					if (var == 9) {
 						qs.setStatus(QuestStatus.REWARD);
 						updateQuestStatus(env);
 						PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
