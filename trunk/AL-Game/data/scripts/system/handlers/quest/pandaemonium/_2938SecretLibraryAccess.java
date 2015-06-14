@@ -25,6 +25,7 @@ import com.aionemu.gameserver.model.DialogAction;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
+import com.aionemu.gameserver.model.TeleportAnimation;
 import com.aionemu.gameserver.services.teleport.TeleportService2;
 import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
@@ -36,7 +37,7 @@ import com.aionemu.gameserver.world.WorldMapType;
 public class _2938SecretLibraryAccess extends QuestHandler {
 
 	private final static int questId = 2938;
-	private final static int[] npc_ids = { 204267, 203557 };
+	private final static int[] npc_ids = { 204267, 203557, 204268 };
 
 	public _2938SecretLibraryAccess() {
 		super(questId);
@@ -52,13 +53,15 @@ public class _2938SecretLibraryAccess extends QuestHandler {
 
 	private boolean AreAltgardQuestsFinished(Player player) {
 		QuestState qs = player.getQuestStateList().getQuestState(2022);
-		return (!((qs == null) || (qs.getStatus() != QuestStatus.COMPLETE && qs.getStatus() != QuestStatus.NONE)));
+		return ((qs == null) || (qs.getStatus() != QuestStatus.COMPLETE && qs.getStatus() != QuestStatus.NONE)) ? false
+                : true;
 	}
 
 	private boolean AreAethertechQuestsFinished(Player player) {
 		QuestState qs = player.getQuestStateList().getQuestState(24016);
-		return (!((qs == null) || (qs.getStatus() != QuestStatus.COMPLETE && qs.getStatus() != QuestStatus.NONE)));
-	}
+		return ((qs == null) || (qs.getStatus() != QuestStatus.COMPLETE && qs.getStatus() != QuestStatus.NONE)) ? false
+                : true;
+    }
 
 	@Override
 	public boolean onDialogEvent(QuestEnv env) {
@@ -88,17 +91,12 @@ public class _2938SecretLibraryAccess extends QuestHandler {
 					return sendQuestEndDialog(env);
 				}
 			} else if (qs.getStatus() == QuestStatus.COMPLETE) {
-				ThreadPoolManager.getInstance().schedule(new Runnable() {
-					@Override
-					public void run() {
-						TeleportService2.teleportTo(player, WorldMapType.PANDAEMONIUM.getId(), 1403.2f, 1063.7f, 206.0f, (byte) 195);
-					}
-				}, 3000);
+					TeleportService2.teleportTo(player, WorldMapType.PANDAEMONIUM.getId(), 1403.2f, 1063.7f, 206.0f, (byte) 195,TeleportAnimation.BEAM_ANIMATION);
+					return true;
 			}
 		} else if (targetId == 203557) {
 			if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 0) {
 				if (env.getDialog() == DialogAction.QUEST_SELECT) {
-
 					if (AreAltgardQuestsFinished(player)) {
 						return sendQuestDialog(env, 1011);
 					} else if (AreAethertechQuestsFinished(player)) {
@@ -117,7 +115,10 @@ public class _2938SecretLibraryAccess extends QuestHandler {
 					return sendQuestStartDialog(env);
 				}
 			}
-		}
+		} else if (targetId == 204268 && qs.getStatus() == QuestStatus.COMPLETE) {
+				TeleportService2.teleportTo(player, WorldMapType.PANDAEMONIUM.getId(), 1392.0f, 1060.3f, 206.0f, (byte) 195,TeleportAnimation.BEAM_ANIMATION);
+				return true;
+		}		
 		return false;
 	}
 }
