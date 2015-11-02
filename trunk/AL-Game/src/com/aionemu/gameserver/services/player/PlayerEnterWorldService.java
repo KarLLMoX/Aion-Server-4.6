@@ -131,8 +131,8 @@ public final class PlayerEnterWorldService {
 		infoBuffer = infoBuffer + LanguageHandler.translate(CustomMessageId.INFO7);
 
 		String alBuffer = "=============================\n";
-		alBuffer = alBuffer + "Aion Lightning Core,developed by AL German Group.\n";
-		alBuffer = alBuffer + "Copyright 2015 Aion German Group\n";
+		alBuffer = alBuffer + "Aion Lightning Core,developed by AionXcentra.\n";
+		alBuffer = alBuffer + "Copyright 2015 Core 4.6.2\n";
 		alBuffer = alBuffer + "=============================\n";
 		alBuffer = alBuffer + LanguageHandler.translate(CustomMessageId.ENDMESSAGE) + GSConfig.SERVER_NAME + " .";
 
